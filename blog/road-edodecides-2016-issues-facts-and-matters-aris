@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>The Road to #EdoDecides 2016: Issues, Facts and Matters Arising! –Ishola Adebayo :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,42 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">The Road to #EdoDecides 2016: Issues, Facts and Matters Arising! –Ishola Adebayo</h1>
+
+  <p class="meta">September 7, 2016</p>
+
+  <div class="markdown infopage">
+    <p>History plays a role and shapes our future. Today, I share with you critical issues, facts and matters arising as the people of Edo State prepare to exercise their franchise in electing its 10th Governor &amp; 5th Democratic Governor on Saturday, September 10th,2016.</p>
+
+<p>According to Benajmin Todd Jealous; “The right to vote is the right upon which all of our rights are leveraged and without which none can be protected.”</p>
+
+<p>Edo State is one of the six states in the South-South Geopolitical Zone of Nigeria and was created on August 27, 1991 out of the old Bendel state. It consists of eighteen (18) Local Government areas with Benin serving as its capital.</p>
+
+<p>On 20 March 2008, an election tribunal nullified the election of Oserheimen Osunbor of the People's Democratic Party,(PDP) and declared erstwhile labour leader Comrade Adams Oshiomhole of the Action Congress as the winner of the 14 April, 2007 governorship election. The judgement was based on several electoral malpractices observed during the election. Oshiomhole was voted for a second term in 2012. Governor Adams Oshiomhole was re-elected under the platform of the then Action Congress of Nigeria with 477, 478 votes against the PDP and ANPP with 144, 235 and 3,642 votes respectively.</p>
+
+<p>The Governor of Edo State is elected using the Open Secret Ballot System. The outgoing governor, Adams Oshiomhole, is ineligible to run for a third consecutive term due to term limits established in the Fifth Amendment to the Constitution of the Federal Republic of Nigeria.</p>
+
+<p>In deciding  who succeeds Comrade Adams Oshiomhole as the Governor of Edo State come Saturday September 10th, the citizens have to make a choice between the 19 political parties that would participate in the September 10 governorship election in the State.</p>
+
+<p>According to the INEC Approved Candidates, 19 gubernatorial aspirants; 15 male running mates and four female running mates will be participating in the Guber poll.</p>
+
+<p>Over 1.92million Registered Voters are expected to vote in the 2, 627 Polling Units across the State with about over 400, 000 Unclaimed Permanent Voter’s Card as at August 2016 despite the CVR process by the electoral umpire.</p>
+
+<p>With the current economic recession trend in the country, Domestic Debt Profile of Edo State as at December 2015 stood at N66.2 billion and the state is currently running with the Budget of N116.6billion for the year 2016.  Some of the critical issues that pervade Edo State, the Heart Beat of Nigeria ranges from Unpaid salaries for Local Council Workers, Pension &amp; Gratuity Arrears, Stalled &amp; Uncompleted Projects across the state.</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

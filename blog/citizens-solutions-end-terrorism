@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Citizens’ Solutions to End Terrorism :: Shine your eye</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- {% jekyll_search_assets %} -->
+</head>
+
+
+  <body class="">
+    <!-- {% if jekyll.environment == 'production' %}
+      {% google_analytics %}
+    {% endif %}
+
+    {% facebook_javascript_sdk %} -->
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-2014-voter-registration-and-pvc-distribution">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <!-- Hide these for now as we don't have the necessary info in EveryPolitician -->
+            <!-- <li>
+              <a href="/position/state-legislator/">State Legislators</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li><a href="/info/places-overview">Places</a></li>
+
+        <li><a href="/info/events">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <div id="header-search">
+      <!-- {% jekyll_search_box %} -->
+    </div>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Citizens’ Solutions to End Terrorism</h1>
+
+  <p class="meta">April 18, 2014</p>
+
+  <div class="markdown infopage">
+    <p>On Monday, April 14, Nigerians woke up to news of another heart-rending carnage at Nyanya Motor Park after a bomb detonated. Over 100 people were injured and over 70 people died. That same night, over 200 school girls were abducted in Chibok, Borno State. This was enough to jolt most citizens out of nonchalance.</p>
+
+<p>Tired of mere condemnations and the usual blame game, citizens on social media platforms responded to a call for suggestions on ways to combat this surge of terror. Over 1,000 suggestions were received in two days, with the hashtag #CitizensSolutionToEndTerrorism trending on Twitter on both days.</p>
+
+<p> A further review of the suggestions and internal discussions has resulted in<strong> 10 key ACTION POINTS</strong> outlined below.</p>
+
+<p> 1. FINANCING THE SECURITY APPARATUS</p>
+
+<hr />
+
+<p> The Nigerian public is concerned that the resources allocated to our security apparatus (N922 billion in 2012, N1 trillion in 2013 &amp; N845 billion in 2014) do not seem to correspond with the results delivered by those at the frontline to prosecute the war against terror. While it is understandable that security operations are mostly classified, citizens believe that some degree of transparency, accountability and disclosure is essential to gaining public confidence and achieving optimal results.</p>
+
+<p> </p>
+
+<h3>a. Agents on the Field </h3>
+
+<p>Citizens are concerned about the size, strength, training, and will of our security agencies to effectively fight insurgents. Similarly, citizens want to be assured that the welfare of our troops is given upmost priority by the government and military leadership. This includes, but not limited to, provision of (1) premium life insurance cover for security agents deployed to fight insurgency, (2) adequate compensation for the families of agents killed in the line of duty, (3) adequate care and support for agents injured in the line of duty, and (4) adequate reward for gallantry. Finally, reports indicate a disconnect between the troops on the ground and the command center. Our ground troops need the most empowering base support functions to be effective with their counter insurgency role and we expect that they are fully supported morally and with adequate resources.</p>
+
+<p> </p>
+
+<h3>b. Weapons, Intel and Logistics </h3>
+
+<p>The misinformation around the abduction of school girls in Chibok raises serious concerns about information sharing within the security agencies. Citizens want to know the technical capacity of our security agents to prosecute the war on terror. Citizens request that an independent committee comprising members of the Senate and House Committees on Defence as well as eminent retired military personnel be established to conduct an audit of the Joint Task Forces responsible for combating insurgency. The objective of the audit should be to ascertain the state of weapons, intelligence gathering and logistics in executing the war on terror.</p>
+
+<ol>
+<li>LOCAL SECURITY GOVERNANCE</li>
+</ol>
+
+
+<hr />
+
+<p>While State policing is a contentious topic, we cannot ignore the fact that community policing is operational in various parts of the country. Citizens believe that government and the military leadership have not maximized the opportunity of well-designed local community participation in the fight against terror.</p>
+
+<p>Communities should be encouraged to set up Community Safety Groups / Neighborhood Watch Groups. Community members know their communities better than the security agencies. They need to take an interest and connect with security organisations. There needs to be support and protection for the communities that are supporting the security agencies.</p>
+
+<p>Citizens call on government and the military to design a robust plan of action and negotiate a unified template with local communities for participation in security&amp; intelligence gathering. Such a plan should adequately provide for (1) anonymous reporting of suspicious people or situations, (2) protection of informants who feel threatened, (3) rapid response to actionable intelligence, (4) feedback between military and communities, and (5) measures to mitigate abuse of mandate by civilians. Governors have a critical role to play as they currently support federal security agencies but there is room for more collaboration and streamlining of efforts. This issue of state policing must also be addressed urgently by the National Assembly and the National Conference.</p>
+
+<ol>
+<li>CONCLUSIVE PROSECUTION</li>
+</ol>
+
+
+<hr />
+
+<p>‘Member of Boko Haram’, ‘Boko Haram financier’, and ‘Boko Haram supporter’ are labels that have been thrown around in a political war to embarrass certain citizens. The ease with which these labels are used, especially from the government, belittles the seriousness of the security challenge we face and the attendant death of innocent Nigerians.</p>
+
+<p>The Senator for Borno South was once ‘charged’ for sponsoring Boko Haram and yet the result of the case remains inconclusive. The government has a duty to promptly prosecute alleged sponsors, and must be seen to be serious about it. It is not enough to promise ‘action’ while citizens watch themselves slaughtered daily.  Citizens encourage the executive and judiciary to work closely together on speedy trials for the critical impact of deterrence. Prosecuting at least 5 cases in 2014 would be a major milestone and would boost the confidence of citizens.</p>
+
+<ol>
+<li>PROTOCOL OF ENGAGEMENT WITH CITIZENS</li>
+</ol>
+
+
+<hr />
+
+<p>There has to be a defined protocol for obtaining information and sharing information with citizens. During such cases of domestic terrorism, a public system through which information can be passed between citizens and the security forces must exist. The presence of such a protocol is essential to the protection of Nigerian lives.</p>
+
+<p>It is unacceptable that in the last 4 years, despite many discussions, Nigeria still does not have a functional nation-wide emergency number. The 112 phone number that is being shared is not active in most states as it only works in states that have set up their own emergency services. Furthermore, in light of what happened to Yusuf Omisani, who was picked by SSS agents and kept incommunicado for 12 days, citizens need to be assured that when they share information, they will not be arbitrarily assumed to be members of Boko Haram and intimidated or victimised.</p>
+
+<p>In addition, we suggest a monthly meeting between security operatives and community stakeholders in communities most affected by these acts of violence. We need an alternative that encourages more collaboration and information sharing to bridge the gap of communication. For the larger populace, the National Assembly should host Quarterly Public Hearings to keep citizens reasonably updated on the status of counter insurgency operations.</p>
+
+<p>  5. FOLLOW THE MONEY</p>
+
+<hr />
+
+<p>The violence is being financed with cash. Terrorism involves the transfer of money in order to fund the procurement of equipment and manpower. The government must make efforts to ensure that financial services such as the banking sector’s Know-Your-Customer initiative is tied to its anti-terrorism strategy. Perhaps, through such efforts, we might be able to cut off their financial supply and trace the sponsors.</p>
+
+<p>  6. IMMIGRATION AND CITIZENS’ IDENTIFICATION</p>
+
+<hr />
+
+<p>Our borders are porous and Nigerians do have family and allegiances to nationals of Niger and Cameroon. As a matter of urgency, we need to streamline the various types of data we have into a comprehensive database – SiM-Card registration (NCC), Immigration, National Identity Card, Civil Service Commission, Driver’s License/ License Plates (FRSC), Voters’ Register (INEC).</p>
+
+<p>A central database where the identities of all Nigerians can be easily verified must exist in order for Nigeria to significantly make progress in fighting terrorism.</p>
+
+<p>  7. RESPECT FOR THE DEAD</p>
+
+<hr />
+
+<p>Nigeria’s Constitution assures us that the security of lives and property is the primary responsibility of government. Given that lives have been lost to terrorism, the government needs to demonstrate respect for the citizens who have lost their lives in this act of violence.</p>
+
+<p>The appropriate agencies of government should within 48 hours of any attack, publish the names of as many victims as possible using formal and informal identification. The National Human Rights Commission should be given adequate resources and support to create and maintain a database of victims of violence.</p>
+
+<p>And, we must learn to remember them as a nation. Reporting victims as mere statistics is dehumanizing our dead brothers &amp; sisters and desensitizing our society, including our children.</p>
+
+<p>  8. RISK CALCULATION AND MITIGATION</p>
+
+<hr />
+
+<p>For public spaces prone to attacks – markets, schools, and parks – a standard package of protection should be designed to protect citizens. Once made public, citizens can also be vigilant to ensure that their spaces have the required services.</p>
+
+<p>  9. PROMOTION OF PEACE EDUCATION</p>
+
+<hr />
+
+<p>Government, religious institutions, private sector and civil society groups should invest more resources in promoting peace education. Peace education will help to redress the culture of violence and aggression and inculcate the value of peaceful coexistence and non-violent orientation on every citizen. Peace education should be integrated in the educational curriculum of Nigeria, from primary to tertiary education.</p>
+
+<p>In addition, the problem of youth radicalization and extremism could partly be curbed through proper sensitization and enlightenment programmes using special designed radio and television programmes, jingles and group discussions. A robust countering violent extremism (CVE) programme should be an integral part of peace education. The Nigerian government, civil society groups and the private sector could partner with Nollywood to produce home movies in the three major languages (Hausa, Igbo and Yoruba) designed to specifically counter the narrative, rhetoric and doctrines of violent radicalization or religious extremism. The private sector can play a crucial role in providing financial support for these programmes.</p>
+
+<p>  10. SOCIAL WELFARE </p>
+
+<hr />
+
+<h3>a.    SPECIFIC PROGRAMMES TO EDUCATE &amp; EMPOWER WOMEN </h3>
+
+<p>The world over, there is a clear and direct link between uneducated and unproductive women and poverty. Statistics have it that 2/3 of the 102 million poor people in Nigeria live in the Northern region of Nigeria, where women are the least literate and empowered. The North East &amp; North West zones have half of all the poor people in Nigeria, with more than 50 million people living in abject poverty and the insurgency has widened the gap even more. Incidentally, over half of the women in the North are married off before they attain the age of 16 and commence childbirth within the first year of marriage. Of the 16 million births by girls below the age of 18, 9 out of 10 of them are married. These poor human development indices only portend massive economic development costs for current and future generations. Governments, at all levels, need to consciously invest in women, if only to increase productivity, promote sustainable growth, their children’s wellbeing, as well as engender healthy livelihoods and establish peace, stability and security, in all of our rural communities. In seeking to harness the energies of the youth in a more productive and meaningful manner, a deliberate focus on education and empowerment for women as a significant strategy of concern is critical as they remain the foremost catalysts for rapid growth, peace and development in our country.</p>
+
+<h3>b.    Creation of Job Opportunities for Nigerian Youth </h3>
+
+<p>The Nigerian government must embark on effective poverty alleviation and human capital development programmes in order to empower its large youth population who are most vulnerable to recruitment and radicalization for violent extremism and terrorism.</p>
+
+<h3>c.    Design and Delivery of Robust Programme for Destitute Children </h3>
+
+<p>The Nigerian government should fund appropriately the National Council for the Welfare of the Destitute (NCWD) to enable the agency formulate and implement robust rehabilitation programmes for destitute children in Nigeria. Government at all levels (federal, state and local), especially working through the NCWD should partner with credible civil society organisations to design and implement effective reorientation programmes to reconnect these destitute children with their parents or provide them the necessary training that will help them function effectively in the society. Such rescue, rehabilitation and reintegration intervention is expedient given the finding that children who were not brought up by their parents are more disposed to using violence in propagating their religious views.</p>
+
+<h3>d.    Enhanced Provision of Education and Literacy Programme </h3>
+
+<p>Due to the high level of illiteracy in Nigeria, most young people have become easily susceptible to manipulation and recruitment into criminal and extremist groups. Although the right to education is one of the basic rights of every Nigerians, access and entitlement to this right is hardly attained. To reduce the number of people who are likely to fall prey to radical preaching and recruitment into violent groups, primary &amp; secondary education should be made free and compulsory for every child in Nigeria. Thus, what is needed is for the local and state government to muster sufficient political will to deliver quality and accessible education to more children in Northern Nigeria through enhanced allocation and judicious utilisation of funds in the education sector.</p>
+
+<p> </p>
+
+<p>In summary, as we’ve seen in other countries, we cannot overemphasise that insurgency is not restricted to a particular part of the country – it is not a North East or Northern problem. It is trans-border and can move easily. The number of casualties in the last 3 years is estimated at almost 20,000. In the first 4 months of this year, we have lost almost 1,500 Nigerians, especially students, and hundreds of women and children remain unaccounted for.</p>
+
+<p>We call on the Federal Government to ensure that our security agencies are equipped adequately for the task; engage communities; provide a national emergency number; honour the dead; prosecute swiftly and harmonise our databases for ease of identification.</p>
+
+<p>The assurances given by the Federal Government are no longer sufficient and they MUST match their words with visible action to rebuild the confidence of the citizens in the efforts to protect lives and property. Nigerian citizens are desperate to see that we are winning this war on terror and for us, results are defined by the absence of abductions and deaths; cutting off financial flows; capture &amp; prosecution of terrorists, especially before they strike.</p>
+
+<p>We call on Mr President for leadership that mobilises Nigerians to fight collectively against a common enemy. Mr President must extend a hand to ALL stakeholders in this war – governors, political party leaders, the National Assembly, traditional and religious institutions, civil society and citizens – and communicate clearly that this is not about party politics, ethnicity or religion, but about pursuing the common good of ALL Nigerians.</p>
+
+<p>Our hearts go out to members of the Chibok community as we pray for the speedy return of our daughters.</p>
+
+<p> </p>
+
+<p>May God bless the Federal Republic of Nigeria.</p>
+
+<p> Signed,  NIGERIAN CITIZENS</p>
+
+<p> </p>
+
+<p> </p>
+
+<p><em>The above document was prepared by EiE Nigeria, a coalition of individuals and youth-led organizations committed to instituting a culture of good governance and public accountability in Nigeria through advocacy, activism and the mobilization of the youth population as responsible citizens. EiE was supported by CLEEN Foundation, a non-governmental organization with the mission of promoting public safety, security and accessible justice through the strategies of empirical research, legislative advocacy, demonstration programmes and publications, in partnership with government and civil society.</em></p>
+
+<p>The edited tweets can be found online here –</p>
+
+<p>  https://storify.com/EiENigeria/citizenssolutiontoendterrorism</p>
+
+  </div>
+
+</div>
+
+
+
+          </div>
+        </div>
+
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="site-footer__primary">
+        <h3>About Shine Your Eye</h3>
+        <p>Shine your Eye is an initiative of <a href="http://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="http://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>.</p>
+        <p>Shine Your Eye lets you follow the activities of elected officials, connect with them and share your concerns. You can view profiles of elected officials that include such information as educational background, experience, legislative interests, phone numbers and email addresses.</p>
+        <p>Our goal is to increase accountability in governance by making it easier for Nigerians to follow the activities of elected officials and connect with them. Curating the activities of elected officials also makes it easier to review track records at election time.</p>
+      </div>
+      <div class="site-footer__secondary">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+          <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+          <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+          <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+          <li><a class="btn btn-default" href="/info/events">Events</a></li>
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

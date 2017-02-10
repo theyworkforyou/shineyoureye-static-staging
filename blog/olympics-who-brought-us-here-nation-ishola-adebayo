@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>Olympics: Who brought us here as a Nation?  - Ishola Adebayo :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,38 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Olympics: Who brought us here as a Nation?  - Ishola Adebayo</h1>
+
+  <p class="meta">August 12, 2016</p>
+
+  <div class="markdown infopage">
+    <p>In 1952, the Nigerian team made their first appearance and since then, Nigerian athletes have always participated in every tournaments of the summer Olympic games except for the 1976 Summer Olympic Games which held in Montreal due to the African boycott. Though, Nigeria has never participated in the Winter Olympic Games.</p>
+
+<p>As usual, the Nigerian team was billed to compete at the 2016 Summer Olympics in Rio de Janeiro from August 5 to 21, 2016, however, not without controversy.</p>
+
+<p>If we as a country with vast Human and material resources can't find a way to successfully manage and finance our team to the Olympic without late preparation, corruption and bribery, racketeering, drug performances and other demanding vices accompanied with the recent Olympic outing, how is the purpose of the outing to our Nation's corporate image (Internationally) going to be achieved? Actually, 'Olympism' is a way that "seeks to create a way of life based on the joy of effort, the educational value of good example, social responsibility and respect for universal fundamental ethical principles." Does this definition define our latest Olympic outing?</p>
+
+<p>Disgraceful as it is, we heard about the case of the U-23 football team who were stranded in Atlanta and almost made us lose the opening match against Japan before Delta Airline came to the rescue, as if this isn't enough, another one rubbed our face and dent our global image as the much publicized new kit that was unveiled before President Buhari at the Aso Villa on the day Team Nigeria was officially handed over to the Nigeria Olympic Committee, NOC, failed to arrive Rio on time for the Opening Ceremony on Saturday. As a result of the non-arrival of their kits, Team Nigeria athletes had to march in tracksuits with one foreign journalist, Alexander Wolff of American Magazine, Sports Illustrated, taking to twitter to ridicule the country thus: “Nigeria, marching in sweats because official outfits didn’t make it to Rio. Can we agree that they’re a country to pull for these two weeks?”</p>
+
+<p>The Youth and Sports Development Ministry was sent to the cleaners through social media outbursts from Nigerians as a result of the poor dressing. One of the quotes read “Shame on Nigeria. Shame! Shame! Shame! We are not capable of doing anything right. It is impossible to do the right thing. We are always coming up with stupid excuses that no one else seems to have. I could not find the right words to explain to my daughter here in Houston why we dressed like no other country. I was embarrassed. The opening ceremony was exciting until we appeared shamelessly and I did not need to be told that they left their official attire in Nigeria. We are ridiculous and shameless.” In truism, despite the near-exaggeration of the comments, they summarize the state of our nation and the depth at which corruption has eaten into our systems, in the comity of other countries, we still showcase our lackadaisical and obscure attitude to pressing international competition like the Olympic. This is utterly outrageous!</p>
+
+<p>As various embarrassing happenings have continued to surge on Team Nigeria like a tsunami, the Nigerian Government (as usually said and not always done) promises to investigate the rot in the Olympic mess that brought international discomfort to the Nigerian team. Investigation isn't enough but bringing the culprits to book will go a long way in putting things in the normal way they should be.</p>
+
+<p>Be it as it may, we equally call on the government to take swift actions to stem the tide and avoid future occurrence because we can't afford to have this crucial issue swept under the carpet as it is normally done in some other cases. If we can't get it right by organizing a shame-free Olympic outing, when and what can we get right as a country?</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

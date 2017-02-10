@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>NASS ELECTIONS :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,64 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">NASS ELECTIONS</h1>
+
+  <p class="meta">April 7, 2015</p>
+
+  <div class="markdown infopage">
+    <p>On March 28, across all federal constituencies and senatorial districts in Nigeria, citizens voted to decide their representatives in the 8th National Assembly.</p>
+
+<ul>
+<li><strong>SENATE</strong>:</li>
+</ul>
+
+
+<p>At least, five governors, Jonathan Jang (Plateau North), Godswill Akpabio (Akwa Ibom West), Theodore Orji (Abia Central), Mohammed Kwankwaso (Kano Central) and Aliyu Wamakko (Sokoto North) have won their election bid into the Nigerian Senate.</p>
+
+<p>Likewise, David Mark (Senate President) and Ike Ekweremadu (Senate Vice President)  also got re-elected, but they both won’t be retaining their current positions. After spending eight years as president of the Senate, David Mark’s best bet will be the Minority Leader post.</p>
+
+<p>The is because the All Progressives Congress have won more seats than the Peoples Democratic Party in the March 28 elections, and therefore, will be the major political party at the 8th National Assembly. As a result, the APC will produce the Senate President, Senate Vice President, Majority Leader and Chief Whip.</p>
+
+<p>Some PDP senators who lost to APC in the election include Ahmed Makarfi (Kaduna North), Abdul Ningi (Deputy Senate Leader, Bauchi Central), Smart Adeyemi (Kogi West), Hosea Agboola (Oyo North) and Zainab Kure (Niger South).</p>
+
+<p>Notwithstanding the majority status the APC will enjoy in the 8th National Assembly, it will also lack a two-third majority (73), needed for key decisions.</p>
+
+<p>The election results also reveal that the next Senate will be male-dominated, as only eight of the 109 elected will be females.</p>
+
+<p>Three of the eight women-senators are of the APC - Oluremi Tinubu (Lagos Central), Alhaja Monsurat Sunmonu (Oyo Central) and Binta Masi Garba (Adamawa North). The other five women are from the PDP - Uche Ekwunife (Anambra), Stella Oduah (Anambra), Abiodun Olujimi (Ekiti South), Fatima Raji-Rasaki (Ekiti Central) and Rose Okoh (Cross River North)</p>
+
+<ul>
+<li><strong>HOUSE OF REPRESENTATIVES</strong>:</li>
+</ul>
+
+
+<p>In the House of Representatives, about 302 out the 360 members will not return to their seats in the 8th session of the National Assembly.</p>
+
+<p>This includes Aminu Tambuwal (Speaker), Emeka Ihedioha (Deputy Speaker), Mulikat Akande-Adeola (House Majority Leader), Ishaka Bawa (Chief Whip),   Sampson Osagie (Minority Whip), and Abdulrahman Suleiman-Kawu (Deputy Minority Leader).</p>
+
+<p>While the speaker, deputy speaker and some other principal officers vied for either governorship or senatorial positions, most lawmakers lost their re-election bid either at the primaries of their political parties or after the March 28 National Assembly election.</p>
+
+<p>Over 155 lawmakers lost out at the primaries of their political parties, while 147 lost at the general elections. Hence, only about 58 scaled through the hurdles, a relative decrease from 2011 when 99 lawmakers returned from the 2007 set.</p>
+
+<p>Prior to the March 28 elections, the PDP had less than 160 members, a decrease from initial majority strength of 208 in June 2011, as a result of mass defection to the All Progressives Congress. Furthermore, the performance of the PDP at the poll paved way for a further decrease to a membership figure under 150.</p>
+
+<p>Even though PDP cleared all the seats in the South South, South East and had good showings in Taraba, Plateau, Ekiti, Lagos and Benue states, the APC was dominant in the North and several South West states  and won at least 200 of the 360 seats.</p>
+
+<p>Intriguingly, for the first time, a non-indigene, Oghne Egoh of the Peoples Democratic Party, won a federal constituency seat in Lagos. The House of Representative elect for Amuwo Odofin Federal Constituency polled a total of 29,761 votes to defeat the incumbent, Ganiyu Olukolu of the All Progressives Congress (APC) who scored 20 616 votes.</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

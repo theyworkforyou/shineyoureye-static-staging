@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>Kogi Central, East rerun polls: Matters Arising!  - Ishola Monsur :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,50 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Kogi Central, East rerun polls: Matters Arising!  - Ishola Monsur</h1>
+
+  <p class="meta">February 17, 2016</p>
+
+  <div class="markdown infopage">
+    <p>Barring any last minute change, the re-scheduled senatorial elec¬tions in the East and Central sen¬atorial districts of Kogi State will hold this week Saturday, February 20th.</p>
+
+<p>The senators representing Kogi Central and East senatorial districts, Muhammed Salami Ohiare and Abdul Abdullahi, respectively, on the platform of the All Progressives Congress, APC, had their elections nullified by the Court of Ap¬peal sitting in Abuja last year Decem¬ber. The court also barred the two of them from participating in the fresh election.</p>
+
+<p>As it stands in the central senatorial district, PDP’s Alhaji Ahmed Ogembe will be running against candidates of PPA (Senator Nuru¬deen Abatemi-Usma), SDP (Dr. Moses Wokili) and LP (Kabiru Att). However, the tussle in the east senatorial district will feature PDP’s Attai Aidoko and LP’s Ibrahim Itodo.</p>
+
+<p>The Independent National Electoral Commission, INEC, had last week an¬nounced that Ohiare, Abdullahi and a member of the House of Representatives, Abdullahi Bello (Okene/Ogori-Magongo), as well as two other state House of Assembly members who contested on APC plat¬form had been barred from partaking in the poll, in adherence to the court rulings.</p>
+
+<p>INEC said the ruling APC and its candidates will not participate in five constituencies in the re-run elections in the state due to the judgement of the Appeal Court. The commission also revealed that it had made arrangement to con¬duct the re-run election in 1,988 poll¬ing units in 14 local government areas of Kogi State.</p>
+
+<p>Kogi State Resident Electoral Com¬missioner, Mallam HaliruPai, disclosed this during a stakeholders meeting. According to him, the re-run election will hold on February 20 in two senatorial districts of the state, Kogi Central and Kogi East.</p>
+
+<p>He further disclosed that the APC will not be participating in the Kogi Central and East senatorial districts elections following the court ruling which barred the two candidates and the APC from contesting.</p>
+
+<p>Mallam Pai also added that APC will not participate in the federal constitu¬ency election in Okene/Ogorimagongo federal constituency also as a result of court ruling adding that only the candi¬date of the PDP is eligible for the re-run election.</p>
+
+<p>This automatically concedes victory to Hon. Tijani Damisa, the candidate of the PDP for the federal constituency.</p>
+
+<p>On the Kogi State House of Assembly re-run election, the REC said APC and its candidates will not participate in Ofu and Ankpa 1 re-run elections, but said APC will participate in Idah, Deki-na Biraidu and Okura re-run elections, stressing that the Idah re-run election will only take place in one unit, Ogegele ward, unit 001.</p>
+
+<p>On the readiness of the commission, Pai noted that about 9,816 ad-hoc staff including members of the National Youth Service Corps, security and assistant personnels will be participating in the re-run election.</p>
+
+<p>Assuring the people of the state of free and fair re-run election, Pai said that the re-run election was as a result of non-conduct of primary by one of the party in the state which led to litigation.</p>
+
+<p>It is our considered view that however the two cases, Kogi Central, East rerun polls, go; we will surely see an expansion in the scope of electoral litigations in the country. This is definitely yet to begin!</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

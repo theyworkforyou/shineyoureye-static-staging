@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>MAVC: Global Innovation Competition :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,48 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">MAVC: Global Innovation Competition</h1>
+
+  <p class="meta">November 21, 2014</p>
+
+  <div class="markdown infopage">
+    <p>VOTE for SYE <a href="http://ideas.makingallvoicescount.org/a/dtd/Shine-Your-Eye-SYE/94827-26650" title="Vote for SYe">Here</a></p>
+
+<p>Do you want a database of all Representatives, Senators &amp; Governors and their contact information?</p>
+
+<p>Do you want easy access to the bills your Representative or Senator is sitting on?</p>
+
+<p>Do you want to engage more with your Representative or Senator?</p>
+
+<p>Shine your eye can help with all of this and more.</p>
+
+<p>Shine Your Eye or SYE is an initiative of Enough is Enough Nigeria (EiE). It’s an online platform and SMS-based app that aims to provide complete biographical and contact information for elected officials at all levels of government; tracks performance relative to campaign promises &amp; ranks officials.</p>
+
+<p>EiE hopes to incorporate elements of the US platform – POPVOX – which will increase SYE’s capacity to provide a database of information about bills introduced in the assembly, including official information from the government and position statements from stakeholders. Users would also be able to participate easily in petitions and polls (performance &amp; policies).</p>
+
+<p>SYE’s goal is to increase accountability in governance by making it easier for Nigerians to follow the activities of elected officials and connect with them.</p>
+
+<p>The website is already live – www.shineyoureye.org but not fully functional and the team needs more financial resources to pay for staff and research.</p>
+
+<p>Shine Your Eye has emerged as one of the 241 ideas approved for voting in the Global Innovation Challenge. Over 350 inspiring ideas were submitted from around the world and the top 50 ideas will make it into the next round.</p>
+
+<p>SYE currently ranks110 and voting will continue until November 23.</p>
+
+<p>You can vote <a href="http://ideas.makingallvoicescount.org/a/dtd/Shine-Your-Eye-SYE/94827-26650" title="Vote for SYe">Here</a></p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

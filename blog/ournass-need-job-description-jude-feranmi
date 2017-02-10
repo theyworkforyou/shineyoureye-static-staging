@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>#OurNASS: In Need of a Job Description? - Jude Feranmi :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,44 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">#OurNASS: In Need of a Job Description? - Jude Feranmi</h1>
+
+  <p class="meta">March 4, 2016</p>
+
+  <div class="markdown infopage">
+    <p>Shall we start with a lesson in Democracy 101? It was in Athens in Greece that what we now regard as Democracy first took shape. Truth however is African philosophy records elements of Democracy in Ancient Egypt 3000 years before the birth of Jesus, but History is for another day. The word parliament took its essential root also in Athenian Democracy where it was called ekklesia and was the most important institution of that system and every citizen could take part in the discussions.</p>
+
+<p>Athenian democracy was not representative and this meant every adult male could participate and that differentiated it from the parliamentary system. Essentially, these assemblies had the FINAL SAY when it came to matters of elections, enactment of new statutes, prescription of punishments, declaration of war and peace, creation of alliances and every matter bordering around money, administration and foreign policy.</p>
+
+<p>The history of any prosperous society can be traced more or less to its parliament. Every society that has emerged from third world into first world has had to rely on the representatives of the people come together to make their lives better through policies, rules and bills. Let me make this simpler. You cannot make a society better without the active input of its parliament. Ironically, a lot of our advocacy and civil society focus has been on the federal government and the state governments while we neglect the supposed representatives both at the national assemblies and the state assemblies.</p>
+
+<p>Barack Obama’s first tenure is a good example of how the parliament is the tool for CHANGE. Whenever his achievements are detailed and indeed any successful President, the items mentioned are usually in the form of bills and acts that more often than not affect the lives of people directly. Let’s consider Wikipedia’s profile of Barack Obama.</p>
+
+<blockquote><p>During his first two years in office, Obama signed into law economic stimulus legislation in response to the Great Recession in the form of the American Recovery and Reinvestment Act of 2009 and the Tax Relief, Unemployment Insurance Reauthorization, and Job Creation Act of 2010. Other major domestic initiatives in his first term included the Patient Protection and Affordable Care Act, often referred to as ‘Obamacare’; the Dodd-Frank Wall Street Reform and Consumer Protection Act; and the Don’t Ask, Don’t Tell Repeal Act of 2010.</p></blockquote>
+
+<p>It’s not about magic nor is it about miracles. Issues that affect the average wo/man in society are issues that are tied to bills and laws which when passed are bound to improve the life of that average wo/man.</p>
+
+<p>Take any Nigerian politician and ask him what he has achieved since office and he will tell you about the schools he built or the markets he constructed or the roads he patched, including Legislators. It is quite true that Nigeria suffers an infrastructure deficit that will require trillions of dollars to fill but the implication then is that our politicians focus on providing what can be provided by the common people if only their lives are better for it and they are in an environment where they can prosper (for themselves, by themselves).</p>
+
+<p>A documentary by the History Channel titled “The Men Who Built America” details how in under 25 years the whole of America was connected through rail lines by men who were interested in advancing their business interests while the government focused on spending on waging wars, foreign policy and R &amp; D without which we might not even have had the 8th wonder of the world – the Internet.</p>
+
+<p>Back here at home, our representatives have spent 8 months passing 3 bills with no agenda or direction as to what policies and bills that could be passed that would favour the CHANGE agenda that they supposedly have. I like to think that the 8th Assembly is a replication of representation as usual and Nigerians should not expect more than what transpired in the 7th Senate.</p>
+
+<p>It is high time that this 8th Senate sits back, draw out a goal, put down some plans and start to execute the passage of bills that will make life better for Nigerians or should we have to draw out a job description for them?</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

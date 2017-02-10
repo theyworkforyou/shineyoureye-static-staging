@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>Governors Shun Court in Suit Challenging Legality of Their Pensions :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,46 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Governors Shun Court in Suit Challenging Legality of Their Pensions</h1>
+
+  <p class="meta">November 28, 2014</p>
+
+  <div class="markdown infopage">
+    <p>Many of the 74 defendants in a suit  seeking an order to set aside  state laws prescribing pension for former governors and their deputies did not show up at the Federal High Court in Abuja on Thursday when the matter came up.</p>
+
+<p>The plaintiffs, comprising EiE Nigeria, 35 other civil society organisations and two activists, Ayodeji Kolawole and Tunde Asaju, had asked the court to nullify the laws enacted by the various state Houses of Assembly prescribing pension for former governors and their deputies.</p>
+
+<p>The governors are the 1st to 36th defendants, the various state Houses of Assembly are the 37th to 72nd defendants. While the Attorney-General of the Federation, Mr. Mohammed Adoke (SAN) and the Revenue Mobilisation, Allocation and Fiscal Commission  are the 73rd and the 74th defendants respectively.</p>
+
+<p>The plaintiffs claim  that  states’  Houses of Assembly lacked the legislative competence to enact pension laws for public officials when the constitution had conferred the Revenue Mobilisation, Allocation and Fiscal Commission with exclusive power to determine the remuneration of public officials.</p>
+
+<p>They further claim that governors, their deputies and other public officials are not entitled to pension as their retirement benefits are already part of the remunerations being paid to them while in office.</p>
+
+<p>The counsel for the 38 plaintiffs in the suit, Mr. Chino Obiagwu, confirmed during the proceedings that 70 out of the total 74 defendants in the suit had been served with the originating summons. However, about 56 of the defendants were absent in court even though they had been served with the originating summons.</p>
+
+<p>Among the 74 defendants, Obiagwu said only the Gombe State governor, his Taraba State counterpart and their respective Houses of Assembly, sued as separate defendants, had not been served because they were not accessible by courier. Obiagwu, therefore indicated his intention to serve them through substituted means.</p>
+
+<p>The absentees included the legal representatives of governors of Lagos, Abia, Kaduna, Anambra, Bauchi, Bayelsa, Borno, Cross River, Delta, Ebonyi, Edo, Enugu, Jigawa, Kaduna, Kano, Kebbi, Nasarawa, Niger, Ogun, Ondo, Oyo, Yobe states and their respective Houses of Assembly. In similar fashion, the Attorney-General of the Federation and the Revenue Mobilisation, Allocation and Fiscal Commission failed to show up in court on Wednesday.</p>
+
+<p>Responsively, the trial judge, Justice Ahmed Mohammed, adjourned till January 28, 2015 for mention. He ordered that fresh hearing notices be served on the defendants that were absent. He also directed the plaintiffs’ counsel to file his intended ex parte application seeking substituted service of the originating summon on Gombe and Taraba State governors and their respective Houses of Assembly, before the next adjourned date.</p>
+
+<p>Apart from seeking an order nullifying the various pension laws, the plaintiffs also want the court to order the 36 state governors to recover from former governors and deputy governors what they have received in excess of the amounts stipulated by RMAFC as pension.</p>
+
+<p>They are seeking, among others, “a declaration that the pension of a governor and deputy governor of a State is a “remuneration of a Public Office holder” in terms of Section 32 (d) of the Third Schedule to the 1999 Constitution and “condition and welfare of labour” in terms of Item 34 of Part 1 Second Schedule to the 1999 Constitution.</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>Senate President Saraki & CCT (Timeline) :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,62 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Senate President Saraki & CCT (Timeline)</h1>
+
+  <p class="meta">February 16, 2016</p>
+
+  <div class="markdown infopage">
+    <p><img src="/media_root/file_archive/SP_Saraki__CCT.jpg" title="Senate President @ CCT" alt="SP Saraki @ CCT" /></p>
+
+<ul>
+<li><p>May 2003 - May 2011 - Dr. Olubukola Abubakar Saraki as Governor of Kwara State, as required by law, filed and submitted four asset declaration forms and submitted same to the Code of Conduct Bureau</p></li>
+<li><p>The forms were duly investigated by the Bureau and other relevant agencies of government</p></li>
+<li><p>It was found that Dr. Olubukola Abubakar Saraki:</p></li>
+</ul>
+
+
+<p>Allegedly corruptly acquired many properties while in office as Governor of Kwara State but failed to declare some of them in the said forms;</p>
+
+<p>Made an anticipatory declaration of assets upon his assumption of office as Governor of Kwara State which he acquired later; and</p>
+
+<p>Sent money abroad for the purchase of properties in London and that he maintained an account outside Nigeria while serving as the Kwara State Governor.</p>
+
+<ul>
+<li><p>The Code of Conduct Bureau initiated a criminal proceeding against Dr. Olubukola Abubakar Saraki before the Code of Conduct Tribunal</p></li>
+<li><p>Dr. Olubukola Abubakar Saraki filed a motion before the Code of Conduct Tribunal challenging the competence of the charge (No CCT/ABJ/01/2015). He also filed a suit each before the Federal High Court Holden at Abuja and Lagos in which he also challenged the validity of the criminal proceedings initiated against him at the Code of Conduct Tribunal.</p></li>
+<li><p>Dr. Olubukola Abubakar Saraki contended that since there was no sitting Attorney-General of the Federation at the time charge was filed before the Tribunal, the said charge was incompetent and that he would not appear before the said Tribunal.</p></li>
+<li><p>September 18, 2015 – The Tribunal overrules the objection of Dr. Olubukola Abubakar Saraki, issues a bench warrant against him and adjourns the case to September 19, 2015 to enable Dr. Saraki to appear</p></li>
+<li><p>He did not so appear</p></li>
+<li><p>The Tribunal renewed its order or bench warrant and adjourned the matter to September 22, 2015</p></li>
+<li><p>September 22, 2015 – Dr. Olubukola Abubakar Saraki (Appellant) voluntarily appears before the Tribunal in person and pleads not guilty. As a result, the warrant of arrest/bench warrant issued against him is revoked, he is granted bail on self recognizance and the matter is adjourned to the 21st, 22nd and 23rd of October, 2015 for hearing.</p></li>
+<li><p>October 2, 2015 – Dr. Olubukola Abubakar Saraki (Appellant) files an appeal against the ruling of the Tribunal of 18th September, 2015 before the Court of Appeal, Holden at Abuja.</p></li>
+<li><p>The Court of Appeal dismissed the appeal</p></li>
+<li><p>Dr. Olubukola Abubakar Saraki (Appellant) further appealed to the Supreme Court</p></li>
+<li><p>February 5, 2016 – Supreme Court Rules against Dr. Olubukola Abubakar Saraki</p></li>
+<li><p>February 10, 2016 – FG writes CCT requesting for date to commence trial of SP Saraki</p></li>
+<li><p>March 10, 2016 –</p></li>
+</ul>
+
+
+<p>Trial Date...</p>
+
+<p>Source: Criminal Jurisdiction of the Code of Conduct Tribunal</p>
+
+<hr />
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>Senate Receives List of Ambassadorial Nominees :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,88 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Senate Receives List of Ambassadorial Nominees</h1>
+
+  <p class="meta">June 10, 2016</p>
+
+  <div class="markdown infopage">
+    <p>Ambassadors are direct representatives of a nation's president in another country. In Nigeria, the power to appoint or to remove ambassadors is vested in the President. However, any such appointment shall not have effect unless it is confirmed by the Senate.</p>
+
+<p>In 2011, an ambassadorial nominee was asked to recite the national anthem and the national pledge. She failed. She also did not know the capital of Jigawa State. Nevertheless the woman was endorsed and confirmed by the Senate. Consequently, she was part of the 93 envoys posted out in 2012.</p>
+
+<p>Consequent to the start of the new administration in 2015, a number of ambassadors on tour of duty abroad were recalled. 12 months after, the Senate receives a list of 47 ambassadorial nominees from President Buhari.</p>
+
+<p>More than ever before, the Senate needs to do a thorough, but quick job on screening this set of ambassadorial nominees. Only competent officials should represent our nation in other countries. We need to get it right this time, and not 4 years later. You should ask your Senator how he/she intends to ensure effective screening of the following ambassadorial nominees:</p>
+
+<ul>
+<li><p>Obinna Chukwuemeka</p></li>
+<li><p>Salisu Umoru</p></li>
+<li><p>Iyang Udoh</p></li>
+<li><p>Okeke Vivian</p></li>
+<li><p>Liman Munir</p></li>
+<li><p>Edem Jane</p></li>
+<li><p>Mohammed Hassan</p></li>
+<li><p>Martin Cobham</p></li>
+<li><p>Janet Molegbo</p></li>
+<li><p>Itegbuoye Sunday</p></li>
+<li><p>Olatunde Adesesan</p></li>
+<li><p>Lilian Onu</p></li>
+<li><p>Manaja Isa</p></li>
+<li><p>Ngozi Ukeje</p></li>
+<li><p>Bello Husseini</p></li>
+<li><p>Enoch Ducci</p></li>
+<li><p>Garba Baba</p></li>
+<li><p>Usman Aliyu</p></li>
+<li><p>Umar Salisu</p></li>
+<li><p>Momoh Omeiza</p></li>
+<li><p>Kadiri Audu</p></li>
+<li><p>Balogun Hakeem</p></li>
+<li><p>Nosa Ahmed</p></li>
+<li><p>Ibrahim Isa</p></li>
+<li><p>Bankole Adeoye</p></li>
+<li><p>Ibidapo Obe</p></li>
+<li><p>Ogundaro Sakirat</p></li>
+<li><p>Eric Belgam</p></li>
+<li><p>Ateru Haliru</p></li>
+<li><p>Ramota Bulima</p></li>
+<li><p>Musa Mamman</p></li>
+<li><p>Kabiru Bala</p></li>
+<li><p>Adamu Shuaibu</p></li>
+<li><ol type="a">
+<li><ol type="a">
+<li>Agiv</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>T.K. Gonglong</p></li>
+<li><p>Ibrahim Hamza</p></li>
+<li><p>K.C. Nwachukwu</p></li>
+<li><p>Q.R. Wolu</p></li>
+<li><p>E.K. Oguntuwase</p></li>
+<li><p>A.I. Paragauda</p></li>
+<li><p>L.A. Gasharga</p></li>
+<li><p>Olufemi Abikoye</p></li>
+<li><p>Abubakar Ibrahim</p></li>
+<li><p>Rabiu Kawu</p></li>
+<li><p>Janet Bisong</p></li>
+<li><p>Adekunbi Habeebat</p></li>
+</ul>
+
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>Lagos East Town Hall Meeting – Domestic Violence Sensitization :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,84 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">Lagos East Town Hall Meeting – Domestic Violence Sensitization</h1>
+
+  <p class="meta">June 2, 2016</p>
+
+  <div class="markdown infopage">
+    <p>A drizzle greeted constituents as they poured in to Mercy Hall on CMD Road, Magodo. From the gate, police men give directions to a 50m by 30m hall. Right inside, two things stand out, women in geles singing in Yoruba with passion, and ‘empowerment’ tools which filled up to one-fifth of the hall. The latter included cartons of Indomie noodles, cartons of Power oil, hair dryers, as well as mini gas cookers well branded with the senator’s photo and name.</p>
+
+<p><img src="/media_root/file_archive/1_PEJmazx.jpg" title="LagosEastTHM2016a" alt="LagosEastTHM2016a" /></p>
+
+<p>The women’s continue to sing as ‘honourables’ are called to the high table. Consequently, the Oba of Ketu is ushered into the hall and straight to the table. Right about that time, the ‘Youth Leader’ is called up. The women began to sing:</p>
+
+<p><img src="/media_root/file_archive/2_aChhGyV.jpg" title="LagosEastTHM2016b" alt="LagosEastTHM2016b" /></p>
+
+<p>“Eje ki omode ko wa… Jojolo, omokekere jojolo…”</p>
+
+<p>A song purposed for Yoruba children aged 10 years and thereabout. Ironically, the “Youth Leader” looks well over 40.</p>
+
+<p>In order to move on, the constituents urged the women to keep quiet for the opening prayer. Immediately, it was time to say the National Prayer. But some way, somehow, it was just the 1st stanza of the National Anthem that was sung.</p>
+
+<p><img src="/media_root/file_archive/3_52Bg5gi.jpg" title="LagosEastTHM2016c" alt="LagosEastTHM2016c" /></p>
+
+<p>Finally, it was time for Senator Ashafa to address the people. Firstly, he couldn’t help but show a sign of being fed up with the women’s over-singing stunts. He repeatedly stressed “Ese pupo o, ese…”.</p>
+
+<p><img src="/media_root/file_archive/4_v1jDSnc.jpg" title="LagosEastTHM2016d" alt="LagosEastTHM2016d" /></p>
+
+<p><strong>Run-down of NASS Events</strong></p>
+
+<hr />
+
+<ul>
+<li><p>Budget presented on December 25, 2015</p></li>
+<li><p>Extensive debate began in January</p></li>
+<li><p>MDA budgets were thus forwarded to committees</p></li>
+<li><p>Senator Ashafa, as Chairman of Land Transport Committee, invited all relevant parastatals for performance reports. He also led his team in visitation to the MDAs in question.</p></li>
+<li><p>On 4th March 2016, Senator Ashafa sponsored a motion to check drug abuse among Nigerian youths.</p></li>
+</ul>
+
+
+<p><strong>Bills @ hand</strong></p>
+
+<hr />
+
+<ol>
+<li><p>Nigerian Railway Corporation Act Repeal &amp; Re-enactment Bill – Public hearing held, technical committee appointed, committee report submitted on 24th May 2016 and presented to the Senate President on the same day.</p></li>
+<li><p>National Transport Commission Bill**</p></li>
+</ol>
+
+
+<p>Top Quotes (Senator Ashafa)**</p>
+
+<hr />
+
+<ul>
+<li><p>“I don’t think there is anyone in Nigeria that is not angry”</p></li>
+<li><p>“The desired change will soon begin to manifest”</p></li>
+<li><p>“In my opinion, domestic violence is directly linked to the downward spiral of family values”</p></li>
+</ul>
+
+
+<p>Following the senator’s remarks, the Director of the Office of the Public Defender stepped up to educate the constituents on the 4 possible occurrences of domestic violence – sexual, physical, emotional and economical. Right afterwards, 8 women were unveiled as survivors of domestic violence in Lagos East Senatorial District. As constituents murmured in response to the indiscreet situation, the senator handed over the total sum of ₦250,000 to the survivors.</p>
+
+<p>So back to the theme of the meeting – Domestic Violence Sensitization. In order to curb this menace in the Lagos Society, especially Lagos East Senatorial District, constituents should work with the <a href="https://www.facebook.com/DSVRT/" title="Domestic and Sexual Violence Response Team of Lagos State Government">Domestic and Sexual Violence Response Team of Lagos State Government </a>.</p>
+
+<p>As the team emphasizes, your role is to report the act, protect the victim and encourage justice. All these, just by calling – 08137960048 or 112 toll free.</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

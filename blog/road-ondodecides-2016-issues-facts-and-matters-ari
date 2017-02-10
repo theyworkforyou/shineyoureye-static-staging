@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Shine your eye</title>
+  <title>The Road to #OndoDecides 2016: Issues, Facts and Matters Arising! –Ishola Adebayo :: Shine your eye</title>
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -24,7 +24,7 @@
 </head>
 
 
-  <body class="page--homepage">
+  <body class="">
     <!-- {% if jekyll.environment == 'production' %}
       {% google_analytics %}
     {% endif %}
@@ -101,117 +101,42 @@
 
     <div id="page">
 
-        <div class="page-section homepage__hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 homepage__hero__secondary">
-        <img src="/static/images/mz-nigeria-logo-symbol.png">
-      </div>
-      <div class="col-sm-7 homepage__hero__primary">
-        <h1><b>Shine Your Eye</b> is an SMS and web platform that facilitates engagement with National Assembly members and other elected officials.</h1>
-        <a class="btn btn-primary" href="/search/">
-          Find your Representative
-        </a>
-      </div>
-    </div>
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="blog-post">
+
+  <h1 class="page-title">The Road to #OndoDecides 2016: Issues, Facts and Matters Arising! –Ishola Adebayo</h1>
+
+  <p class="meta">November 25, 2016</p>
+
+  <div class="markdown infopage">
+    <p>History plays a role and shapes our future. Today, I share with you critical issues, facts and matters arising as the people of Ondo State prepare to exercise their franchise in electing its 17th Governor &amp; 6th Democratic Governor on Saturday, November 26, 2016.</p>
+
+<p>According to Benajmin Todd Jealous; “The right to vote is the right upon which all of our rights are leveraged and without which none can be protected.”</p>
+
+<p>Ondo State with a population of 4.02 million (Nigeria Bureau of Statistics, 2011)  is one of the six states in the South-West Geopolitical Zone of Nigeria and was created on February 3, 1976 out of the defunct Western Region. It consists of eighteen (18) local government areas with Akure serving as its capital.</p>
+
+<p>As the front runners for Ondo Guber poll – the ruling People’s Democratic Party (PDP), Alliance for Democracy (AD) and All Progressives Congress (APC) – in rounding off their campaigns, pundits would have began an uneasy permutation about the possible outcome of Saturday’s contest with no one ready to place a bet on any of the three leading candidates: Mr. Eyitayo Jegede (PDP), Chief Olusola Oke (AD) and Mr. Rotimi Akeredolu (APC).</p>
+
+<p>The outgoing governor, Olusegun Mimiko before defecting to the People’s Democracy Party during the buildup to 2015 general elections was elected in 2012 under the platform of the Labour Party with 260,199 votes against the PDP and ACN with 155,961 and 143, 512 votes respectively.</p>
+
+<p>In deciding who succeeds Mr. Olusegun Mimiko as the Governor of Ondo State come Saturday, November 26th, the citizens have to make a choice between the 28 INEC Approved Candidates that would participate in the November 26th governorship election in the State.</p>
+
+<p>Over 1.66million Registered Voters are expected to vote in the 3,009 Polling Units across the State with about 3,694 Smart Card Readers deployed by INEC for the election. There are over 330, 218 Unclaimed Voter’s card as at October 31, 2016 despite the CVR exercise by the electoral umpire in Ondo State.</p>
+
+<p>With the economic recession currently pervading the country, Domestic Debt Profile of Ondo State as at December 2015 stood at N26.6 billion with External Debt profile of $51.7 million as at June 30, 2016. The State is currently running with the Budget of N123.7billion for the year 2016.</p>
+
+<p>Some of the critical issues that engulfs Ondo State, the Sunshine State of Nigeria ranges from Unpaid bursary for Ondo students in tertiary institution since 2014, Unpaid worker’s salaries for about five months, Over 2 years power outage in Okitipupa Local Government Area, Six suspended lecturers from Adekunle Ajasin University, Akungba, Alape Bridge which links Okitipupa, Irele, Ilaje and Ese together has been abandoned/uncompleted for over 8 years.</p>
+
   </div>
+
 </div>
 
 
-<div class="page-section homepage__reps">
-  <div class="container">
-    <h2>Find more information about your government representatives</h2>
-    <div class="row">
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/governors/person/nasir-el-rufai/">
-          <img src="http://www.shineyoureye.org/media_root/cache/fa/18/fa18778ccb20510ac887c07750e47fa3.jpg">
-        </a>
-        <p>
-            <strong>Nasir El-Rufai,</strong>
-            APC, Kaduna
-        </p>
-        <a class="btn btn-default" href="/position/executive-governor/"><b>Governors</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/senate/person/76d38ffb-0b7e-4b3e-b5a6-92eed438c4c8/">
-          <img src="http://www.shineyoureye.org/media_root/images/1014158160editor_Chris_Anyanwu.jpg">
-        </a>
-        <p>
-            <strong>Anyanwu Chris N. D,</strong>
-            APC, Abuja
-        </p>
-        <a class="btn btn-default" href="/position/senator/"><b>Senators</b></a>
-      </div>
-      <div class="col-sm-4 homepage__reps__rep">
-        <a href="/assembly/person/ed60d392-ebe6-49f6-8174-10eb29dbb216/">
-          <img src="http://www.shineyoureye.org/media_root/cache/7a/bb/7abb1cb47babe064deba452e976dc6cc.jpg">
-        </a>
-        <p>
-            <strong>Lawali Hassan,</strong>
-            APC, Zamfara
-        </p>
-        <a class="btn btn-default" href="/position/representative/"><b>Representatives</b></a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="/blog/">News</a></h2>
-            <a href="/blog/sye-week-review-december-9-2016"><h3>SYE Week Review (December 9, 2016)</h3></a>
-            <p>December 13, 2016</p>
-            <a href="/blog/riversrun-elections-matters-arising-ishola-adebayo"><h3>#RiversRerun Elections: Issues & Matters Arising! –Ishola Adebayo</h3></a>
-            <p>December 8, 2016</p>
-            <a href="/blog/sye-week-review-december-2-2016"><h3>SYE Week Review (December 2, 2016)</h3></a>
-            <p>December 5, 2016</p>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="/info/events">Events</a></h2>
-          <p>There are no upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section homepage__quote">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <h1>Quote of the Week</h1>
-      </div>
-      <div class="col-sm-6 col-lg-5 col-lg-push-1">
-          <p>
-              <em>”Followers who tell the truth and leaders who listen to it, are an unbeatable combination.”</em>
-              <strong style="display: block;">- Warren Bennis</strong>
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <iframe style="width: 100%; height: 315px; margin-bottom: 1em;" src="https://www.youtube.com/embed/NDSIJfYWgko" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-sm-6">
-        <div style="text-align: center; margin-bottom: 1em;">
-            <a class="btn btn-default" href="https://twitter.com/NGShineYourEye">Shine Your Eye on Twitter</a>
+          </div>
         </div>
-        <a style="color: white !important;" class="twitter-timeline"  href="https://twitter.com/NGShineYourEye" data-widget-id="661503293731000320" width="600px" data-chrome="nofooter noborders noheader noscrollbar transparent"  data-tweet-limit="3">Tweets by @NGShineYourEye</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     </div>

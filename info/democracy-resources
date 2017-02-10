@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Democracy Resources :: Shine your eye</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- {% jekyll_search_assets %} -->
+</head>
+
+
+  <body class="">
+    <!-- {% if jekyll.environment == 'production' %}
+      {% google_analytics %}
+    {% endif %}
+
+    {% facebook_javascript_sdk %} -->
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-2014-voter-registration-and-pvc-distribution">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <!-- Hide these for now as we don't have the necessary info in EveryPolitician -->
+            <!-- <li>
+              <a href="/position/state-legislator/">State Legislators</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li><a href="/info/places-overview">Places</a></li>
+
+        <li><a href="/info/events">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <div id="header-search">
+      <!-- {% jekyll_search_box %} -->
+    </div>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <h1 class="page-title">Democracy Resources</h1>
+
+<div class="markdown infopage">
+  <p><strong>Democracy</strong> noun \di-ˈmä-krə-sē- A government in which the supreme power is vested in the people.</p>
+
+<p>Democracy only works if the people involved work to promote and protect it. Be a part of preserving and growing democracy in Nigeria through the following ways:</p>
+
+<p><strong>Know Your Rights</strong></p>
+
+<hr />
+
+<p>In accordance with the 1999 Nigerian Constitution, every Nigerian Citizen has the following basic rights:</p>
+
+<ul>
+<li><p>Right to life</p></li>
+<li><p>Right to dignity</p></li>
+<li><p>Right to personal liberty</p></li>
+<li><p>Right to fair hearing</p></li>
+<li><p>Right to private and family life</p></li>
+<li><p>Right to freedom of thought, conscience and religion</p></li>
+<li><p>Right to freedom of expression and the press</p></li>
+<li><p>Right to peaceful assembly and association</p></li>
+<li><p>Right to freedom of movement</p></li>
+<li><p>Right to freedom from discrimination on the grounds of ethnic group, place of origin, circumstance of birth, sex, religion or political opinion</p></li>
+<li><p>Right to compensation for property compulsorily acquired.</p></li>
+</ul>
+
+
+<p><strong>Know Your Government Basics</strong></p>
+
+<hr />
+
+<p>The work of the government in Nigeria is divided into three levels:</p>
+
+<h3><em>Local</em></h3>
+
+<p> A Local Government Council represents each Local Government Area. The local government is responsible for things like:</p>
+
+<p>-construction and maintenance of roads streets, street lightings, drains and other public highways</p>
+
+<p>-establishment, maintenance and regulation of markets, motorparks and public conveniences</p>
+
+<ul>
+<li>registration of all births, deaths and marriages</li>
+</ul>
+
+
+<h3><em>State</em></h3>
+
+<p>A state’s residents are represented by a Governor and a State House of Representatives (State House of Assembly). The role of government at the state level, in collaboration with the local government, is to maintain primary, vocational and adult education and health services. State governments also share responsibility with the federal government to facilitate industrial, commercial and agricultural development, in addition to university and post-primary education matters.</p>
+
+<h3><em>Federal</em></h3>
+
+<p>The federal government is Nigeria’s highest establishment in charge of running the country. It is divided into three branches:</p>
+
+<p>Executive</p>
+
+<p>This branch consists of the President, Vice-President and Ministers of the Federation, which are subject to the provisions of laws made by National Assembly.</p>
+
+<p>Judicial</p>
+
+<p>The judicial branch upholds the mandates of the Constitution. This branch works via a court system and has four main divisions:</p>
+
+<ul>
+<li><p>The Supreme Court is the highest court that has last appeal on all matters. It consists of the Chief Justice of the Federation and Justices appointed to the Supreme Court.</p></li>
+<li><p>The Court of Appeal consists the President and the Justices of the Court of Appeal among which at least three must be learned in Islamic Law and three in Customary Law. It has exclusive jurisdiction to hear and determine appeals from the Federal High Court, High Court of the Federal Capital Territory, State High court, Sharia Court of Appeal, Customary Court of Appeal, National Industrial Court, a court-martial or other tribunals prescribed by an Act of the National Assembly.</p></li>
+<li><p>The Constitutional Court consists of the President and at least 20 Justices of the Constitutional Court. It has original jurisdiction in respect of matters relating to the interpretation or enforcement of the Constitution.</p></li>
+<li><p>The Federal High Court has exclusive jurisdiction in civil cases and matters relating to the revenue of the Government of the Federation such as taxation, customs, and excise duties, banking, copyright, admiralty, citizenship, etc.</p></li>
+</ul>
+
+
+<p>Legislative</p>
+
+<p>The National Assembly enacts the duties of the legislative branch and is divided into the Senate and a House of Representatives. The role of the National Assembly is to make laws that promote peace, order and good government.</p>
+
+<p>A bill becomes a law in the following ways:</p>
+
+<ul>
+<li><p>A bill can originate in either the Senate or the House of Representatives.</p></li>
+<li><p>However, a bill may be submitted to both the Senate &amp; the House of Representatives at the same time &amp; considered simultaneously in both chambers.</p></li>
+</ul>
+
+
+<p>A bill becomes law when it has been passed by both chambers and the President agrees on the bill.</p>
+
+<p>If the President does not agree on the bill, a two-thirds majority of all the members of both chambers is needed to pass the bill.</p>
+
+<p>Other things to consider:</p>
+
+<ul>
+<li><p>The President has 30 days to determine if he is assenting or withholding assent.</p></li>
+<li><p>If both chambers pass different versions of a bill, the bill goes through a harmonization process via a conference committee.</p></li>
+<li><p>A bill can be presented as an Executive Bill (through the President) or a Private Member’s (through a member of the Senate or the House of Representatives).</p></li>
+</ul>
+
+
+<p><strong>Get Involved</strong></p>
+
+<hr />
+
+<p>There are many ways to be a part of making Nigeria great. If you want more from your government or are interested in learning more on such topics as voting or ways you can be an advocate for better government, visit the following sites:</p>
+
+<ul>
+<li><p>Interesting in Registering to Vote?- Visit <a href="http://www.inecnigeria.org/" title="INEC">INEC</a></p></li>
+<li><p>Interested in Promoting Government Accountability?- Visit <a href="http://www.eienigeria.org" title="EiE Nigeria">Enough is Enough Nigeria</a></p></li>
+<li><p>Interested in Learning More About Your Rights in Nigeria?- Visit the <a href="http://www.nigeriarights.gov.ng/" title="National Human Rights Commission">National Human Rights Commission </a></p></li>
+<li><p>Interested in Knowing More About the Laws Governing Nigeria? Visit the <a href="http://www.nigeria-law.org/LawLibrary.htm" title="International Centre for Nigerian Law">International Centre for Nigerian Law </a></p></li>
+</ul>
+
+
+</div>
+
+          </div>
+        </div>
+
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="site-footer__primary">
+        <h3>About Shine Your Eye</h3>
+        <p>Shine your Eye is an initiative of <a href="http://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="http://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>.</p>
+        <p>Shine Your Eye lets you follow the activities of elected officials, connect with them and share your concerns. You can view profiles of elected officials that include such information as educational background, experience, legislative interests, phone numbers and email addresses.</p>
+        <p>Our goal is to increase accountability in governance by making it easier for Nigerians to follow the activities of elected officials and connect with them. Curating the activities of elected officials also makes it easier to review track records at election time.</p>
+      </div>
+      <div class="site-footer__secondary">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+          <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+          <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+          <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+          <li><a class="btn btn-default" href="/info/events">Events</a></li>
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
