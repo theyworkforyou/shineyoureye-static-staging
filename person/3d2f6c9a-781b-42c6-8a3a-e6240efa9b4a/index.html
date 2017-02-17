@@ -99,9 +99,20 @@
     <div class="site-header">
   <div class="container">
 
-    <div id="header-search">
-      <!-- {% jekyll_search_box %} -->
-    </div>
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
 
   </div>
 </div>
@@ -137,7 +148,7 @@
             </li>
 
             <li>
-                <a href="http://localhost:9292/person/3d2f6c9a-781b-42c6-8a3a-e6240efa9b4a/#comments"
+                <a href="http://localhost:9292/person/3d2f6c9a-781b-42c6-8a3a-e6240efa9b4a/#fb-root"
                   class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
                 </a>
             </li>
@@ -156,19 +167,47 @@
             <p class="person__area"><a href="/place/osun-central-ii-odo-otin-ifelodun-boripe/">ODO-OTIN/IFELODUN/BORIPE</a></p>
             <h2>Party</h2>
             <p class="person__party"><a href="/organisation/apc/">All Progressives Congress</a></p>
+            <h2>Email</h2>
+            <p><a href="mailto:goldadedayo@gmail.com">goldadedayo@gmail.com</a></p>
+
+
         </header>
 
         <section class="person__section">
             <h2>Summary</h2>
             <div class="person-summary">
-                <p></p>
+                <p><p>Legistlative Interest(s): Multi Modal Transportation, Achievement Of International Human Development Targets Under The MDGs</p>
+
+<ul>
+<li>Committee Member at Milliennium Development Goals Committee starting at May 2015</li>
+<li>Student at University of Wales, Cardiff</li>
+<li>Chairman at Aids, Loans and Debt Management Committee (Reps) from 2011 to June 2019</li>
+<li>Federal Representative at House of Representatives from May 2011 to May 2019</li>
+<li>Committee Member at Niger Delta Development Commission Committee (Reps) until May 2015</li>
+<li>Committee Member at Aviation Committee (Reps) until May 2015</li>
+<li>Committee Member at Land Transport Committee (Reps) until May 2015</li>
+<li>Committee Member at Public Petitions Committee (Reps) until May 2015</li>
+<li>Committee Member at Inter-Parliamentary Relations Committee (Reps) until May 2015</li>
+<li>Student at University of Wales, Cardiff until 1989</li>
+</ul>
+
+</p>
             </div>
         </section>
 
 
 
 
-        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
 
     </div>
 </div>

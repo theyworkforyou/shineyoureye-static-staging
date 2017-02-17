@@ -99,9 +99,20 @@
     <div class="site-header">
   <div class="container">
 
-    <div id="header-search">
-      <!-- {% jekyll_search_box %} -->
-    </div>
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
 
   </div>
 </div>
@@ -137,7 +148,7 @@
             </li>
 
             <li>
-                <a href="http://localhost:9292/person/b72e517d-600f-4421-8c18-76263d959a66/#comments"
+                <a href="http://localhost:9292/person/b72e517d-600f-4421-8c18-76263d959a66/#fb-root"
                   class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
                 </a>
             </li>
@@ -156,6 +167,8 @@
             <p class="person__area"><a href="/place/kaura-namodabirnin-magaji/">KAURA-NAMODA/BIRNIN MAGAJI</a></p>
             <h2>Party</h2>
             <p class="person__party"><a href="/organisation/apc/">All Progressives Congress</a></p>
+
+
         </header>
 
         <section class="person__section">
@@ -168,7 +181,16 @@
 
 
 
-        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
 
     </div>
 </div>

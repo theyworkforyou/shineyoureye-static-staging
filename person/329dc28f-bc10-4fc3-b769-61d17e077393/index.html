@@ -99,9 +99,20 @@
     <div class="site-header">
   <div class="container">
 
-    <div id="header-search">
-      <!-- {% jekyll_search_box %} -->
-    </div>
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
 
   </div>
 </div>
@@ -137,7 +148,7 @@
             </li>
 
             <li>
-                <a href="http://localhost:9292/person/329dc28f-bc10-4fc3-b769-61d17e077393/#comments"
+                <a href="http://localhost:9292/person/329dc28f-bc10-4fc3-b769-61d17e077393/#fb-root"
                   class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
                 </a>
             </li>
@@ -156,19 +167,60 @@
             <p class="person__area"><a href="/place/damaturagujbagulanitarmuwa/">GULANI/GUJBA/DAMATURU/TARMUWA</a></p>
             <h2>Party</h2>
             <p class="person__party"><a href="/organisation/apc/">All Progressives Congress</a></p>
+            <h2>Email</h2>
+            <p><a href="mailto:hon.khadija.ibrahim@nass.gov.ng">hon.khadija.ibrahim@nass.gov.ng</a></p>
+
+            <h2>Wikipedia</h2>
+            <p><a href="https://en.wikipedia.org/wiki/Khadija_Bukar_Abba_Ibrahim">https://en.wikipedia.org/wiki/Khadija_Bukar_Abba_Ibrahim</a></p>
+
         </header>
 
         <section class="person__section">
             <h2>Summary</h2>
             <div class="person-summary">
-                <p></p>
+                <p><p>Target Achievement(s): To be an outstanding Legislator in the 7th Session of the National Assembly</p>
+
+<p>Legistlative Interest(s): Legislative development pf the Health sector, Education with regards to the female child, Women Empowerment and Maternal protection.</p>
+
+<p>Awards &amp; Honours: SATBILA Award for 'The Most Outstanding Legislator', 2010;
+Selfless Service Award by NEPU-PRP Commitee, 2008;
+Northern Nigeria Women Merit Award, 2007;
+Rotary Club Award, 2006;
+Distinguished Leadership Award, 2006</p>
+
+<ul>
+<li>Federal Representative at House of Representatives from May 2011 to May 2019</li>
+<li>Committee Member at Interior Committee (Reps) until May 2015</li>
+<li>Chairman at Privatization and Commercialization Committee (Reps) until May 2015</li>
+<li>Committee Member at Environment Committee (Senate) until May 2015</li>
+<li>Committee Member at Industry Committee (Senate) until May 2015</li>
+<li>Committee Member at Youth and Social Development Committee (Reps) until May 2015</li>
+<li>Committee Member at Niger Delta Development Commission Committee (Reps) until May 2015</li>
+<li>Committee Member at Culture &amp; Tourism Committee (Reps) until May 2015</li>
+<li>Committee Member at Milliennium Development Goals Committee until May 2015</li>
+<li>Federal Representative at House of Representatives from May 2007 to May 2011</li>
+<li>Student at University of Surrey UK until 1989</li>
+<li>Student at Padworth College, Reading, UK until 1986</li>
+<li>Student at Headington School, Oxford, UK until 1985</li>
+</ul>
+
+</p>
             </div>
         </section>
 
 
 
 
-        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
 
     </div>
 </div>

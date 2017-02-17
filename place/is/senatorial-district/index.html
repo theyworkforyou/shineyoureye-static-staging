@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Senatorial District (Current) :: Shine your eye</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- {% jekyll_search_assets %} -->
+</head>
+
+
+  <body class="">
+    <!-- {% if jekyll.environment == 'production' %}
+      {% google_analytics %}
+    {% endif %}
+
+    {% facebook_javascript_sdk %} -->
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-2014-voter-registration-and-pvc-distribution">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <!-- Hide these for now as we don't have the necessary info in EveryPolitician -->
+            <!-- <li>
+              <a href="/position/state-legislator/">State Legislators</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Places<span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/places-overview">Places</a></li>
+            <li><a href="/place/is/state/">States</a></li>
+            <li><a href="/place/is/senatorial-district/">Senatorial Districts</a></li>
+            <li><a href="/place/is/federal-constituency/">Federal Constituencies</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/info/events">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <h1 class="page-title">Places</h1>
+
+<!-- Commenting these until we start working on those pages -->
+<div class="object_menu">
+  <nav>
+    <ul class="nav nav-pills">
+      <!-- <li role="presentation"><a href="/place/all/">All</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/continent/">Continents</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/country/">Countries</a></li> -->
+      <li role="presentation"><a href="/place/is/federal-constituency/">Federal Constituencies (Current)</a></li>
+      <!-- <li role="presentation"><a href="/place/is/local-community/">Local Communities</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/local-government-area/">Local Government Areas</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/other/">Other</a></li> -->
+      <li role="presentation" class="active"><a href="/place/is/senatorial-district/">Senatorial District (Current)</a></li>
+      <li role="presentation"><a href="/place/is/state/">States</a></li>
+      <!-- <li role="presentation"><a href="/place/is/state-constituency/">State Constituencies</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/territory/">Territories</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/ward/">Wards</a></li> -->
+    </ul>
+  </nav>
+</div>
+
+<hr>
+
+<div>
+  <h2>Senatorial District (Current)</h2>
+  <!-- Commented until we implement pagination -->
+  <!-- <h3>Entries 1 to 10 of 360.</h3> -->
+
+  <ul class="media-list media-list--places">
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/abia-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/abia-central/"><h3 class="media-heading">ABIA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/abia-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/abia-north/"><h3 class="media-heading">ABIA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/abia-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/abia-south/"><h3 class="media-heading">ABIA SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/adamawa-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/adamawa-central/"><h3 class="media-heading">ADAMAWA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/adamawa-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/adamawa-north/"><h3 class="media-heading">ADAMAWA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/adamawa-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/adamawa-south/"><h3 class="media-heading">ADAMAWA SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/akwa-ibom-north-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/akwa-ibom-north-east/"><h3 class="media-heading">AKWA IBOM NORTH EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/akwa-ibom-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/akwa-ibom-north/"><h3 class="media-heading">AKWA IBOM NORTH WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/akwa-ibom-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/akwa-ibom-south/"><h3 class="media-heading">AKWA IBOM SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/anambra-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/anambra-central/"><h3 class="media-heading">ANAMBRA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/anambra-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/anambra-north/"><h3 class="media-heading">ANAMBRA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/anambra-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/anambra-south/"><h3 class="media-heading">ANAMBRA SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/bauchi-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/bauchi-central/"><h3 class="media-heading">Bauchi CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/bauchi-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/bauchi-north/"><h3 class="media-heading">Bauchi NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/bauchi-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/bauchi-south/"><h3 class="media-heading">Bauchi SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/bayelsa-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/bayelsa-central/"><h3 class="media-heading">BAYELSA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/bayelsa-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/bayelsa-east/"><h3 class="media-heading">BAYELSA EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/bayelsa-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/bayelsa-west/"><h3 class="media-heading">BAYELSA WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/benue-north-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/benue-north-east/"><h3 class="media-heading">BENUE NORTH EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/benue-north-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/benue-north-west/"><h3 class="media-heading">BENUE NORTH WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/benue-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/benue-south/"><h3 class="media-heading">BENUE SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/borno-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/borno-central/"><h3 class="media-heading">BORNO CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/borno-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/borno-north/"><h3 class="media-heading">BORNO NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/borno-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/borno-south/"><h3 class="media-heading">BORNO SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/cross-river-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/cross-river-central/"><h3 class="media-heading">CROSS RIVER CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/cross-river-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/cross-river-north/"><h3 class="media-heading">CROSS RIVER NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/cross-river-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/cross-river-south/"><h3 class="media-heading">CROSS RIVER SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/delta-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/delta-central/"><h3 class="media-heading">DELTA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/delta-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/delta-north/"><h3 class="media-heading">DELTA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/delta-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/delta-south/"><h3 class="media-heading">DELTA SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ebonyi-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ebonyi-central/"><h3 class="media-heading">Ebonyi CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ebonyi-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ebonyi-north/"><h3 class="media-heading">Ebonyi NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ebonyi-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ebonyi-south/"><h3 class="media-heading">Ebonyi SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/edo-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/edo-central/"><h3 class="media-heading">EDO CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/edo-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/edo-north/"><h3 class="media-heading">EDO NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/edo-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/edo-south/"><h3 class="media-heading">EDO SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ekiti-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ekiti-central/"><h3 class="media-heading">Ekiti CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ekiti-north-sen/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ekiti-north-sen/"><h3 class="media-heading">Ekiti NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ekiti-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ekiti-south/"><h3 class="media-heading">Ekiti SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/enugu-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/enugu-east/"><h3 class="media-heading">Enugu East</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/enugu-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/enugu-north/"><h3 class="media-heading">Enugu North</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/enugu-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/enugu-west/"><h3 class="media-heading">ENUGU WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/fct/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/fct/"><h3 class="media-heading">FEDERAL CAPITAL TERRITORY</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/federal-capital-territory/">Federal Capital Territory</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/gombe-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/gombe-central/"><h3 class="media-heading">Gombe CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/gombe-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/gombe-north/"><h3 class="media-heading">Gombe NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/gombe-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/gombe-south/"><h3 class="media-heading">Gombe SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/imo-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/imo-east/"><h3 class="media-heading">IMO EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/imo-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/imo-north/"><h3 class="media-heading">IMO NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/imo-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/imo-west/"><h3 class="media-heading">IMO WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/jigawa-north-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/jigawa-north-east/"><h3 class="media-heading">JIGAWA NORTH – EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/jigawa-north-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/jigawa-north-west/"><h3 class="media-heading">JIGAWA NORTH - WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/jigawa-south-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/jigawa-south-west/"><h3 class="media-heading">JIGAWA SOUTH – WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kaduna-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kaduna-central/"><h3 class="media-heading">KADUNA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kaduna-north-sen/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kaduna-north-sen/"><h3 class="media-heading">Kaduna North</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kaduna-south-sen/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kaduna-south-sen/"><h3 class="media-heading">Kaduna South</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kano-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kano-central/"><h3 class="media-heading">KANO CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kano-north-senatorial-district/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kano-north-senatorial-district/"><h3 class="media-heading">KANO NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kano-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kano-south/"><h3 class="media-heading">KANO SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/katsina-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/katsina-central/"><h3 class="media-heading">Katsina (K) CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/katsina-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/katsina-north/"><h3 class="media-heading">Katsina (K) NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/katsina-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/katsina-south/"><h3 class="media-heading">Katsina (K) SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kebbi-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kebbi-central/"><h3 class="media-heading">KEBBI CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kebbi-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kebbi-north/"><h3 class="media-heading">KEBBI NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kebbi-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kebbi-south/"><h3 class="media-heading">KEBBI SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kogi-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kogi-central/"><h3 class="media-heading">Kogi Central</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kogi-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kogi-east/"><h3 class="media-heading">Kogi East</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kogi-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kogi-west/"><h3 class="media-heading">Kogi West</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kwara-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kwara-central/"><h3 class="media-heading">KWARA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kwara-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kwara-north/"><h3 class="media-heading">KWARA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/kwara-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/kwara-south/"><h3 class="media-heading">KWARA SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/lagos-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/lagos-central/"><h3 class="media-heading">LAGOS CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/lagos-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/lagos-east/"><h3 class="media-heading">LAGOS EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/lagos-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/lagos-west/"><h3 class="media-heading">LAGOS WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/nasarawa-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/nasarawa-north/"><h3 class="media-heading">Nassaraw NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/nasarawa-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/nasarawa-south/"><h3 class="media-heading">Nassaraw SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/nasarawa-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/nasarawa-west/"><h3 class="media-heading">Nassaraw WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/niger-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/niger-east/"><h3 class="media-heading">NIGER EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/niger-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/niger-north/"><h3 class="media-heading">NIGER NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/niger-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/niger-south/"><h3 class="media-heading">NIGER SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ogun-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ogun-central/"><h3 class="media-heading">OGUN CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ogun-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ogun-east/"><h3 class="media-heading">OGUN EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ogun-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ogun-west/"><h3 class="media-heading">OGUN WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ondo-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ondo-central/"><h3 class="media-heading">ONDO CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ondo-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ondo-north/"><h3 class="media-heading">ONDO NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/ondo-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/ondo-south/"><h3 class="media-heading">ONDO SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/osun-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/osun-central/"><h3 class="media-heading">OSUN CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/osun-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/osun-east/"><h3 class="media-heading">OSUN EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/osun-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/osun-west/"><h3 class="media-heading">OSUN WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/oyo-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/oyo-central/"><h3 class="media-heading">OYO CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/oyo-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/oyo-north/"><h3 class="media-heading">OYO NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/oyo-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/oyo-south/"><h3 class="media-heading">OYO SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/plateau-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/plateau-central/"><h3 class="media-heading">PLATEAU CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/plateau-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/plateau-north/"><h3 class="media-heading">PLATEAU NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/plateau-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/plateau-south/"><h3 class="media-heading">PLATEAU SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/rivers-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/rivers-east/"><h3 class="media-heading">RIVERS EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/rivers-south-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/rivers-south-east/"><h3 class="media-heading">RIVERS SOUTH EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/rivers-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/rivers-west/"><h3 class="media-heading">RIVERS WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/sokoto-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/sokoto-east/"><h3 class="media-heading">SOKOTO EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/sokoto-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/sokoto-north/"><h3 class="media-heading">Sokoto North</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/sokoto-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/sokoto-south/"><h3 class="media-heading">Sokoto South</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/taraba-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/taraba-central/"><h3 class="media-heading">TARABA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/taraba-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/taraba-north/"><h3 class="media-heading">TARABA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/taraba-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/taraba-south/"><h3 class="media-heading">TARABA SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/yobe-east/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/yobe-east/"><h3 class="media-heading">YOBE EAST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/yobe-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/yobe-north/"><h3 class="media-heading">YOBE NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/yobe-south/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/yobe-south/"><h3 class="media-heading">YOBE SOUTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/zamfara-central/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/zamfara-central/"><h3 class="media-heading">ZAMFARA CENTRAL</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/zamfara-north/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/zamfara-north/"><h3 class="media-heading">ZAMFARA NORTH</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <div class="media-left">
+        <a href="/place/zamfara-west/">
+          <img class="media-object" src="/images/place-200x200.jpg" alt="default image for places">
+        </a>
+      </div>
+      <div class="media-body">
+        <a href="/place/zamfara-west/"><h3 class="media-heading">ZAMFARA WEST</h3></a>
+        <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
+        <div class="kind">
+          <p>Senatorial District</p>
+          <p>Senate 2015-current</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Commenting the pagination for now until it is implemented -->
+  <!-- <nav aria-label="Page navigation">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+
+</div>
+
+          </div>
+        </div>
+
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="site-footer__primary">
+        <h3>About Shine Your Eye</h3>
+        <p>Shine your Eye is an initiative of <a href="http://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="http://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>.</p>
+        <p>Shine Your Eye lets you follow the activities of elected officials, connect with them and share your concerns. You can view profiles of elected officials that include such information as educational background, experience, legislative interests, phone numbers and email addresses.</p>
+        <p>Our goal is to increase accountability in governance by making it easier for Nigerians to follow the activities of elected officials and connect with them. Curating the activities of elected officials also makes it easier to review track records at election time.</p>
+      </div>
+      <div class="site-footer__secondary">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+          <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+          <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+          <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+          <li><a class="btn btn-default" href="/info/events">Events</a></li>
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

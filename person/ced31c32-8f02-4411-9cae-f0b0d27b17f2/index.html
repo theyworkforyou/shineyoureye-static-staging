@@ -99,9 +99,20 @@
     <div class="site-header">
   <div class="container">
 
-    <div id="header-search">
-      <!-- {% jekyll_search_box %} -->
-    </div>
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
 
   </div>
 </div>
@@ -137,7 +148,7 @@
             </li>
 
             <li>
-                <a href="http://localhost:9292/person/ced31c32-8f02-4411-9cae-f0b0d27b17f2/#comments"
+                <a href="http://localhost:9292/person/ced31c32-8f02-4411-9cae-f0b0d27b17f2/#fb-root"
                   class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
                 </a>
             </li>
@@ -156,19 +167,47 @@
             <p class="person__area"><a href="/place/plateau-south/">PLATEAU SOUTH</a></p>
             <h2>Party</h2>
             <p class="person__party"><a href="/organisation/pdp/">Peoples Democratic Party</a></p>
+            <h2>Email</h2>
+            <p><a href="mailto:jerruseni@yahoo.com">jerruseni@yahoo.com</a></p>
+
+
         </header>
 
         <section class="person__section">
             <h2>Summary</h2>
             <div class="person-summary">
-                <p></p>
+                <p><p>In August 2001 he was appointed head of a delegation from the Arewa Consultative Forum to meet and discuss common goals with Northern state governors and other leaders.</p>
+
+<p>In 2003, he was Deputy National Chairman North for the All Nigeria Peoples Party (ANPP). In November 2004, he was locked in an internal ANPP struggle with Chief Donald Etiebet, the National Chairman.</p>
+
+<p>In May 2006, he left the ANPP to become chairman of a new party, the Democratic People's Party, taking with him other members of the progressive wing of the ANPP. However, he was suspended indefinitely in December 2008 for saying the death of Ken Saro-Wiwa was a national sacrifice.</p>
+
+<p>He was succeeded by Biodun Ogunbiyi, who criticized Useni's poor leadership, resulting in failure to win any seats in the Senate or House of Representatives in the April 2007 elections. Useni ran for election as Senator for Plateau South in April 2011 on the DPP platform, but was defeated by Victor Lar of the PDP.</p>
+
+<p>4 years later, he ran on the PDP platform and was elected senator for Plateau South</p>
+
+<ul>
+<li>Chairman at Defence Committee (Senate) from June 2015 to June 2019</li>
+<li>Senator at Senate until May 2019</li>
+</ul>
+
+</p>
             </div>
         </section>
 
 
 
 
-        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
 
     </div>
 </div>

@@ -99,9 +99,20 @@
     <div class="site-header">
   <div class="container">
 
-    <div id="header-search">
-      <!-- {% jekyll_search_box %} -->
-    </div>
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
 
   </div>
 </div>
@@ -115,24 +126,24 @@
              <h1 class="page-title">Places</h1>
 
 <!-- Commenting these until we start working on those pages -->
-<!-- <div class="object_menu">
+<div class="object_menu">
   <nav>
     <ul class="nav nav-pills">
-      <li role="presentation"><a href="/place/all/">All</a></li>
-      <li role="presentation"><a href="/place/is/continent/">Continents</a></li>
-      <li role="presentation"><a href="/place/is/country/">Countries</a></li>
-      <li role="presentation"><a href="/place/is/federal-constituency/hr2011">Federal Constituencies (Current)</a></li>
-      <li role="presentation"><a href="/place/is/local-community/">Local Communities</a></li>
-      <li role="presentation"><a href="/place/is/local-government-area/">Local Government Areas</a></li>
-      <li role="presentation"><a href="/place/is/other/">Other</a></li>
-      <li role="presentation"><a href="/place/is/senatorial-district/s2011">Senatorial District (Current)</a></li>
+      <!-- <li role="presentation"><a href="/place/all/">All</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/continent/">Continents</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/country/">Countries</a></li> -->
+      <li role="presentation" class="active"><a href="/place/is/federal-constituency/">Federal Constituencies (Current)</a></li>
+      <!-- <li role="presentation"><a href="/place/is/local-community/">Local Communities</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/local-government-area/">Local Government Areas</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/other/">Other</a></li> -->
+      <li role="presentation"><a href="/place/is/senatorial-district/">Senatorial District (Current)</a></li>
       <li role="presentation"><a href="/place/is/state/">States</a></li>
-      <li role="presentation"><a href="/place/is/state-constituency/">State Constituencies</a></li>
-      <li role="presentation"><a href="/place/is/territory/">Territories</a></li>
-      <li role="presentation"><a href="/place/is/ward/">Wards</a></li>
+      <!-- <li role="presentation"><a href="/place/is/state-constituency/">State Constituencies</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/territory/">Territories</a></li> -->
+      <!-- <li role="presentation"><a href="/place/is/ward/">Wards</a></li> -->
     </ul>
   </nav>
-</div> -->
+</div>
 
 <hr>
 
@@ -151,7 +162,10 @@
       <div class="media-body">
         <a href="/place/gwagwaladakuje/"><h3 class="media-heading">Abaji/Gwagwalada/Kwali/Kuje</h3></a>
         <p class="parent-place">Parent place: <a href="/place/federal-capital-territory/">Federal Capital Territory</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -163,7 +177,10 @@
       <div class="media-body">
         <a href="/place/abakalikiizzi/"><h3 class="media-heading">Abakaliki/Izzi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -175,7 +192,10 @@
       <div class="media-body">
         <a href="/place/abaketim-ekpo-ika/"><h3 class="media-heading">Abak/ETIM EKPO/IKA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -187,7 +207,10 @@
       <div class="media-body">
         <a href="/place/aba-north-aba-south/"><h3 class="media-heading">Aba North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -199,7 +222,10 @@
       <div class="media-body">
         <a href="/place/abeokuta-south/"><h3 class="media-heading">Abeokuta South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -211,7 +237,10 @@
       <div class="media-body">
         <a href="/place/aboh-mbaisengor-okpala-federal-consistuency/"><h3 class="media-heading">Aboh Mbaise/Ngor Okpala</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -223,7 +252,10 @@
       <div class="media-body">
         <a href="/place/ahoada-eastabuaodual/"><h3 class="media-heading">ABUA-ODUAL/AHOADA EAST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -235,7 +267,10 @@
       <div class="media-body">
         <a href="/place/adaviokehi/"><h3 class="media-heading">ADAVI/OKEHI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -247,7 +282,10 @@
       <div class="media-body">
         <a href="/place/ado-ekitiirepodun-ifelodun/"><h3 class="media-heading">ADO EKITI/IREPODUN/IFELODUN</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -259,7 +297,10 @@
       <div class="media-body">
         <a href="/place/ado-odo-otta/"><h3 class="media-heading">ADO-ODO/OTA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -271,7 +312,10 @@
       <div class="media-body">
         <a href="/place/adoogbadibookpokwu/"><h3 class="media-heading">Ado/Ogbadigba/Okpokwu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -283,7 +327,10 @@
       <div class="media-body">
         <a href="/place/afijioatiba-eastoyo-west/"><h3 class="media-heading">AFIJIO/ATIBA/OYO EAST/ OYO WEST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -295,7 +342,10 @@
       <div class="media-body">
         <a href="/place/afikpo-northafikpo-south/"><h3 class="media-heading">Afikpo North/Afikpo South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -307,7 +357,10 @@
       <div class="media-body">
         <a href="/place/agale-lapai/"><h3 class="media-heading">AGAIE/LAPAI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -319,7 +372,10 @@
       <div class="media-body">
         <a href="/place/agege/"><h3 class="media-heading">AGEGE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -331,7 +387,10 @@
       <div class="media-body">
         <a href="/place/aguata/"><h3 class="media-heading">Aguta</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -343,7 +402,10 @@
       <div class="media-body">
         <a href="/place/agwara-borgu/"><h3 class="media-heading">AGWARA/BORGU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -355,7 +417,10 @@
       <div class="media-body">
         <a href="/place/ahiazu-mbaiseezinitte/"><h3 class="media-heading">Ahiazu Mbaise/Ezinihitte</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -367,7 +432,10 @@
       <div class="media-body">
         <a href="/place/ogbaegbemandoniahoada-west/"><h3 class="media-heading">AHOADA WEST/OGBA/EGBEMA/INDONI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -379,7 +447,10 @@
       <div class="media-body">
         <a href="/place/ajaokuta/"><h3 class="media-heading">Ajaokuta</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -391,7 +462,10 @@
       <div class="media-body">
         <a href="/place/ajeromiifelodun/"><h3 class="media-heading">AJEROMI/IFELODUN</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -403,7 +477,10 @@
       <div class="media-body">
         <a href="/place/akamkpabiase/"><h3 class="media-heading">AKAMKPA/BIASE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -415,7 +492,10 @@
       <div class="media-body">
         <a href="/place/akinyelelagelu/"><h3 class="media-heading">Akinyele/Lagelu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -427,7 +507,10 @@
       <div class="media-body">
         <a href="/place/akko/"><h3 class="media-heading">AKKO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -439,7 +522,10 @@
       <div class="media-body">
         <a href="/place/akoko-edo/"><h3 class="media-heading">Akoko-Edo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -451,7 +537,10 @@
       <div class="media-body">
         <a href="/place/akoko-north-eastnorth-west/"><h3 class="media-heading">AKOKO NORTH EAST/ AKOKO NORTH WEST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -463,7 +552,10 @@
       <div class="media-body">
         <a href="/place/akoko-south-eastsouth-west/"><h3 class="media-heading">AKOKO SOUTH EAST/ AKOKO SOUTH WEST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -475,7 +567,10 @@
       <div class="media-body">
         <a href="/place/calabar-southakpabuyobakassi/"><h3 class="media-heading">Akpabuyo/Bakassi/Calabar South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -487,7 +582,10 @@
       <div class="media-body">
         <a href="/place/akuku-toruasari-toru/"><h3 class="media-heading">AKUKU-TORU/ASARI-TORU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -499,7 +597,10 @@
       <div class="media-body">
         <a href="/place/akure-south-north/"><h3 class="media-heading">AKURE NORTH/AKURE SOUTH</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -511,7 +612,10 @@
       <div class="media-body">
         <a href="/place/akwangawambanasarawa-eggon/"><h3 class="media-heading">AKWANGA//WAMBA/NASARAWA EGGON</h3></a>
         <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -523,7 +627,10 @@
       <div class="media-body">
         <a href="/place/albasugayaajingi/"><h3 class="media-heading">Albasu/Gaya/Ajingi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -535,7 +642,10 @@
       <div class="media-body">
         <a href="/place/aliero-gwandu-jega/"><h3 class="media-heading">ALIERO/GWANDU/JEGA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -547,7 +657,10 @@
       <div class="media-body">
         <a href="/place/alimosho/"><h3 class="media-heading">Alimosho</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -559,7 +672,10 @@
       <div class="media-body">
         <a href="/place/alkalerikirfi/"><h3 class="media-heading">ALKALERI/KIRFI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -571,7 +687,10 @@
       <div class="media-body">
         <a href="/place/amuwo-odofin-federal-constituency/"><h3 class="media-heading">AMUWO-ODOFIN</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -583,7 +702,10 @@
       <div class="media-body">
         <a href="/place/anambra-eastwest/"><h3 class="media-heading">Anambra East/West</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -595,7 +717,10 @@
       <div class="media-body">
         <a href="/place/anochanjikokadunukofia/"><h3 class="media-heading">Anaocha/Njikoka/Dunukofia</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -607,7 +732,10 @@
       <div class="media-body">
         <a href="/place/opobo-nkoro/"><h3 class="media-heading">ANDONI/OPOBO-NKORO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -619,7 +747,10 @@
       <div class="media-body">
         <a href="/place/aninri-agwu-oji-river/"><h3 class="media-heading">Aninri/Agwu/Oji-uzo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -631,7 +762,10 @@
       <div class="media-body">
         <a href="/place/aniocha-northaniocha-southoshimili-northoshimili-south/"><h3 class="media-heading">Aniocha North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -643,7 +777,10 @@
       <div class="media-body">
         <a href="/place/ankatalata-mafara/"><h3 class="media-heading">ANKA//TALATA-MAFARA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -655,7 +792,10 @@
       <div class="media-body">
         <a href="/place/ankpa-omala-olamaboro/"><h3 class="media-heading">ANKPA/OMALA/OLAMABORO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -667,7 +807,10 @@
       <div class="media-body">
         <a href="/place/apaagatu/"><h3 class="media-heading">Apa/Aguta</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -679,7 +822,10 @@
       <div class="media-body">
         <a href="/place/apapa-federal-constituency/"><h3 class="media-heading">APAPA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -691,7 +837,10 @@
       <div class="media-body">
         <a href="/place/lauklamidoardo-kola/"><h3 class="media-heading">ARDO-KOLA/LAU/KARIM-LAMIDO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -703,7 +852,10 @@
       <div class="media-body">
         <a href="/place/arewadandi/"><h3 class="media-heading">Arewa/Dandi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -715,7 +867,10 @@
       <div class="media-body">
         <a href="/place/argunguaugie/"><h3 class="media-heading">Argungu/Augie</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -727,7 +882,10 @@
       <div class="media-body">
         <a href="/place/arochukwuohafia/"><h3 class="media-heading">Arochukwu/Ohafia</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -739,7 +897,10 @@
       <div class="media-body">
         <a href="/place/askira-uba-hawul/"><h3 class="media-heading">Askira-Uba/Hawul</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -751,7 +912,10 @@
       <div class="media-body">
         <a href="/place/atakumosa-east-west-ilesa-east-west/"><h3 class="media-heading">ATAKUNMOSA EAST/WEST/ILESHA EAST/WEST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -763,7 +927,10 @@
       <div class="media-body">
         <a href="/place/awedomakeana/"><h3 class="media-heading">AWE/DOMA/KEANA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -775,7 +942,10 @@
       <div class="media-body">
         <a href="/place/awka-north-south/"><h3 class="media-heading">Awka North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -787,7 +957,10 @@
       <div class="media-body">
         <a href="/place/ayedaade-irewole-isokan/"><h3 class="media-heading">AYEDAADE/IREWOLE/ISOKAN</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -799,7 +972,10 @@
       <div class="media-body">
         <a href="/place/ayedire-iwo-ola-oluwa/"><h3 class="media-heading">AYEDIRE/IWO/OLA-OLUWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -811,7 +987,10 @@
       <div class="media-body">
         <a href="/place/baburagarki/"><h3 class="media-heading">BABURA/GARKI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -823,7 +1002,10 @@
       <div class="media-body">
         <a href="/place/badagry/"><h3 class="media-heading">Badagry</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -835,7 +1017,10 @@
       <div class="media-body">
         <a href="/place/badejakusko/"><h3 class="media-heading">Bade/Jakusko</h3></a>
         <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -847,7 +1032,10 @@
       <div class="media-body">
         <a href="/place/bagudo-suru/"><h3 class="media-heading">BAGUDO/SURU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -859,7 +1047,10 @@
       <div class="media-body">
         <a href="/place/bagwaishanono/"><h3 class="media-heading">Bagwai/Shanono</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -871,7 +1062,10 @@
       <div class="media-body">
         <a href="/place/bakorodanja/"><h3 class="media-heading">BAKORI/DANJA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -883,7 +1077,10 @@
       <div class="media-body">
         <a href="/place/balangabiliri/"><h3 class="media-heading">Balanga/Billiri</h3></a>
         <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -895,7 +1092,10 @@
       <div class="media-body">
         <a href="/place/baligassol/"><h3 class="media-heading">Bali/Gassol</h3></a>
         <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -907,7 +1107,10 @@
       <div class="media-body">
         <a href="/place/bama-ngala/"><h3 class="media-heading">Bama/Ngala/Kala-Balge</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -919,7 +1122,10 @@
       <div class="media-body">
         <a href="/place/barakin-ladiriyom/"><h3 class="media-heading">BARKIN LADI/RIYOM</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -931,7 +1137,10 @@
       <div class="media-body">
         <a href="/place/barutenkalama/"><h3 class="media-heading">BARUTEN/KAIAMA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -943,7 +1152,10 @@
       <div class="media-body">
         <a href="/place/batagaracharangirimi/"><h3 class="media-heading">BATAGARAWA/RIMI/CHARANCHI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -955,7 +1167,10 @@
       <div class="media-body">
         <a href="/place/bauchi/"><h3 class="media-heading">Bauchi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -967,7 +1182,10 @@
       <div class="media-body">
         <a href="/place/kirubebeji/"><h3 class="media-heading">Bebeji/Kiru</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -979,7 +1197,10 @@
       <div class="media-body">
         <a href="/place/obanikuobudubekwarra/"><h3 class="media-heading">Bekwarra/Obudu/Obanliku</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -991,7 +1212,10 @@
       <div class="media-body">
         <a href="/place/bende/"><h3 class="media-heading">Bende</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1003,7 +1227,10 @@
       <div class="media-body">
         <a href="/place/bichi/"><h3 class="media-heading">Bichi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1015,7 +1242,10 @@
       <div class="media-body">
         <a href="/place/binjisilame/"><h3 class="media-heading">BINJI/SILAME</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1027,7 +1257,10 @@
       <div class="media-body">
         <a href="/place/giwabirnin-gwari/"><h3 class="media-heading">Birnin-Gwari/Giwa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1039,7 +1272,10 @@
       <div class="media-body">
         <a href="/place/birnin-kudubuji/"><h3 class="media-heading">Birnin-Kudu/Buji</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1051,7 +1287,10 @@
       <div class="media-body">
         <a href="/place/birniwagurikirikasamma/"><h3 class="media-heading">Birniwa/Guri/Kiri-Kasamma</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1063,7 +1302,10 @@
       <div class="media-body">
         <a href="/place/biu-bayo-kwaya-kusar-shani/"><h3 class="media-heading">Biu/Bayo/Shani/Kwaya Kusar</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1075,7 +1317,10 @@
       <div class="media-body">
         <a href="/place/bogorodasstafawa-balewa/"><h3 class="media-heading">BOGORO/ DASS/ TAFAWA BALEWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1087,7 +1332,10 @@
       <div class="media-body">
         <a href="/place/boluwaduro-ifedayo-ila/"><h3 class="media-heading">BOLUWADURO/IFEDAYO/ILA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1099,7 +1347,10 @@
       <div class="media-body">
         <a href="/place/bomadipatani/"><h3 class="media-heading">Bomadi/Patani</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1111,7 +1362,10 @@
       <div class="media-body">
         <a href="/place/degemabonny/"><h3 class="media-heading">BONNY/DEGEMA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1123,7 +1377,10 @@
       <div class="media-body">
         <a href="/place/bossopaikoro/"><h3 class="media-heading">BOOSO/PAIKORO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1135,7 +1392,10 @@
       <div class="media-body">
         <a href="/place/brass-nembe/"><h3 class="media-heading">Brass/Nembe</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1147,7 +1407,10 @@
       <div class="media-body">
         <a href="/place/bursarigeidamyunusari/"><h3 class="media-heading">Bursari/Geidam/Yunusari</h3></a>
         <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1159,7 +1422,10 @@
       <div class="media-body">
         <a href="/place/buruku/"><h3 class="media-heading">Buruku</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1171,7 +1437,10 @@
       <div class="media-body">
         <a href="/place/burutu/"><h3 class="media-heading">Burutu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1183,7 +1452,10 @@
       <div class="media-body">
         <a href="/place/calabarudokpani/"><h3 class="media-heading">Calabar Munincipal/Odukpani</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1195,7 +1467,10 @@
       <div class="media-body">
         <a href="/place/chanchaga/"><h3 class="media-heading">Chanchaga</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1207,7 +1482,10 @@
       <div class="media-body">
         <a href="/place/kajuruchikum/"><h3 class="media-heading">Chikun/Kajuru</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1219,7 +1497,10 @@
       <div class="media-body">
         <a href="/place/dala/"><h3 class="media-heading">Dala</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1231,7 +1512,10 @@
       <div class="media-body">
         <a href="/place/dabbattamakoda/"><h3 class="media-heading">Dambatta/Makoda</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1243,7 +1527,10 @@
       <div class="media-body">
         <a href="/place/damiboa-chibok-gwoza/"><h3 class="media-heading">Damboa/Gwoza/Chibok</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1255,7 +1542,10 @@
       <div class="media-body">
         <a href="/place/funtuadandume-constituency/"><h3 class="media-heading">DANDUME/FUNTUA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1267,7 +1557,10 @@
       <div class="media-body">
         <a href="/place/dange-shunibodingatureta/"><h3 class="media-heading">DANGE SHUNI/BODINGA/TURETA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1279,7 +1572,10 @@
       <div class="media-body">
         <a href="/place/darazoganjuwa/"><h3 class="media-heading">Darazo/Ganjuwa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1291,7 +1587,10 @@
       <div class="media-body">
         <a href="/place/dauramaiduwasadamu-constituency/"><h3 class="media-heading">DAURA/MAI'ADUA/SANDAMU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1303,7 +1602,10 @@
       <div class="media-body">
         <a href="/place/dawakin-kuduwarawa/"><h3 class="media-heading">Dawakin-Kudu/Warawa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1315,7 +1617,10 @@
       <div class="media-body">
         <a href="/place/dawakin-tofatofarimin-gado/"><h3 class="media-heading">Dawakin-Tofa/Tofa/Rimin Gado</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1327,7 +1632,10 @@
       <div class="media-body">
         <a href="/place/bassa-dekina/"><h3 class="media-heading">DEKINA/BASSA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1339,7 +1647,10 @@
       <div class="media-body">
         <a href="/place/demsanumanlamurde/"><h3 class="media-heading">Demsa/Numan/Lamurde</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1351,7 +1662,10 @@
       <div class="media-body">
         <a href="/place/mafadikwakonduga/"><h3 class="media-heading">Dikwa/Mafa/Konduga</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1363,7 +1677,10 @@
       <div class="media-body">
         <a href="/place/dukkunafada/"><h3 class="media-heading">Dukku / Nafada</h3></a>
         <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1375,7 +1692,10 @@
       <div class="media-body">
         <a href="/place/dutsekiyawa/"><h3 class="media-heading">DUTSE/KIYAWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1387,7 +1707,10 @@
       <div class="media-body">
         <a href="/place/dutsin-makurfi/"><h3 class="media-heading">DUTSIN-MA/KURFI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1399,7 +1722,10 @@
       <div class="media-body">
         <a href="/place/eden-north/"><h3 class="media-heading">EDE NORTH/EDE SOUTH/EGBEDORE/EJIGBO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1411,7 +1737,10 @@
       <div class="media-body">
         <a href="/place/egbado-northimeko-afon/"><h3 class="media-heading">EGBADO-NORTH/IMEKO-AFON</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1423,7 +1752,10 @@
       <div class="media-body">
         <a href="/place/egbado-southipokia/"><h3 class="media-heading">EGBADO-SOUTH/IPOKIA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1435,7 +1767,10 @@
       <div class="media-body">
         <a href="/place/egbeda-ona-ara/"><h3 class="media-heading">EGBEDA/ONA-ARA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1447,7 +1782,10 @@
       <div class="media-body">
         <a href="/place/egor-ikpoba-okha/"><h3 class="media-heading">Egor/Ikpoba-okha</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1459,7 +1797,10 @@
       <div class="media-body">
         <a href="/place/ehimeihitte-ubomaobono/"><h3 class="media-heading">Ehimembano/Ihitte Uboma/Obowo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1471,7 +1812,10 @@
       <div class="media-body">
         <a href="/place/eketonnaesit-eketibeno/"><h3 class="media-heading">Eket/Onna/Esit/eket/ibeno</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1483,7 +1827,10 @@
       <div class="media-body">
         <a href="/place/isin-irepodun-ekiti-oke-ero/"><h3 class="media-heading">EKITI/IREPODUN/ISIN/OKE-ERO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1495,7 +1842,10 @@
       <div class="media-body">
         <a href="/place/ekiti-south-westikereise-orun/"><h3 class="media-heading">EKITI SOUTH WEST/IKERE/ORUN ISE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1507,7 +1857,10 @@
       <div class="media-body">
         <a href="/place/emuregbonyinekiti-east/"><h3 class="media-heading">EMURE/GBOYIN/EKITI EAST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1519,7 +1872,10 @@
       <div class="media-body">
         <a href="/place/enugu_east-isi-uzo/"><h3 class="media-heading">Enugu East/Isi-Uzo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1531,7 +1887,10 @@
       <div class="media-body">
         <a href="/place/enugu-northenugu-south/"><h3 class="media-heading">Enugu North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1543,7 +1902,10 @@
       <div class="media-body">
         <a href="/place/epe/"><h3 class="media-heading">EPE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1555,7 +1917,10 @@
       <div class="media-body">
         <a href="/place/esan-central-esan-west-igueben/"><h3 class="media-heading">Esan Central/West/Igueben</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1567,7 +1932,10 @@
       <div class="media-body">
         <a href="/place/esan-north-eastsouth-west/"><h3 class="media-heading">Esan North-East/Esan South- East</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1579,7 +1947,10 @@
       <div class="media-body">
         <a href="/place/etche-omuma/"><h3 class="media-heading">ETCHE/OMUMA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1591,7 +1962,10 @@
       <div class="media-body">
         <a href="/place/ethiope/"><h3 class="media-heading">Ethiope</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1603,7 +1977,10 @@
       <div class="media-body">
         <a href="/place/etinan/"><h3 class="media-heading">Etinan/ nsit/nsit Ubium</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1615,7 +1992,10 @@
       <div class="media-body">
         <a href="/place/eti-osa/"><h3 class="media-heading">Eti-Osa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1627,7 +2007,10 @@
       <div class="media-body">
         <a href="/place/etsako/"><h3 class="media-heading">Etsako East/West/Central</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1639,7 +2022,10 @@
       <div class="media-body">
         <a href="/place/ezeaguudi/"><h3 class="media-heading">Ezeagu/Udi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1651,7 +2037,10 @@
       <div class="media-body">
         <a href="/place/ezza-northishelu/"><h3 class="media-heading">Ezza North/Ishielu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1663,7 +2052,10 @@
       <div class="media-body">
         <a href="/place/fagge/"><h3 class="media-heading">Fagge</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1675,7 +2067,10 @@
       <div class="media-body">
         <a href="/place/fikafune/"><h3 class="media-heading">Fika/Fune</h3></a>
         <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1687,7 +2082,10 @@
       <div class="media-body">
         <a href="/place/furoresong/"><h3 class="media-heading">Furore/Song</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1699,7 +2097,10 @@
       <div class="media-body">
         <a href="/place/goronyogada/"><h3 class="media-heading">GADA/GORONYO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1711,7 +2112,10 @@
       <div class="media-body">
         <a href="/place/gamawa/"><h3 class="media-heading">Gamawa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1723,7 +2127,10 @@
       <div class="media-body">
         <a href="/place/mayo-belwajadaganyetoongo/"><h3 class="media-heading">Ganye/Mayo Belwa/Toungo/JADA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1735,7 +2142,10 @@
       <div class="media-body">
         <a href="/place/gashakakurmisardauna/"><h3 class="media-heading">Gashaka/Kurmi/Sardauna</h3></a>
         <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1747,7 +2157,10 @@
       <div class="media-body">
         <a href="/place/bida-gbaka-paicho/"><h3 class="media-heading">GBAKO/BIDA/KATCHA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1759,7 +2172,10 @@
       <div class="media-body">
         <a href="/place/gbokotarka/"><h3 class="media-heading">GBOKO/TARKA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1771,7 +2187,10 @@
       <div class="media-body">
         <a href="/place/gezawagabasawa/"><h3 class="media-heading">Gezawa/Gabasawa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1783,7 +2202,10 @@
       <div class="media-body">
         <a href="/place/gombe-kwami-funakaye/"><h3 class="media-heading">Gombe/kwami/Funakaye</h3></a>
         <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1795,7 +2217,10 @@
       <div class="media-body">
         <a href="/place/damaturagujbagulanitarmuwa/"><h3 class="media-heading">GULANI/GUJBA/DAMATURU/TARMUWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1807,7 +2232,10 @@
       <div class="media-body">
         <a href="/place/gummibukkuyum/"><h3 class="media-heading">Gummi/Bukkuyum</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1819,7 +2247,10 @@
       <div class="media-body">
         <a href="/place/guyukshelleng/"><h3 class="media-heading">Guyuk/Shelleng</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1831,7 +2262,10 @@
       <div class="media-body">
         <a href="/place/gwale/"><h3 class="media-heading">Gwale</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1843,7 +2277,10 @@
       <div class="media-body">
         <a href="/place/gwaram/"><h3 class="media-heading">Gwaram</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1855,7 +2292,10 @@
       <div class="media-body">
         <a href="/place/gwarzokabo-federal-constituency/"><h3 class="media-heading">Gwarzo/kabo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1867,7 +2307,10 @@
       <div class="media-body">
         <a href="/place/gwer-eastgwer-west/"><h3 class="media-heading">Gwer-East/Gwer-West</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1879,7 +2322,10 @@
       <div class="media-body">
         <a href="/place/hadejiakafin-hausa/"><h3 class="media-heading">Hadejia/Kafin Hausa/Auyo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1891,7 +2337,10 @@
       <div class="media-body">
         <a href="/place/gombihong/"><h3 class="media-heading">Hong/Gombi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1903,7 +2352,10 @@
       <div class="media-body">
         <a href="/place/ibadan-north/"><h3 class="media-heading">Ibadan North</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1915,7 +2367,10 @@
       <div class="media-body">
         <a href="/place/ibadan-neast-south-east/"><h3 class="media-heading">IBADAN NORTH EAST/IBADAN SOUTH EAST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1927,7 +2382,10 @@
       <div class="media-body">
         <a href="/place/ibadan-southwest-northwest/"><h3 class="media-heading">IBADAN NORTH WEST/SOUTH WEST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1939,7 +2397,10 @@
       <div class="media-body">
         <a href="/place/ibarapa-centralnorth/"><h3 class="media-heading">IBARAPA CENTRAL/IBARAPA NORTH</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1951,7 +2412,10 @@
       <div class="media-body">
         <a href="/place/ibarapa-east-ido/"><h3 class="media-heading">IBARAPA EAST/IDO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1963,7 +2427,10 @@
       <div class="media-body">
         <a href="/place/ibeju-lekki/"><h3 class="media-heading">IBEJU-LEKKI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1975,7 +2442,10 @@
       <div class="media-body">
         <a href="/place/idahigalamelaibajiofu/"><h3 class="media-heading">Idah/Igalamela-Odolu/Ibaji/Ofu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1987,7 +2457,10 @@
       <div class="media-body">
         <a href="/place/idanre-ifedore/"><h3 class="media-heading">IDANRE/IFEDORE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -1999,7 +2472,10 @@
       <div class="media-body">
         <a href="/place/ideato-northsouth/"><h3 class="media-heading">Ideato North /South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2011,7 +2487,10 @@
       <div class="media-body">
         <a href="/place/idemili-northidemili/"><h3 class="media-heading">Idemili North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2023,7 +2502,10 @@
       <div class="media-body">
         <a href="/place/ido-osi-moba-ilejeme/"><h3 class="media-heading">IDO-OSI/MOBA/ILEJEMEJE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2035,7 +2517,10 @@
       <div class="media-body">
         <a href="/place/ifako-ijaye/"><h3 class="media-heading">IFAKO-IJAIYE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2047,7 +2532,10 @@
       <div class="media-body">
         <a href="/place/ife-federal-constituency/"><h3 class="media-heading">IFE CENTRAL/ IFE EAST/ IFE NORTH/ IFE SOUTH</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2059,7 +2547,10 @@
       <div class="media-body">
         <a href="/place/felodunoffaoyun/"><h3 class="media-heading">IFELODUN/OFFA/OYUN</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2071,7 +2562,10 @@
       <div class="media-body">
         <a href="/place/ifo-ewekoro/"><h3 class="media-heading">IFO/EWEKORO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2083,7 +2577,10 @@
       <div class="media-body">
         <a href="/place/igabi/"><h3 class="media-heading">Igabi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2095,7 +2592,10 @@
       <div class="media-body">
         <a href="/place/igbo-etiti/"><h3 class="media-heading">Igbo-Etiti/Uzo-Uwani</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2107,7 +2607,10 @@
       <div class="media-body">
         <a href="/place/igboeze-northudenu/"><h3 class="media-heading">Igboeze North/Udenu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2119,7 +2622,10 @@
       <div class="media-body">
         <a href="/place/ihiala/"><h3 class="media-heading">Ihiala</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2131,7 +2637,10 @@
       <div class="media-body">
         <a href="/place/ogun-watersideijebu-north-east/"><h3 class="media-heading">IJEBU-EAST/IJEBU-NORTH/OGUN-WATERSIDE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2143,7 +2652,10 @@
       <div class="media-body">
         <a href="/place/ijebu-central/"><h3 class="media-heading">IJEBU ODE/ODOGBOLU/ IJEBU NORTH EAST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2155,7 +2667,10 @@
       <div class="media-body">
         <a href="/place/ijeroefonekiti-west/"><h3 class="media-heading">IJERO/EKITI WEST/ EFON</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2167,7 +2682,10 @@
       <div class="media-body">
         <a href="/place/ikan-north-east/"><h3 class="media-heading">Ika</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2179,7 +2697,10 @@
       <div class="media-body">
         <a href="/place/ikarakukubau/"><h3 class="media-heading">Ikara/Kubau</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2191,7 +2712,10 @@
       <div class="media-body">
         <a href="/place/ikeja/"><h3 class="media-heading">IKEJA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2203,7 +2727,10 @@
       <div class="media-body">
         <a href="/place/sagamuikenne-remo-north/"><h3 class="media-heading">IKENNE/SHAGAMU/REMO NORTH</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2215,7 +2742,10 @@
       <div class="media-body">
         <a href="/place/ikole-oye/"><h3 class="media-heading">IKOLE/OYE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ekiti/">Ekiti</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2227,7 +2757,10 @@
       <div class="media-body">
         <a href="/place/bokiikom/"><h3 class="media-heading">Ikom/Boki</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2239,7 +2772,10 @@
       <div class="media-body">
         <a href="/place/ini-ikono/"><h3 class="media-heading">Ikono/ Ini</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2251,7 +2787,10 @@
       <div class="media-body">
         <a href="/place/ikorodu/"><h3 class="media-heading">Ikorodu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2263,7 +2802,10 @@
       <div class="media-body">
         <a href="/place/ikot-abasi-mkat-enin-eastern-obolo/"><h3 class="media-heading">Ikot Abasi/MKPAT ENIN/EASTERN OBOLO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2275,7 +2817,10 @@
       <div class="media-body">
         <a href="/place/ikot-ekpene-essien-udim-obot-akara/"><h3 class="media-heading">Ikot Ekpene/ Essien Udim/ Obot Akara</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2287,7 +2832,10 @@
       <div class="media-body">
         <a href="/place/ikwerreemohua/"><h3 class="media-heading">Ikwerre/Emohua</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2299,7 +2847,10 @@
       <div class="media-body">
         <a href="/place/ikwo-ezza-south/"><h3 class="media-heading">Ikwo/Ezza South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2311,7 +2862,10 @@
       <div class="media-body">
         <a href="/place/umahia-northsouthikwuaro/"><h3 class="media-heading">Ikwuano/Umuahia North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2323,7 +2877,10 @@
       <div class="media-body">
         <a href="/place/ilaje-ese-odo/"><h3 class="media-heading">ILAJE/ESEODO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2335,7 +2892,10 @@
       <div class="media-body">
         <a href="/place/illelagwadabawa/"><h3 class="media-heading">ILELLA/GWADABAWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2347,7 +2907,10 @@
       <div class="media-body">
         <a href="/place/ile-olujiokeigbo-odigbo/"><h3 class="media-heading">ILEOLUJI - OKEIGBO /ODIGBO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2359,7 +2922,10 @@
       <div class="media-body">
         <a href="/place/ilorin-eastilorin-south/"><h3 class="media-heading">ILORIN SOUTH/ EAST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2371,7 +2937,10 @@
       <div class="media-body">
         <a href="/place/ilorin-westasa/"><h3 class="media-heading">Ilorin West/Asa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2383,7 +2952,10 @@
       <div class="media-body">
         <a href="/place/irepodun-olorunda-orolu-osogbo/"><h3 class="media-heading">IREPODUN/OLORUNDA/OSOGBO/OROLU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2395,7 +2967,10 @@
       <div class="media-body">
         <a href="/place/irepoorelopeolorunsogo/"><h3 class="media-heading">Irepo/Orelope/Olorunsogo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2407,7 +2982,10 @@
       <div class="media-body">
         <a href="/place/isasbirni/"><h3 class="media-heading">ISA/SABON BIRNI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2419,7 +2997,10 @@
       <div class="media-body">
         <a href="/place/iseyin-itesiwasu-kajola-iwajowa/"><h3 class="media-heading">ISEYIN/ITESIWAJU/KAJOLA/IWAJOWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2431,7 +3012,10 @@
       <div class="media-body">
         <a href="/place/isala-ngwa-northsouth/"><h3 class="media-heading">Isiala Ngwa North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2443,7 +3027,10 @@
       <div class="media-body">
         <a href="/place/isoko-northisoko-south/"><h3 class="media-heading">Isoko North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2455,7 +3042,10 @@
       <div class="media-body">
         <a href="/place/isuikwuatoumunneochi/"><h3 class="media-heading">Isuikwato/Umunneochi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2467,7 +3057,10 @@
       <div class="media-body">
         <a href="/place/itu/"><h3 class="media-heading">Itu/Ibiono Ibom</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2479,7 +3072,10 @@
       <div class="media-body">
         <a href="/place/ohaozaraonichaivo/"><h3 class="media-heading">Ivo/Ohaozara/Onicha</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2491,7 +3087,10 @@
       <div class="media-body">
         <a href="/place/jahunmiga/"><h3 class="media-heading">Jahun/Miga</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2503,7 +3102,10 @@
       <div class="media-body">
         <a href="/place/jalingo-yorro-zing/"><h3 class="media-heading">JALINGO/ YORRO/ ZING</h3></a>
         <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2515,7 +3117,10 @@
       <div class="media-body">
         <a href="/place/jamaareitas-gadau/"><h3 class="media-heading">Jama'are/itas-gadau</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2527,7 +3132,10 @@
       <div class="media-body">
         <a href="/place/jemaa-sanga/"><h3 class="media-heading">Jema'a/Sanga</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2539,7 +3147,10 @@
       <div class="media-body">
         <a href="/place/jere/"><h3 class="media-heading">Jere</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2551,7 +3162,10 @@
       <div class="media-body">
         <a href="/place/kaitajibiya-constituency/"><h3 class="media-heading">JIBIA/KAITA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2563,7 +3177,10 @@
       <div class="media-body">
         <a href="/place/jos-northbassa-federal-constituency/"><h3 class="media-heading">JOS NORTH/BASSA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2575,7 +3192,10 @@
       <div class="media-body">
         <a href="/place/jos-southjos-east/"><h3 class="media-heading">Jos South/Jos East</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2587,7 +3207,10 @@
       <div class="media-body">
         <a href="/place/kabba-bunuijimu/"><h3 class="media-heading">KABBA-BUNU/IJUMU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2599,7 +3222,10 @@
       <div class="media-body">
         <a href="/place/kachiyakagarko/"><h3 class="media-heading">Kachia/Kagarko</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2611,7 +3237,10 @@
       <div class="media-body">
         <a href="/place/kaduna-north/"><h3 class="media-heading">Kaduna North</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2623,7 +3252,10 @@
       <div class="media-body">
         <a href="/place/kaduna-south/"><h3 class="media-heading">Kaduna South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2635,7 +3267,10 @@
       <div class="media-body">
         <a href="/place/kaga-gubio-magumeri/"><h3 class="media-heading">Kaga/Gubio/Magumeri</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2647,7 +3282,10 @@
       <div class="media-body">
         <a href="/place/birnin-kebbi-kalgo-bunza/"><h3 class="media-heading">KALGO/BUNZA/BIRNIN KEBBI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2659,7 +3297,10 @@
       <div class="media-body">
         <a href="/place/kaltungoshongom/"><h3 class="media-heading">KALTUNGO/SHONGOM</h3></a>
         <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2671,7 +3312,10 @@
       <div class="media-body">
         <a href="/place/kankarafaskarisabuwa-constituency/"><h3 class="media-heading">KANKARA/FASKARI/SABUWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2683,7 +3327,10 @@
       <div class="media-body">
         <a href="/place/kankiakusada-ingawa-federal-constituency/"><h3 class="media-heading">KANKIA/KUSADA/INGAWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2695,7 +3342,10 @@
       <div class="media-body">
         <a href="/place/karayerogo/"><h3 class="media-heading">Karaye/Rogo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2707,7 +3357,10 @@
       <div class="media-body">
         <a href="/place/katagum/"><h3 class="media-heading">Katagum</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2719,7 +3372,10 @@
       <div class="media-body">
         <a href="/place/katsina-federal-constituency/"><h3 class="media-heading">KATSINA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2731,7 +3387,10 @@
       <div class="media-body">
         <a href="/place/katsina-ala-ukum-logo/"><h3 class="media-heading">Katsina-Ala/Ukum/Logo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2743,7 +3402,10 @@
       <div class="media-body">
         <a href="/place/kaura/"><h3 class="media-heading">Kaura</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2755,7 +3417,10 @@
       <div class="media-body">
         <a href="/place/kaura-namodabirnin-magaji/"><h3 class="media-heading">KAURA-NAMODA/BIRNIN MAGAJI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2767,7 +3432,10 @@
       <div class="media-body">
         <a href="/place/kauru/"><h3 class="media-heading">Kauru</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2779,7 +3447,10 @@
       <div class="media-body">
         <a href="/place/kazaureroni-gwiwa/"><h3 class="media-heading">Kazaure/Roni/Gwiwa/Yankwashi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2791,7 +3462,10 @@
       <div class="media-body">
         <a href="/place/karu-kokona-keffi/"><h3 class="media-heading">KEFFI/KARU/KOKONA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2803,7 +3477,10 @@
       <div class="media-body">
         <a href="/place/khana-gokana/"><h3 class="media-heading">KHANA/GOKANA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2815,7 +3492,10 @@
       <div class="media-body">
         <a href="/place/maiyamakoko-besse/"><h3 class="media-heading">KOKO-BESSE/MAIYAMA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2827,7 +3507,10 @@
       <div class="media-body">
         <a href="/place/kosofe-federal-constituency/"><h3 class="media-heading">KOSOFE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2839,7 +3522,10 @@
       <div class="media-body">
         <a href="/place/kukawa-gutamala-abadam-mobbar/"><h3 class="media-heading">Kukawa/Mobbar/Abadam/Guzamala</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2851,7 +3537,10 @@
       <div class="media-body">
         <a href="/place/kumbotso/"><h3 class="media-heading">Kumbosto</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2863,7 +3552,10 @@
       <div class="media-body">
         <a href="/place/kuramadobigarin-malan/"><h3 class="media-heading">Kura/Madobi/Garun Mallam</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2875,7 +3567,10 @@
       <div class="media-body">
         <a href="/place/kwandeushongo/"><h3 class="media-heading">Kwande/Ushongo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2887,7 +3582,10 @@
       <div class="media-body">
         <a href="/place/kwarewammako/"><h3 class="media-heading">KWARE/WAMMAKO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2899,7 +3597,10 @@
       <div class="media-body">
         <a href="/place/lafia-obi/"><h3 class="media-heading">LAFIA/OBI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2911,7 +3612,10 @@
       <div class="media-body">
         <a href="/place/lagos-island-i-federal-constituency/"><h3 class="media-heading">LAGOS ISLAND I</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2923,7 +3627,10 @@
       <div class="media-body">
         <a href="/place/lagos-island-ii/"><h3 class="media-heading">LAGOS ISLAND II</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2935,7 +3642,10 @@
       <div class="media-body">
         <a href="/place/lagos-mainland/"><h3 class="media-heading">LAGOS MAINLAND</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2947,7 +3657,10 @@
       <div class="media-body">
         <a href="/place/langtang-northlangtang-south/"><h3 class="media-heading">Langtang North/Langtang South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2959,7 +3672,10 @@
       <div class="media-body">
         <a href="/place/lere/"><h3 class="media-heading">Lere</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2971,7 +3687,10 @@
       <div class="media-body">
         <a href="/place/lokoja/"><h3 class="media-heading">LOKOJA/KOGI (KK)</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2983,7 +3702,10 @@
       <div class="media-body">
         <a href="/place/machinangurukarasuwayusufari/"><h3 class="media-heading">MACHINA/ NGURU/ KARASUWA/YUSUFARI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -2995,7 +3717,10 @@
       <div class="media-body">
         <a href="/place/maiduguri/"><h3 class="media-heading">Maiduguri (Metropolitan)</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3007,7 +3732,10 @@
       <div class="media-body">
         <a href="/place/makarfikudan/"><h3 class="media-heading">Makarfi/Kudan</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3019,7 +3747,10 @@
       <div class="media-body">
         <a href="/place/makurdiguma/"><h3 class="media-heading">MAKURDI/GUMA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3031,7 +3762,10 @@
       <div class="media-body">
         <a href="/place/mallam-madorikaugama/"><h3 class="media-heading">Mallam Madori/Kaugama</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3043,7 +3777,10 @@
       <div class="media-body">
         <a href="/place/malunfashikafur/"><h3 class="media-heading">MALUMFASHI/KAFUR</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3055,7 +3792,10 @@
       <div class="media-body">
         <a href="/place/mangubokkos/"><h3 class="media-heading">MANGU/BOKKOS</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3067,7 +3807,10 @@
       <div class="media-body">
         <a href="/place/manibindawa-constituency/"><h3 class="media-heading">MANI/BINDAWA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3079,7 +3822,10 @@
       <div class="media-body">
         <a href="/place/bakuramaradun/"><h3 class="media-heading">MARADUN/BAKURA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3091,7 +3837,10 @@
       <div class="media-body">
         <a href="/place/bungudumaru/"><h3 class="media-heading">MARU/BUNGUDU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3103,7 +3852,10 @@
       <div class="media-body">
         <a href="/place/mashidutsi-constituency/"><h3 class="media-heading">MASHI/DUTSI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3115,7 +3867,10 @@
       <div class="media-body">
         <a href="/place/mbaitoliikeduru/"><h3 class="media-heading">Mbaitolu/Ikeduru</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3127,7 +3882,10 @@
       <div class="media-body">
         <a href="/place/madagali-michika/"><h3 class="media-heading">Michika/Madagali</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3139,7 +3897,10 @@
       <div class="media-body">
         <a href="/place/ungogominjibir/"><h3 class="media-heading">Minjibir/Ungogo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3151,7 +3912,10 @@
       <div class="media-body">
         <a href="/place/misau-dambam/"><h3 class="media-heading">Misau/Damban</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3163,7 +3927,10 @@
       <div class="media-body">
         <a href="/place/lavvnedatimokwa/"><h3 class="media-heading">MOKWA/LAVUN/EDATI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3175,7 +3942,10 @@
       <div class="media-body">
         <a href="/place/marte-monhuno-nganzai/"><h3 class="media-heading">Monguno/Marte/Nganzai</h3></a>
         <p class="parent-place">Parent place: <a href="/place/borno/">Borno</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3187,7 +3957,10 @@
       <div class="media-body">
         <a href="/place/mubi-north-mubi-south-maiha/"><h3 class="media-heading">Mubi North/Mu South/Maiha</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3199,7 +3972,10 @@
       <div class="media-body">
         <a href="/place/kano-municipal/"><h3 class="media-heading">Municipal</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3211,7 +3987,10 @@
       <div class="media-body">
         <a href="/place/abuja-municipalbwari/"><h3 class="media-heading">Municipal/Bwari</h3></a>
         <p class="parent-place">Parent place: <a href="/place/federal-capital-territory/">Federal Capital Territory</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3223,7 +4002,10 @@
       <div class="media-body">
         <a href="/place/musawamatazu/"><h3 class="media-heading">MUSAWA/MATAZU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3235,7 +4017,10 @@
       <div class="media-body">
         <a href="/place/mushin-i-federal-constituency/"><h3 class="media-heading">MUSHIN I</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3247,7 +4032,10 @@
       <div class="media-body">
         <a href="/place/mushin-ii-federal-constituency/"><h3 class="media-heading">MUSHIN II</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3259,7 +4047,10 @@
       <div class="media-body">
         <a href="/place/nangerepotiskum/"><h3 class="media-heading">Nangere/Potiskum</h3></a>
         <p class="parent-place">Parent place: <a href="/place/yobe/">Yobe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3271,7 +4062,10 @@
       <div class="media-body">
         <a href="/place/nassarawa/"><h3 class="media-heading">Nassarawa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3283,7 +4077,10 @@
       <div class="media-body">
         <a href="/place/nasarawa-toto/"><h3 class="media-heading">NASSAWARA/TOTO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/nasarawa-state/">Nassarawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3295,7 +4092,10 @@
       <div class="media-body">
         <a href="/place/ndokwa-eastndokwa/"><h3 class="media-heading">Ndokwa/Ukwani</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3307,7 +4107,10 @@
       <div class="media-body">
         <a href="/place/ningiwarji/"><h3 class="media-heading">NINGI/WARJI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3319,7 +4122,10 @@
       <div class="media-body">
         <a href="/place/nkanu-eastnkanu-west/"><h3 class="media-heading">Nkanu East/Nkanu West</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3331,7 +4137,10 @@
       <div class="media-body">
         <a href="/place/nnewi-north-south-ekwusigo/"><h3 class="media-heading">Nnewi North/South/Ekwusigo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3343,7 +4152,10 @@
       <div class="media-body">
         <a href="/place/nsukkaigboeze/"><h3 class="media-heading">Nsukka/ Igboeze South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/enugu/">Enugu</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3355,7 +4167,10 @@
       <div class="media-body">
         <a href="/place/nkwerrenwangeleisunjaba/"><h3 class="media-heading">Nwangele/Isu/Njaba/Nkwerre</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3367,7 +4182,10 @@
       <div class="media-body">
         <a href="/place/obingwaosisiomaugwumagbo/"><h3 class="media-heading">Obingwa/Osisioma/Ugwunagbo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3379,7 +4197,10 @@
       <div class="media-body">
         <a href="/place/obio-akpor/"><h3 class="media-heading">OBIO AKPOR</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3391,7 +4212,10 @@
       <div class="media-body">
         <a href="/place/oriade-obokon/"><h3 class="media-heading">OBOKUN/ORIADE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3403,7 +4227,10 @@
       <div class="media-body">
         <a href="/place/obubraetung/"><h3 class="media-heading">Obubra/Etung</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3415,7 +4242,10 @@
       <div class="media-body">
         <a href="/place/abeokuta-north-obafemi-owode-odeda-fed-const/"><h3 class="media-heading">ODEDA/OBAFEMI-OWODE/ABEOKUTA NORTH</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ogun/">Ogun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3427,7 +4257,10 @@
       <div class="media-body">
         <a href="/place/osun-central-ii-odo-otin-ifelodun-boripe/"><h3 class="media-heading">ODO-OTIN/IFELODUN/BORIPE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/osun/">Osun</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3439,7 +4272,10 @@
       <div class="media-body">
         <a href="/place/ogbaru/"><h3 class="media-heading">Ogbaru</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3451,7 +4287,10 @@
       <div class="media-body">
         <a href="/place/ogbia/"><h3 class="media-heading">Ogbia</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3463,7 +4302,10 @@
       <div class="media-body">
         <a href="/place/ogbomosho-northsouthorire/"><h3 class="media-heading">OGBOMOSHO NORTH/OGBOMOSO SOUTH /ORIRE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3475,7 +4317,10 @@
       <div class="media-body">
         <a href="/place/ogojayala/"><h3 class="media-heading">OGOJA/YALA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3487,7 +4332,10 @@
       <div class="media-body">
         <a href="/place/ogo-oluwa-surulere/"><h3 class="media-heading">OGO-OLUWA/SURULERE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3499,7 +4347,10 @@
       <div class="media-body">
         <a href="/place/ohaji-egbema-oguta-oru-west/"><h3 class="media-heading">Ohaji-Egbema/Oguta/Oru West</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3511,7 +4362,10 @@
       <div class="media-body">
         <a href="/place/ebonyiohaukwu/"><h3 class="media-heading">Ohaukwu/Ebonyi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ebonyi/">Ebonyi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3523,7 +4377,10 @@
       <div class="media-body">
         <a href="/place/ojo/"><h3 class="media-heading">OJO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3535,7 +4392,10 @@
       <div class="media-body">
         <a href="/place/oju-obi/"><h3 class="media-heading">Oju/Obi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3547,7 +4407,10 @@
       <div class="media-body">
         <a href="/place/okeneogori-magongo/"><h3 class="media-heading">OKENE/OGORI MAGONGO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3559,7 +4422,10 @@
       <div class="media-body">
         <a href="/place/onuimookigweisiala-mbano/"><h3 class="media-heading">Okigwe/Isiala-Mbano/Onuimo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3571,7 +4437,10 @@
       <div class="media-body">
         <a href="/place/okitipupairele/"><h3 class="media-heading">Okitipupa/Irele</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3583,7 +4452,10 @@
       <div class="media-body">
         <a href="/place/okpe-sapele-uvwie/"><h3 class="media-heading">Okpe/Sapele/Uvwie</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3595,7 +4467,10 @@
       <div class="media-body">
         <a href="/place/okrika-ogu-bolo/"><h3 class="media-heading">OKRIKA/OGU-BOLO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3607,7 +4482,10 @@
       <div class="media-body">
         <a href="/place/oluyole/"><h3 class="media-heading">Oluyole</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3619,7 +4497,10 @@
       <div class="media-body">
         <a href="/place/ondo-eastwest/"><h3 class="media-heading">ONDO WEST/ONDO EAST</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3631,7 +4512,10 @@
       <div class="media-body">
         <a href="/place/onitsha-northsouth-federal/"><h3 class="media-heading">Onitsha North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3643,7 +4527,10 @@
       <div class="media-body">
         <a href="/place/oredo/"><h3 class="media-heading">Oredo</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3655,7 +4542,10 @@
       <div class="media-body">
         <a href="/place/orhionmwonuhunmwode/"><h3 class="media-heading">Orhionmwon/Uhunmwode</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3667,7 +4557,10 @@
       <div class="media-body">
         <a href="/place/orluorsuorue-ast/"><h3 class="media-heading">Orlu/Oru East/Orsu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3679,7 +4572,10 @@
       <div class="media-body">
         <a href="/place/oronmbookobourefongudung-uko/"><h3 class="media-heading">Oron/Mbo/Okobo/UrueOffong/Oruko/Udung-Uko</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3691,7 +4587,10 @@
       <div class="media-body">
         <a href="/place/orumba-south/"><h3 class="media-heading">Orumba North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3703,7 +4602,10 @@
       <div class="media-body">
         <a href="/place/oshodi-isolo-i-federal-constituency/"><h3 class="media-heading">OSHODI/ISOLO I</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3715,7 +4617,10 @@
       <div class="media-body">
         <a href="/place/oshodi-isolo-fed-const-ii/"><h3 class="media-heading">OSHODI/ISOLO II</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3727,7 +4632,10 @@
       <div class="media-body">
         <a href="/place/otukpoohimini/"><h3 class="media-heading">OTUKPO/OHIMINI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3739,7 +4647,10 @@
       <div class="media-body">
         <a href="/place/ovia-federal-constituency/"><h3 class="media-heading">Ovia South-West/Ovia North-East</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3751,7 +4662,10 @@
       <div class="media-body">
         <a href="/place/owan-east-west/"><h3 class="media-heading">Owan West/East</h3></a>
         <p class="parent-place">Parent place: <a href="/place/edo/">Edo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3763,7 +4677,10 @@
       <div class="media-body">
         <a href="/place/owerri-minicipalnorthwest/"><h3 class="media-heading">Owerri Municipal/Owerri North/West</h3></a>
         <p class="parent-place">Parent place: <a href="/place/imo/">Imo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3775,7 +4692,10 @@
       <div class="media-body">
         <a href="/place/owoose/"><h3 class="media-heading">Owo/Ose</h3></a>
         <p class="parent-place">Parent place: <a href="/place/ondo/">Ondo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3787,7 +4707,10 @@
       <div class="media-body">
         <a href="/place/ayamelum-oyi/"><h3 class="media-heading">Oyi/Ayamelum</h3></a>
         <p class="parent-place">Parent place: <a href="/place/anambra/">Anambra</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3799,7 +4722,10 @@
       <div class="media-body">
         <a href="/place/pankshinkankekanam/"><h3 class="media-heading">PANKSHIN/KANAM/ KANKE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3811,7 +4737,10 @@
       <div class="media-body">
         <a href="/place/edumoropatigi/"><h3 class="media-heading">PATIGI/EDU/MORO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kwara/">Kwara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3823,7 +4752,10 @@
       <div class="media-body">
         <a href="/place/port-harcourt-one/"><h3 class="media-heading">PORT HARCOURT I</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3835,7 +4767,10 @@
       <div class="media-body">
         <a href="/place/port-harcourt-fed-const2/"><h3 class="media-heading">PORT HARCOURT II</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3847,7 +4782,10 @@
       <div class="media-body">
         <a href="/place/ranobunkurekibiya-federal-constituency/"><h3 class="media-heading">Rano/Bunkure/Kibiya</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3859,7 +4797,10 @@
       <div class="media-body">
         <a href="/place/magamarijau/"><h3 class="media-heading">RIJAU/MAGAMA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3871,7 +4812,10 @@
       <div class="media-body">
         <a href="/place/ringimtaura/"><h3 class="media-heading">Ringim/Taura</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3883,7 +4827,10 @@
       <div class="media-body">
         <a href="/place/sabon-gari/"><h3 class="media-heading">Sabon Gari</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3895,7 +4842,10 @@
       <div class="media-body">
         <a href="/place/safanadan-musabatsari/"><h3 class="media-heading">SAFANA/DANMUSA/ BATSARI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3907,7 +4857,10 @@
       <div class="media-body">
         <a href="/place/sagbamaekeremor/"><h3 class="media-heading">Sagbama/Ekeremor</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3919,7 +4872,10 @@
       <div class="media-body">
         <a href="/place/saki-eastwestatisbo/"><h3 class="media-heading">SAKI EAST/ SAKI WEST/ ATISBO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/oyo/">Oyo</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3931,7 +4887,10 @@
       <div class="media-body">
         <a href="/place/shendammikangquaanpan/"><h3 class="media-heading">SHENDAM/MIKANG/QUA'AN-PAN</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3943,7 +4902,10 @@
       <div class="media-body">
         <a href="/place/zurmiishinkafi/"><h3 class="media-heading">SHINKAFI/ZURMI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3955,7 +4917,10 @@
       <div class="media-body">
         <a href="/place/shiragiade/"><h3 class="media-heading">Shira/Giade</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3967,7 +4932,10 @@
       <div class="media-body">
         <a href="/place/munyarafishiroro/"><h3 class="media-heading">SHIRORO/RAFI/MUNYA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3979,7 +4947,10 @@
       <div class="media-body">
         <a href="/place/shomolu/"><h3 class="media-heading">SHOMOLU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -3991,7 +4962,10 @@
       <div class="media-body">
         <a href="/place/soba/"><h3 class="media-heading">Soba</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4003,7 +4977,10 @@
       <div class="media-body">
         <a href="/place/sokoto-northsouth/"><h3 class="media-heading">Sokoto North/South</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4015,7 +4992,10 @@
       <div class="media-body">
         <a href="/place/southern-ijaw/"><h3 class="media-heading">Southern Ijaw</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4027,7 +5007,10 @@
       <div class="media-body">
         <a href="/place/gurarasulejatafa/"><h3 class="media-heading">SULEJA/TAFA/GURARA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4039,7 +5022,10 @@
       <div class="media-body">
         <a href="/place/tankarkargagarawa/"><h3 class="media-heading">Sule-Tankarkar/Gagarawa/Maigatari/Gumel</h3></a>
         <p class="parent-place">Parent place: <a href="/place/jigawa/">Jigawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4051,7 +5037,10 @@
       <div class="media-body">
         <a href="/place/sumailatakai/"><h3 class="media-heading">Sumaila/Takai</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4063,7 +5052,10 @@
       <div class="media-body">
         <a href="/place/surulere-i/"><h3 class="media-heading">SURULERE I</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4075,7 +5067,10 @@
       <div class="media-body">
         <a href="/place/surulere-ii/"><h3 class="media-heading">SURULERE II</h3></a>
         <p class="parent-place">Parent place: <a href="/place/lagos/">Lagos</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4087,7 +5082,10 @@
       <div class="media-body">
         <a href="/place/eleme-oyigbo-tai/"><h3 class="media-heading">TAI/ELEME/OYIGBO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/rivers/">Rivers</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4099,7 +5097,10 @@
       <div class="media-body">
         <a href="/place/dongaussatakumspecial-area/"><h3 class="media-heading">TAKUM/DONGA/USSA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4111,7 +5112,10 @@
       <div class="media-body">
         <a href="/place/kebbetambuwal-federal-constituency/"><h3 class="media-heading">TAMBUWAL-KEBBE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4123,7 +5127,10 @@
       <div class="media-body">
         <a href="/place/tangazagudu/"><h3 class="media-heading">Tangaza/Gudu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4135,7 +5142,10 @@
       <div class="media-body">
         <a href="/place/tarauni/"><h3 class="media-heading">Tarauni</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4147,7 +5157,10 @@
       <div class="media-body">
         <a href="/place/toro/"><h3 class="media-heading">Toro</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4159,7 +5172,10 @@
       <div class="media-body">
         <a href="/place/gusautsafe/"><h3 class="media-heading">TSAFE/GUSAU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/zamfara/">Zamfara</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4171,7 +5187,10 @@
       <div class="media-body">
         <a href="/place/tsanyawakunchi/"><h3 class="media-heading">Tsanyawa/Kunchi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4183,7 +5202,10 @@
       <div class="media-body">
         <a href="/place/tudun-wadadoguwa/"><h3 class="media-heading">Tudun-Wada/Doguwa</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4195,7 +5217,10 @@
       <div class="media-body">
         <a href="/place/uduughelli-northsouth/"><h3 class="media-heading">Ughelli North/South/Udu</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4207,7 +5232,10 @@
       <div class="media-body">
         <a href="/place/ukanafunorukaanam/"><h3 class="media-heading">Ukanafun/Oruk anam</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4219,7 +5247,10 @@
       <div class="media-body">
         <a href="/place/ukwa-eastwest/"><h3 class="media-heading">Ukwa East/Ukwa West</h3></a>
         <p class="parent-place">Parent place: <a href="/place/abia/">Abia</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4231,7 +5262,10 @@
       <div class="media-body">
         <a href="/place/uyo/"><h3 class="media-heading">Uyo/Uruan/Nsit Ata/Ibeskip Asutan</h3></a>
         <p class="parent-place">Parent place: <a href="/place/akwa-ibom/">Akwa Ibom</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4243,7 +5277,10 @@
       <div class="media-body">
         <a href="/place/konshishavandekiya/"><h3 class="media-heading">Vandeikya/Konshisha</h3></a>
         <p class="parent-place">Parent place: <a href="/place/benue/">Benue</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4255,7 +5292,10 @@
       <div class="media-body">
         <a href="/place/warri-northwarri-southwarri-west/"><h3 class="media-heading">Warri</h3></a>
         <p class="parent-place">Parent place: <a href="/place/delta/">Delta</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4267,7 +5307,10 @@
       <div class="media-body">
         <a href="/place/wase/"><h3 class="media-heading">Wase</h3></a>
         <p class="parent-place">Parent place: <a href="/place/plateau/">Plateau</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4279,7 +5322,10 @@
       <div class="media-body">
         <a href="/place/wudilgarko/"><h3 class="media-heading">Wudil/Garko</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kano/">Kano</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4291,7 +5337,10 @@
       <div class="media-body">
         <a href="/place/ibiwukari/"><h3 class="media-heading">WUKARI/IBI</h3></a>
         <p class="parent-place">Parent place: <a href="/place/taraba/">Taraba</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4303,7 +5352,10 @@
       <div class="media-body">
         <a href="/place/wurno-rabah/"><h3 class="media-heading">WURNO/RABBAH</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4315,7 +5367,10 @@
       <div class="media-body">
         <a href="/place/kontagorawushishimarigamashegu/"><h3 class="media-heading">WUSHISHI/MASHEGU/KONTAGORA/MARIGA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/niger/">Niger</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4327,7 +5382,10 @@
       <div class="media-body">
         <a href="/place/yaboshagari/"><h3 class="media-heading">Yabo/Shagari</h3></a>
         <p class="parent-place">Parent place: <a href="/place/sokoto/">Sokoto</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4339,7 +5397,10 @@
       <div class="media-body">
         <a href="/place/yagba-eastwest/"><h3 class="media-heading">YAGBA EAST/WEST/MOPAMURO</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kogi/">Kogi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4351,7 +5412,10 @@
       <div class="media-body">
         <a href="/place/yakurrabi/"><h3 class="media-heading">Yakurr/Abi</h3></a>
         <p class="parent-place">Parent place: <a href="/place/cross-river/">Cross River</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4363,7 +5427,10 @@
       <div class="media-body">
         <a href="/place/yamaltu-deba/"><h3 class="media-heading">Yamaltu-Deba</h3></a>
         <p class="parent-place">Parent place: <a href="/place/gombe/">Gombe</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4375,7 +5442,10 @@
       <div class="media-body">
         <a href="/place/yaurishangangaski/"><h3 class="media-heading">YAURI/NGASKI /SHANGA</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4387,7 +5457,10 @@
       <div class="media-body">
         <a href="/place/yenagoakopokuma/"><h3 class="media-heading">Yenagoa/Kolokuma/Opokuma</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bayelsa/">Bayelsa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4399,7 +5472,10 @@
       <div class="media-body">
         <a href="/place/yola-northyola-south-girei/"><h3 class="media-heading">Yola North/Yola South/Girei</h3></a>
         <p class="parent-place">Parent place: <a href="/place/adamawa/">Adamawa</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4411,7 +5487,10 @@
       <div class="media-body">
         <a href="/place/zaki/"><h3 class="media-heading">Zaki</h3></a>
         <p class="parent-place">Parent place: <a href="/place/bauchi-state/">Bauchi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4423,7 +5502,10 @@
       <div class="media-body">
         <a href="/place/zangobaure/"><h3 class="media-heading">ZANGO/BAURE</h3></a>
         <p class="parent-place">Parent place: <a href="/place/katsina/">Katsina</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4435,7 +5517,10 @@
       <div class="media-body">
         <a href="/place/jabazangon-kafat/"><h3 class="media-heading">Zangon Kataf/Jaba</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4447,7 +5532,10 @@
       <div class="media-body">
         <a href="/place/zaria/"><h3 class="media-heading">Zaria Federal</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kaduna/">Kaduna</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
     <li class="media">
@@ -4459,7 +5547,10 @@
       <div class="media-body">
         <a href="/place/zurufakaisakabadanko-wasagu/"><h3 class="media-heading">ZURU/FAKAI/DANKO/SAKABA/WASAGU</h3></a>
         <p class="parent-place">Parent place: <a href="/place/kebbi/">Kebbi</a></p>
-        <div class="kind">Federal Constituency<br>House of Representatives 2011-current</div>
+        <div class="kind">
+          <p>Federal Constituency</p>
+          <p>House of Representatives 2015-current</p>
+        </div>
       </div>
     </li>
   </ul>

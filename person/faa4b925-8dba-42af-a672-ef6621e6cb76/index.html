@@ -99,9 +99,20 @@
     <div class="site-header">
   <div class="container">
 
-    <div id="header-search">
-      <!-- {% jekyll_search_box %} -->
-    </div>
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
 
   </div>
 </div>
@@ -137,7 +148,7 @@
             </li>
 
             <li>
-                <a href="http://localhost:9292/person/faa4b925-8dba-42af-a672-ef6621e6cb76/#comments"
+                <a href="http://localhost:9292/person/faa4b925-8dba-42af-a672-ef6621e6cb76/#fb-root"
                   class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
                 </a>
             </li>
@@ -156,19 +167,58 @@
             <p class="person__area"><a href="/place/benue-north-east/">BENUE NORTH EAST</a></p>
             <h2>Party</h2>
             <p class="person__party"><a href="/organisation/apc/">All Progressives Congress</a></p>
+            <h2>Email</h2>
+            <p><a href="mailto:bagemade@gmail.com">bagemade@gmail.com</a></p>
+
+
         </header>
 
         <section class="person__section">
             <h2>Summary</h2>
             <div class="person-summary">
-                <p></p>
+                <p><p>Target Achievement(s): 1.Securing mass employment in the senatorial zone through siting of industries and tertiary institutions
+2.Establishment of a tertiary hospital in the zone</p>
+
+<p>Legistlative Interest(s): job creation, security,healthcare services</p>
+
+<p>Awards &amp; Honours: 1.Doctor of science causa university of agriculture markudi 2002
+2.Doctor of science causa university of calabar 1996
+3.Natonal productivity merit award 1993
+4Coren merit award 2000
+5.Member order of the federal republic (OFR)</p>
+
+<ul>
+<li>Chairman at Housing Committee (Senate) from June 2015 to June 2019</li>
+<li>Senator at Senate from May 2011 to May 2019</li>
+<li>Committee Member at Works Committee (Reps) until May 2015</li>
+<li>Chairman at National Planning &amp; Economic Affairs Committee (Senate) until May 2015</li>
+<li>National Chairman at Congress for National Consensus until 2013</li>
+<li>Elected member at National Constitutional Conference until 2013</li>
+<li>Member at National Political Reform Conference until 2005</li>
+<li>National Treasurer at Congress for National Consensus from 1997 to 1998</li>
+<li>Student at City University London until 1978</li>
+<li>Student at Ahmadu Bello University, Zaria until 1974</li>
+<li>Student at Govt college Keffi until 1970</li>
+<li>Student at Bristow Secondary School Gboko until 1963</li>
+</ul>
+
+</p>
             </div>
         </section>
 
 
 
 
-        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
 
     </div>
 </div>
