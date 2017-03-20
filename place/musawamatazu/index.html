@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>MUSAWA/MATAZU :: Shine your eye</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- {% jekyll_search_assets %} -->
+</head>
+
+
+  <body class="">
+    <!-- {% if jekyll.environment == 'production' %}
+      {% google_analytics %}
+    {% endif %}
+
+    {% facebook_javascript_sdk %} -->
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-2014-voter-registration-and-pvc-distribution">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <!-- Hide these for now as we don't have the necessary info in EveryPolitician -->
+            <!-- <li>
+              <a href="/position/state-legislator/">State Legislators</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Places<span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/places-overview">Places</a></li>
+            <li><a href="/place/is/state/">States</a></li>
+            <li><a href="/place/is/senatorial-district/">Senatorial Districts</a></li>
+            <li><a href="/place/is/federal-constituency/">Federal Constituencies</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/info/events">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+      
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="row">
+    <div class="col-sm-4 col-md-3">
+        <div class="person__image">
+            <div id="map-canvas"></div>
+        </div>
+
+        <!-- <div class="constituency-party">
+          <h2>Key figure</h2>
+          <p><a href="/person/sylvester-o-ogbaga/">SYLVESTER O OGBAGA
+             <span>[Federal Representative]</span>
+           </a></p>
+        </div> -->
+
+        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">MUSAWA/MATAZU</h3>
+    </div>
+    <div class="panel-body">
+
+        <ul class="social-actions">
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:9292/place/musawamatazu/&amp;t=MUSAWA/MATAZU"
+                  target="_blank"
+                  class="btn btn-block btn-facebook">Share on Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/share?via=NGShineyoureye&amp;text=MUSAWA/MATAZU&amp;url=http://localhost:9292/place/musawamatazu/"
+                  target="_blank"
+                  class="btn btn-block btn-twitter">Share on Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="http://localhost:9292/place/musawamatazu/#fb-root"
+                  class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+        <!-- <p><a href="/feedback/?url=http://www.shineyoureye.org/place/abakalikiizzi/"
+          class="feedback_link big-btn-text-red"
+          >Correct this page
+        </a></p> -->
+    </div>
+
+    <div class="col-sm-8 col-md-9">
+        <header class="person__key-info">
+          <h1 class="person__name">MUSAWA/MATAZU</h1>
+          <h2>
+            Federal Constituency
+             (House of Representatives)
+          </h2>
+        </header>
+
+        <section class="person__section">
+            <h2>People</h2>
+            <ul class="media-list media-list--people">
+  
+    <li class="media">
+        <div class="media-left">
+            <a href="/person/1f2fdde9-40ee-4fa3-956f-039b8c07448d/">
+              
+                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/1f2fdde9-40ee-4fa3-956f-039b8c07448d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/1f2fdde9-40ee-4fa3-956f-039b8c07448d/100x100.jpeg" alt="IBRAHIM DANMAZARI">
+              
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="/person/1f2fdde9-40ee-4fa3-956f-039b8c07448d/"><h3 class="media-heading">IBRAHIM DANMAZARI</h3></a>
+            
+            <p>
+              Federal Constituency:
+              <a class="listing__area" href="/place/musawamatazu/">MUSAWA/MATAZU</a>
+            </p>
+            
+            <p>
+              Party:
+              <span class="listing__party">All Progressives Congress</span>
+            </p>
+        </div>
+    </li>
+  
+</ul>
+
+        </section>
+
+        <section class="person__section">
+            <h2>Comments</h2>
+            <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
+        </section>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="/javascripts/show-map.js"></script>
+<script>LeafletMap.showMap([12.137325698555154, 7.669794358917349], { "type": "Polygon", "coordinates": [ [ [ 7.83713, 12.162242 ], [ 7.837378, 12.13847 ], [ 7.839425, 12.121172 ], [ 7.840291, 12.10525 ], [ 7.839819, 12.083773 ], [ 7.839229000000102, 12.073378000000105 ], [ 7.83891, 12.059293 ], [ 7.839568, 12.04106 ], [ 7.837845, 12.02742 ], [ 7.839295, 12.022588 ], [ 7.842171, 12.015228 ], [ 7.841843, 12.002066 ], [ 7.837570000000142, 11.98707 ], [ 7.836895, 11.984697 ], [ 7.837446, 11.976622 ], [ 7.838996, 11.962327 ], [ 7.836555, 11.952607 ], [ 7.830917, 11.934549 ], [ 7.822755, 11.933989 ], [ 7.810626000000127, 11.933161 ], [ 7.784696, 11.937963 ], [ 7.775108000000159, 11.940632 ], [ 7.766278, 11.93777 ], [ 7.753185, 11.941318000000138 ], [ 7.75014, 11.942672 ], [ 7.750778, 11.948452000000145 ], [ 7.750443, 11.958145000000115 ], [ 7.7499, 11.965527 ], [ 7.749611000000129, 11.970833 ], [ 7.74252, 11.979993 ], [ 7.735754, 11.980611 ], [ 7.721505, 11.983229 ], [ 7.711941, 11.983589 ], [ 7.69941, 11.978375 ], [ 7.685672000000124, 11.97615 ], [ 7.670564000000126, 11.97183 ], [ 7.648878, 11.972064000000159 ], [ 7.640262, 11.971047 ], [ 7.626212, 11.977130000000102 ], [ 7.61968, 11.97729 ], [ 7.609884000000136, 11.977648000000158 ], [ 7.598723, 11.974758000000122 ], [ 7.586409, 11.970931 ], [ 7.57967, 11.96878 ], [ 7.575097, 11.959959 ], [ 7.573049, 11.955319 ], [ 7.572884000000101, 11.948621 ], [ 7.574327000000153, 11.94471200000015 ], [ 7.577233, 11.934356 ], [ 7.582404, 11.930255000000159 ], [ 7.583548000000121, 11.929674 ], [ 7.575191, 11.92902 ], [ 7.569621000000153, 11.926654 ], [ 7.565678, 11.924535000000104 ], [ 7.560821000000145, 11.920788 ], [ 7.553163000000154, 11.917474 ], [ 7.543408, 11.913907 ], [ 7.529873000000124, 11.91515 ], [ 7.520492, 11.920357 ], [ 7.513021, 11.921431000000155 ], [ 7.507163000000105, 11.924138 ], [ 7.50413200000014, 11.9241 ], [ 7.49388, 11.923302 ], [ 7.489024000000142, 11.91979 ], [ 7.481774000000144, 11.921786 ], [ 7.478284, 11.921057 ], [ 7.470524000000125, 11.92744 ], [ 7.477699000000143, 11.932364 ], [ 7.492768000000126, 11.940607000000114 ], [ 7.507608, 11.948384 ], [ 7.520834, 11.954528000000153 ], [ 7.530561, 11.96064 ], [ 7.539349, 11.967426000000103 ], [ 7.546524, 11.972351000000117 ], [ 7.555987, 11.981454 ], [ 7.56005, 11.993736 ], [ 7.564347, 12.006942 ], [ 7.55302, 12.020211 ], [ 7.551752, 12.029664 ], [ 7.54091700000015, 12.039706000000137 ], [ 7.53661000000011, 12.046587000000159 ], [ 7.521946, 12.057746 ], [ 7.514347000000156, 12.065745 ], [ 7.49881, 12.07204 ], [ 7.491312, 12.072428 ], [ 7.48104, 12.070007 ], [ 7.471679000000108, 12.069907 ], [ 7.462264, 12.073734 ], [ 7.457713, 12.081305000000157 ], [ 7.458403000000145, 12.082235 ], [ 7.457407000000159, 12.088528 ], [ 7.463942000000145, 12.088298 ], [ 7.468609000000129, 12.089271 ], [ 7.472782, 12.092548000000136 ], [ 7.482309000000156, 12.097729 ], [ 7.490161, 12.105892 ], [ 7.495510000000138, 12.108721 ], [ 7.506434, 12.114608 ], [ 7.514557000000139, 12.120005 ], [ 7.522233, 12.12378100000012 ], [ 7.527789000000154, 12.128458 ], [ 7.535242, 12.131307 ], [ 7.544689000000118, 12.13095200000015 ], [ 7.54412200000013, 12.132556 ], [ 7.538169000000152, 12.140114 ], [ 7.534388, 12.142612000000156 ], [ 7.52937, 12.150409000000138 ], [ 7.526928, 12.157772 ], [ 7.523505000000114, 12.16859 ], [ 7.521665, 12.183575 ], [ 7.520756, 12.199034 ], [ 7.521588000000122, 12.206895 ], [ 7.519958, 12.223733 ], [ 7.522759, 12.239297 ], [ 7.523662000000115, 12.24432 ], [ 7.523498, 12.245895000000132 ], [ 7.524084, 12.247787 ], [ 7.52469, 12.254952 ], [ 7.522438, 12.265778 ], [ 7.520633000000146, 12.278227000000127 ], [ 7.520223000000158, 12.291384 ], [ 7.523837, 12.301119 ], [ 7.528918000000147, 12.306484 ], [ 7.529262, 12.31572 ], [ 7.528667000000154, 12.325184 ], [ 7.525759, 12.332541 ], [ 7.523514000000148, 12.342909000000134 ], [ 7.52392200000014, 12.347299 ], [ 7.523666000000104, 12.35384 ], [ 7.524744000000111, 12.356543 ], [ 7.53665500000011, 12.35805 ], [ 7.547951, 12.353787 ], [ 7.561375, 12.347928 ], [ 7.563410000000148, 12.347401 ], [ 7.565142, 12.34635 ], [ 7.575480000000142, 12.34346 ], [ 7.578263, 12.34356 ], [ 7.578525, 12.343492 ], [ 7.587947000000157, 12.339205 ], [ 7.601285, 12.339809000000116 ], [ 7.603505, 12.341304 ], [ 7.610335000000133, 12.345908000000122 ], [ 7.624812, 12.348832 ], [ 7.63341400000013, 12.353311000000133 ], [ 7.641329, 12.355408 ], [ 7.643686, 12.355497 ], [ 7.657741000000159, 12.354954 ], [ 7.6704, 12.353703 ], [ 7.676560000000109, 12.351064 ], [ 7.677447000000143, 12.350553 ], [ 7.679694, 12.348272000000122 ], [ 7.686773000000129, 12.337485 ], [ 7.691331000000104, 12.329218 ], [ 7.697464, 12.325355 ], [ 7.705332, 12.315286 ], [ 7.712953, 12.30567 ], [ 7.721714000000133, 12.29607 ], [ 7.727086000000156, 12.2952 ], [ 7.7328, 12.294477000000143 ], [ 7.734562, 12.29367 ], [ 7.740565, 12.292148 ], [ 7.746963, 12.289641 ], [ 7.75701800000013, 12.28675 ], [ 7.766841, 12.283852000000136 ], [ 7.775044, 12.27978 ], [ 7.782314, 12.275706 ], [ 7.785614, 12.272281 ], [ 7.78569400000015, 12.271011 ], [ 7.787481, 12.272069 ], [ 7.78958, 12.271629 ], [ 7.790521, 12.27117 ], [ 7.795237, 12.266148 ], [ 7.800189, 12.260892 ], [ 7.806762, 12.256575 ], [ 7.816141, 12.25159 ], [ 7.821283000000108, 12.250267 ], [ 7.829002, 12.247810000000129 ], [ 7.833855, 12.246989 ], [ 7.83198, 12.230987000000141 ], [ 7.8307870000001, 12.21112 ], [ 7.832387, 12.191973000000132 ], [ 7.83713, 12.162242 ] ] ] });</script>
+
+          </div>
+        </div>
+
+      
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="site-footer__primary">
+        <h3>About Shine Your Eye</h3>
+        <p>Shine your Eye is an initiative of <a href="http://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="http://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>.</p>
+        <p>Shine Your Eye lets you follow the activities of elected officials, connect with them and share your concerns. You can view profiles of elected officials that include such information as educational background, experience, legislative interests, phone numbers and email addresses.</p>
+        <p>Our goal is to increase accountability in governance by making it easier for Nigerians to follow the activities of elected officials and connect with them. Curating the activities of elected officials also makes it easier to review track records at election time.</p>
+      </div>
+      <div class="site-footer__secondary">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+          <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+          <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+          <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+          <li><a class="btn btn-default" href="/info/events">Events</a></li>
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
