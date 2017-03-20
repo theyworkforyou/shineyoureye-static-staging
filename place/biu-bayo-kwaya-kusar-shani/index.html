@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Biu/Bayo/Shani/Kwaya Kusar :: Shine your eye</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- {% jekyll_search_assets %} -->
+</head>
+
+
+  <body class="">
+    <!-- {% if jekyll.environment == 'production' %}
+      {% google_analytics %}
+    {% endif %}
+
+    {% facebook_javascript_sdk %} -->
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-2014-voter-registration-and-pvc-distribution">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <!-- Hide these for now as we don't have the necessary info in EveryPolitician -->
+            <!-- <li>
+              <a href="/position/state-legislator/">State Legislators</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Places<span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/places-overview">Places</a></li>
+            <li><a href="/place/is/state/">States</a></li>
+            <li><a href="/place/is/senatorial-district/">Senatorial Districts</a></li>
+            <li><a href="/place/is/federal-constituency/">Federal Constituencies</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/info/events">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <form class="site-header__search" action="http://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span>Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+      
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="row">
+    <div class="col-sm-4 col-md-3">
+        <div class="person__image">
+            <div id="map-canvas"></div>
+        </div>
+
+        <!-- <div class="constituency-party">
+          <h2>Key figure</h2>
+          <p><a href="/person/sylvester-o-ogbaga/">SYLVESTER O OGBAGA
+             <span>[Federal Representative]</span>
+           </a></p>
+        </div> -->
+
+        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Biu/Bayo/Shani/Kwaya Kusar</h3>
+    </div>
+    <div class="panel-body">
+
+        <ul class="social-actions">
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:9292/place/biu-bayo-kwaya-kusar-shani/&amp;t=Biu/Bayo/Shani/Kwaya Kusar"
+                  target="_blank"
+                  class="btn btn-block btn-facebook">Share on Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/share?via=NGShineyoureye&amp;text=Biu/Bayo/Shani/Kwaya Kusar&amp;url=http://localhost:9292/place/biu-bayo-kwaya-kusar-shani/"
+                  target="_blank"
+                  class="btn btn-block btn-twitter">Share on Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="http://localhost:9292/place/biu-bayo-kwaya-kusar-shani/#fb-root"
+                  class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+        <!-- <p><a href="/feedback/?url=http://www.shineyoureye.org/place/abakalikiizzi/"
+          class="feedback_link big-btn-text-red"
+          >Correct this page
+        </a></p> -->
+    </div>
+
+    <div class="col-sm-8 col-md-9">
+        <header class="person__key-info">
+          <h1 class="person__name">Biu/Bayo/Shani/Kwaya Kusar</h1>
+          <h2>
+            Federal Constituency
+             (House of Representatives)
+          </h2>
+        </header>
+
+        <section class="person__section">
+            <h2>People</h2>
+            <ul class="media-list media-list--people">
+  
+    <li class="media">
+        <div class="media-left">
+            <a href="/person/9cb0fa3f-13da-4444-b571-a38a4e0c4524/">
+              
+                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9cb0fa3f-13da-4444-b571-a38a4e0c4524/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9cb0fa3f-13da-4444-b571-a38a4e0c4524/100x100.jpeg" alt="Aliyu Muktar">
+              
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="/person/9cb0fa3f-13da-4444-b571-a38a4e0c4524/"><h3 class="media-heading">Aliyu Muktar</h3></a>
+            
+            <p>
+              Federal Constituency:
+              <a class="listing__area" href="/place/biu-bayo-kwaya-kusar-shani/">Biu/Bayo/Shani/Kwaya Kusar</a>
+            </p>
+            
+            <p>
+              Party:
+              <span class="listing__party">All Progressives Congress</span>
+            </p>
+        </div>
+    </li>
+  
+</ul>
+
+        </section>
+
+        <section class="person__section">
+            <h2>Comments</h2>
+            <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
+        </section>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="/javascripts/show-map.js"></script>
+<script>LeafletMap.showMap([10.571736336557478, 12.07205481735327], { "type": "Polygon", "coordinates": [ [ [ 12.06984, 10.343929 ], [ 12.087358, 10.335392000000127 ], [ 12.092604, 10.33554 ], [ 12.098575, 10.33452 ], [ 12.10774, 10.323545 ], [ 12.11883900000015, 10.310002 ], [ 12.1364, 10.293822000000148 ], [ 12.157787, 10.276658 ], [ 12.182215, 10.265901 ], [ 12.194662, 10.261326000000111 ], [ 12.208291, 10.257655000000113 ], [ 12.212817, 10.258507000000122 ], [ 12.231139, 10.263286000000107 ], [ 12.240169000000151, 10.26706 ], [ 12.258222000000103, 10.27531 ], [ 12.283199, 10.282753 ], [ 12.299851, 10.288022 ], [ 12.318722, 10.284959 ], [ 12.323485, 10.285807 ], [ 12.335672000000159, 10.28331 ], [ 12.351252000000102, 10.275227 ], [ 12.35240300000015, 10.27406 ], [ 12.34276, 10.264526 ], [ 12.31471, 10.228088000000128 ], [ 12.281191, 10.189664 ], [ 12.24277, 10.139559 ], [ 12.220938, 10.100946000000134 ], [ 12.193549000000132, 10.070492000000113 ], [ 12.165318, 10.053417 ], [ 12.131322, 10.041043000000116 ], [ 12.091567, 10.032219000000111 ], [ 12.075825, 10.032004 ], [ 12.048487000000137, 10.029272 ], [ 12.047942000000148, 10.029217 ], [ 11.98658, 10.03571 ], [ 11.945552, 10.044761000000108 ], [ 11.943795, 10.045146000000159 ], [ 11.913847, 10.05945 ], [ 11.88241, 10.079996000000106 ], [ 11.853076000000158, 10.105582 ], [ 11.851194, 10.109529000000123 ], [ 11.835807, 10.141811 ], [ 11.818253000000141, 10.183346 ], [ 11.813772, 10.189338 ], [ 11.802554, 10.20434 ], [ 11.770441000000119, 10.220751 ], [ 11.734333, 10.23054 ], [ 11.711091, 10.241737 ], [ 11.681487, 10.270785000000103 ], [ 11.642329000000132, 10.326952 ], [ 11.62927, 10.372334000000137 ], [ 11.650422, 10.406576 ], [ 11.679841, 10.450139 ], [ 11.712841, 10.493185 ], [ 11.722917000000109, 10.541389 ], [ 11.7112, 10.575836 ], [ 11.701055000000109, 10.594244 ], [ 11.710313000000156, 10.59655 ], [ 11.750283, 10.605193 ], [ 11.777427000000102, 10.63748 ], [ 11.793044000000121, 10.660009 ], [ 11.805223000000126, 10.677579000000149 ], [ 11.80409, 10.72936 ], [ 11.800795, 10.81154 ], [ 11.810682, 10.855803 ], [ 11.838437, 10.900966 ], [ 11.881326, 10.93165 ], [ 11.920329, 10.941911 ], [ 11.965294, 10.95186 ], [ 12.001648000000159, 10.965377 ], [ 12.062542, 10.979931 ], [ 12.10445, 11.000844 ], [ 12.110967, 11.004092 ], [ 12.161215, 11.03812 ], [ 12.194443, 11.086679 ], [ 12.227463, 11.068706000000134 ], [ 12.251642000000118, 11.05548 ], [ 12.27102200000013, 11.046231 ], [ 12.301646, 11.031765 ], [ 12.327736, 11.019191 ], [ 12.359723, 10.990333 ], [ 12.396180000000129, 10.968784 ], [ 12.419464, 10.952973 ], [ 12.437276000000111, 10.935406 ], [ 12.458421, 10.918479 ], [ 12.477147, 10.905276 ], [ 12.491587000000152, 10.89145 ], [ 12.503004000000146, 10.869142 ], [ 12.521816, 10.846488 ], [ 12.537749, 10.825953 ], [ 12.554316, 10.813937000000124 ], [ 12.566730000000121, 10.812818 ], [ 12.575311, 10.813604 ], [ 12.590604000000155, 10.8106 ], [ 12.60021300000011, 10.808273 ], [ 12.60997, 10.80592 ], [ 12.617592, 10.781131 ], [ 12.629992, 10.762032000000147 ], [ 12.61828, 10.758301 ], [ 12.594727, 10.751297000000136 ], [ 12.57571, 10.743988 ], [ 12.553, 10.723601 ], [ 12.532698000000153, 10.7001810000001 ], [ 12.514315, 10.676036 ], [ 12.49612100000013, 10.656959 ], [ 12.495182, 10.65623 ], [ 12.478122, 10.64295 ], [ 12.467467, 10.634359 ], [ 12.447272000000112, 10.62546 ], [ 12.424255, 10.612222 ], [ 12.405789, 10.597070000000144 ], [ 12.38357, 10.574831 ], [ 12.366759000000114, 10.561263 ], [ 12.352556, 10.54927 ], [ 12.340686, 10.543005 ], [ 12.324556, 10.533346 ], [ 12.30661, 10.53939 ], [ 12.296001000000103, 10.55177 ], [ 12.283404, 10.572716 ], [ 12.269775000000152, 10.602436 ], [ 12.257121000000152, 10.603787 ], [ 12.242323, 10.578664 ], [ 12.241454, 10.569229 ], [ 12.220432, 10.572786000000121 ], [ 12.203564, 10.591491 ], [ 12.18507, 10.604922 ], [ 12.169894000000113, 10.621295 ], [ 12.151121, 10.63957 ], [ 12.13911400000012, 10.64829 ], [ 12.127883, 10.65054 ], [ 12.11362, 10.645231 ], [ 12.097415000000124, 10.617364 ], [ 12.088964, 10.60251 ], [ 12.082674000000109, 10.586249 ], [ 12.07659, 10.573666 ], [ 12.066232, 10.558157000000108 ], [ 12.060395, 10.553272 ], [ 12.070362000000159, 10.55002 ], [ 12.083116, 10.537838 ], [ 12.10003, 10.51429 ], [ 12.107175000000153, 10.489744000000144 ], [ 12.110577, 10.4565 ], [ 12.111564, 10.426981 ], [ 12.106142000000148, 10.394104000000141 ], [ 12.098231, 10.372102 ], [ 12.081443, 10.355999 ], [ 12.076969, 10.349848 ], [ 12.06984, 10.343929 ] ] ] });</script>
+
+          </div>
+        </div>
+
+      
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="site-footer__primary">
+        <h3>About Shine Your Eye</h3>
+        <p>Shine your Eye is an initiative of <a href="http://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="http://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>.</p>
+        <p>Shine Your Eye lets you follow the activities of elected officials, connect with them and share your concerns. You can view profiles of elected officials that include such information as educational background, experience, legislative interests, phone numbers and email addresses.</p>
+        <p>Our goal is to increase accountability in governance by making it easier for Nigerians to follow the activities of elected officials and connect with them. Curating the activities of elected officials also makes it easier to review track records at election time.</p>
+      </div>
+      <div class="site-footer__secondary">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+          <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+          <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+          <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+          <li><a class="btn btn-default" href="/info/events">Events</a></li>
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
