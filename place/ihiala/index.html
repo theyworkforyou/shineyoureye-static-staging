@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/chukwuemeka-anohu/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b17b20ef-a8a0-481b-abba-8a9ceedaed1e/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b17b20ef-a8a0-481b-abba-8a9ceedaed1e/100x100.jpeg" alt="CHUKWUEMEKA ANOHU">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/chukwuemeka-anohu/"><h3 class="media-heading">CHUKWUEMEKA ANOHU</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/ihiala/">Ihiala</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">Peoples Democratic Party</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="chukwuemeka-anohu">
+        <a href="/person/chukwuemeka-anohu/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b17b20ef-a8a0-481b-abba-8a9ceedaed1e/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b17b20ef-a8a0-481b-abba-8a9ceedaed1e/100x100.jpeg" alt="CHUKWUEMEKA ANOHU">
+          
+        </a>
+        <a href="/person/chukwuemeka-anohu/">
+            <h3 class="contact-list__item__name">CHUKWUEMEKA ANOHU</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">Peoples Democratic Party</span>,
+            <a class="test-area" href="/place/ihiala/">Ihiala</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([5.827074354415244, 6.855385060977427], { "type": "Polygon", "coordinates": [ [ [ 6.902832, 5.89587500000016 ], [ 6.911791, 5.893648 ], [ 6.919648, 5.894436 ], [ 6.925804, 5.889953 ], [ 6.938897, 5.886505 ], [ 6.945881000000156, 5.886088 ], [ 6.941345, 5.874701 ], [ 6.935766, 5.857954000000119 ], [ 6.93626, 5.84572 ], [ 6.932021, 5.831851 ], [ 6.931631, 5.83057 ], [ 6.923274, 5.813411 ], [ 6.915422, 5.799011 ], [ 6.908505000000104, 5.785286000000156 ], [ 6.898534, 5.768154 ], [ 6.893258000000116, 5.756018 ], [ 6.860137, 5.749431 ], [ 6.858617, 5.749768 ], [ 6.850016, 5.751680000000134 ], [ 6.841977, 5.754354 ], [ 6.831905, 5.759833 ], [ 6.815411, 5.767726 ], [ 6.813264000000117, 5.769077 ], [ 6.801468, 5.776500000000112 ], [ 6.787002, 5.781359000000123 ], [ 6.777095, 5.782684 ], [ 6.772985, 5.780954 ], [ 6.772753, 5.783559 ], [ 6.774499, 5.791593 ], [ 6.77596, 5.796406000000104 ], [ 6.777411000000143, 5.800531000000149 ], [ 6.774298000000101, 5.807727000000114 ], [ 6.774002, 5.817869 ], [ 6.773614, 5.822484 ], [ 6.771479000000113, 5.833121 ], [ 6.774184000000104, 5.843443 ], [ 6.775472, 5.851716 ], [ 6.777457, 5.860439 ], [ 6.780351, 5.868224 ], [ 6.784376, 5.874608 ], [ 6.787914, 5.879387 ], [ 6.79146, 5.884625000000142 ], [ 6.7963850000001, 5.889611 ], [ 6.7994, 5.890712 ], [ 6.803874, 5.896396 ], [ 6.803605000000118, 5.898083 ], [ 6.806703, 5.900036 ], [ 6.808269, 5.900114 ], [ 6.808749, 5.898158 ], [ 6.810751, 5.893516 ], [ 6.8134510000001, 5.889322000000107 ], [ 6.816136, 5.884208 ], [ 6.82087, 5.877445 ], [ 6.822871, 5.872803 ], [ 6.827878000000112, 5.868571 ], [ 6.831486, 5.86344 ], [ 6.834376, 5.85671 ], [ 6.854619, 5.853141 ], [ 6.85771, 5.858848 ], [ 6.860668000000145, 5.870549 ], [ 6.860798, 5.878612 ], [ 6.86115800000016, 5.886669000000154 ], [ 6.862156000000141, 5.891262 ], [ 6.867558, 5.897162 ], [ 6.873609000000101, 5.900515 ], [ 6.877554, 5.902062000000114 ], [ 6.881235000000117, 5.901308 ], [ 6.889481000000103, 5.897712 ], [ 6.902832, 5.89587500000016 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([5.827074354415244, 6.855385060977427], { "type": "Polygon", "coordinates": [ [ [ 6.902832, 5.89587500000016 ], [ 6.911791, 5.893648 ], [ 6.919648, 5.894436 ], [ 6.925804, 5.889953 ], [ 6.938897, 5.886505 ], [ 6.945881000000156, 5.886088 ], [ 6.941345, 5.874701 ], [ 6.935766, 5.857954000000119 ], [ 6.93626, 5.84572 ], [ 6.932021, 5.831851 ], [ 6.931631, 5.83057 ], [ 6.923274, 5.813411 ], [ 6.915422, 5.799011 ], [ 6.908505000000104, 5.785286000000156 ], [ 6.898534, 5.768154 ], [ 6.893258000000116, 5.756018 ], [ 6.860137, 5.749431 ], [ 6.858617, 5.749768 ], [ 6.850016, 5.751680000000134 ], [ 6.841977, 5.754354 ], [ 6.831905, 5.759833 ], [ 6.815411, 5.767726 ], [ 6.813264000000117, 5.769077 ], [ 6.801468, 5.776500000000112 ], [ 6.787002, 5.781359000000123 ], [ 6.777095, 5.782684 ], [ 6.772985, 5.780954 ], [ 6.772753, 5.783559 ], [ 6.774499, 5.791593 ], [ 6.77596, 5.796406000000104 ], [ 6.777411000000143, 5.800531000000149 ], [ 6.774298000000101, 5.807727000000114 ], [ 6.774002, 5.817869 ], [ 6.773614, 5.822484 ], [ 6.771479000000113, 5.833121 ], [ 6.774184000000104, 5.843443 ], [ 6.775472, 5.851716 ], [ 6.777457, 5.860439 ], [ 6.780351, 5.868224 ], [ 6.784376, 5.874608 ], [ 6.787914, 5.879387 ], [ 6.79146, 5.884625000000142 ], [ 6.7963850000001, 5.889611 ], [ 6.7994, 5.890712 ], [ 6.803874, 5.896396 ], [ 6.803605000000118, 5.898083 ], [ 6.806703, 5.900036 ], [ 6.808269, 5.900114 ], [ 6.808749, 5.898158 ], [ 6.810751, 5.893516 ], [ 6.8134510000001, 5.889322000000107 ], [ 6.816136, 5.884208 ], [ 6.82087, 5.877445 ], [ 6.822871, 5.872803 ], [ 6.827878000000112, 5.868571 ], [ 6.831486, 5.86344 ], [ 6.834376, 5.85671 ], [ 6.854619, 5.853141 ], [ 6.85771, 5.858848 ], [ 6.860668000000145, 5.870549 ], [ 6.860798, 5.878612 ], [ 6.86115800000016, 5.886669000000154 ], [ 6.862156000000141, 5.891262 ], [ 6.867558, 5.897162 ], [ 6.873609000000101, 5.900515 ], [ 6.877554, 5.902062000000114 ], [ 6.881235000000117, 5.901308 ], [ 6.889481000000103, 5.897712 ], [ 6.902832, 5.89587500000016 ] ] ] });</script>
 
 
   </body>

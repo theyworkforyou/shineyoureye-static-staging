@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/samuel-olusegun-williams/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/86250b8a-201b-4d62-9c93-d8f7ab7b4911/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/86250b8a-201b-4d62-9c93-d8f7ab7b4911/100x100.jpeg" alt="SAMUEL WILLIAM">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/samuel-olusegun-williams/"><h3 class="media-heading">SAMUEL WILLIAM</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/abeokuta-south/">Abeokuta South</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="samuel-olusegun-williams">
+        <a href="/person/samuel-olusegun-williams/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/86250b8a-201b-4d62-9c93-d8f7ab7b4911/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/86250b8a-201b-4d62-9c93-d8f7ab7b4911/100x100.jpeg" alt="SAMUEL WILLIAM">
+          
+        </a>
+        <a href="/person/samuel-olusegun-williams/">
+            <h3 class="contact-list__item__name">SAMUEL WILLIAM</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/abeokuta-south/">Abeokuta South</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([7.169759084690426, 3.3540222259840164], { "type": "Polygon", "coordinates": [ [ [ 3.382304, 7.147229 ], [ 3.373472000000106, 7.143234 ], [ 3.368634, 7.143544000000134 ], [ 3.363603000000126, 7.141342 ], [ 3.363059, 7.141103000000101 ], [ 3.354685, 7.136868 ], [ 3.353046, 7.135512 ], [ 3.344443, 7.131282 ], [ 3.340030000000127, 7.129511 ], [ 3.333332000000155, 7.128935 ], [ 3.332872000000123, 7.128942 ], [ 3.330107, 7.129220000000146 ], [ 3.323862, 7.128174000000115 ], [ 3.316241, 7.127611 ], [ 3.30815, 7.126596 ], [ 3.302862, 7.126843000000122 ], [ 3.302853, 7.127146 ], [ 3.305002, 7.131718 ], [ 3.303117, 7.143503000000123 ], [ 3.305752, 7.149449 ], [ 3.31003, 7.157212 ], [ 3.314069, 7.164514 ], [ 3.31689, 7.167694 ], [ 3.320929000000149, 7.174998 ], [ 3.325154000000111, 7.179536 ], [ 3.330102, 7.185902 ], [ 3.333371, 7.188382000000103 ], [ 3.336735, 7.193528 ], [ 3.337393, 7.194535 ], [ 3.338877000000139, 7.200732 ], [ 3.343125, 7.206651 ], [ 3.344595, 7.211925000000121 ], [ 3.347686, 7.217632000000151 ], [ 3.350558, 7.224036000000126 ], [ 3.353393, 7.228522 ], [ 3.353858000000116, 7.228358 ], [ 3.361343, 7.220397 ], [ 3.366605, 7.217773 ], [ 3.370274, 7.216558000000134 ], [ 3.37417, 7.214881000000105 ], [ 3.376923, 7.213912 ], [ 3.381615, 7.204616 ], [ 3.384068, 7.199273 ], [ 3.385166, 7.195800000000133 ], [ 3.387193000000138, 7.192771 ], [ 3.388982, 7.189284000000156 ], [ 3.401895000000138, 7.174777000000119 ], [ 3.40505, 7.170117 ], [ 3.405663000000118, 7.165267 ], [ 3.40564, 7.163769 ], [ 3.404938, 7.163206 ], [ 3.401825, 7.156116000000111 ], [ 3.397145, 7.15204800000015 ], [ 3.391792, 7.149142 ], [ 3.386942000000147, 7.148763 ], [ 3.382304, 7.147229 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([7.169759084690426, 3.3540222259840164], { "type": "Polygon", "coordinates": [ [ [ 3.382304, 7.147229 ], [ 3.373472000000106, 7.143234 ], [ 3.368634, 7.143544000000134 ], [ 3.363603000000126, 7.141342 ], [ 3.363059, 7.141103000000101 ], [ 3.354685, 7.136868 ], [ 3.353046, 7.135512 ], [ 3.344443, 7.131282 ], [ 3.340030000000127, 7.129511 ], [ 3.333332000000155, 7.128935 ], [ 3.332872000000123, 7.128942 ], [ 3.330107, 7.129220000000146 ], [ 3.323862, 7.128174000000115 ], [ 3.316241, 7.127611 ], [ 3.30815, 7.126596 ], [ 3.302862, 7.126843000000122 ], [ 3.302853, 7.127146 ], [ 3.305002, 7.131718 ], [ 3.303117, 7.143503000000123 ], [ 3.305752, 7.149449 ], [ 3.31003, 7.157212 ], [ 3.314069, 7.164514 ], [ 3.31689, 7.167694 ], [ 3.320929000000149, 7.174998 ], [ 3.325154000000111, 7.179536 ], [ 3.330102, 7.185902 ], [ 3.333371, 7.188382000000103 ], [ 3.336735, 7.193528 ], [ 3.337393, 7.194535 ], [ 3.338877000000139, 7.200732 ], [ 3.343125, 7.206651 ], [ 3.344595, 7.211925000000121 ], [ 3.347686, 7.217632000000151 ], [ 3.350558, 7.224036000000126 ], [ 3.353393, 7.228522 ], [ 3.353858000000116, 7.228358 ], [ 3.361343, 7.220397 ], [ 3.366605, 7.217773 ], [ 3.370274, 7.216558000000134 ], [ 3.37417, 7.214881000000105 ], [ 3.376923, 7.213912 ], [ 3.381615, 7.204616 ], [ 3.384068, 7.199273 ], [ 3.385166, 7.195800000000133 ], [ 3.387193000000138, 7.192771 ], [ 3.388982, 7.189284000000156 ], [ 3.401895000000138, 7.174777000000119 ], [ 3.40505, 7.170117 ], [ 3.405663000000118, 7.165267 ], [ 3.40564, 7.163769 ], [ 3.404938, 7.163206 ], [ 3.401825, 7.156116000000111 ], [ 3.397145, 7.15204800000015 ], [ 3.391792, 7.149142 ], [ 3.386942000000147, 7.148763 ], [ 3.382304, 7.147229 ] ] ] });</script>
 
 
   </body>

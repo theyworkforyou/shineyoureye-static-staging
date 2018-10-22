@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/adedapo-lam-adesina/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8ecd73b9-0119-4f2a-9514-cf441b8246a2/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8ecd73b9-0119-4f2a-9514-cf441b8246a2/100x100.jpeg" alt="LAM ADEDAPO">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/adedapo-lam-adesina/"><h3 class="media-heading">LAM ADEDAPO</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/ibadan-neast-south-east/">IBADAN NORTH EAST/IBADAN SOUTH EAST</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="adedapo-lam-adesina">
+        <a href="/person/adedapo-lam-adesina/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8ecd73b9-0119-4f2a-9514-cf441b8246a2/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8ecd73b9-0119-4f2a-9514-cf441b8246a2/100x100.jpeg" alt="LAM ADEDAPO">
+          
+        </a>
+        <a href="/person/adedapo-lam-adesina/">
+            <h3 class="contact-list__item__name">LAM ADEDAPO</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/ibadan-neast-south-east/">IBADAN NORTH EAST/IBADAN SOUTH EAST</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([7.352001271302767, 3.9160132566757615], { "type": "Polygon", "coordinates": [ [ [ 3.893407, 7.312537 ], [ 3.88232100000016, 7.311804 ], [ 3.874187, 7.313754 ], [ 3.874305, 7.315395 ], [ 3.875317, 7.320909 ], [ 3.877523, 7.328936 ], [ 3.88037, 7.333729 ], [ 3.884384000000125, 7.33942 ], [ 3.889817, 7.347392 ], [ 3.894282, 7.352386 ], [ 3.899891000000139, 7.356899000000112 ], [ 3.90158700000012, 7.357771000000127 ], [ 3.902022, 7.360319000000118 ], [ 3.900483, 7.364953 ], [ 3.899709000000144, 7.366143 ], [ 3.90098, 7.36725 ], [ 3.904486, 7.369956 ], [ 3.907041, 7.371063 ], [ 3.911695, 7.37352 ], [ 3.9145, 7.375777000000142 ], [ 3.916843000000142, 7.37804 ], [ 3.920574000000101, 7.38051300000012 ], [ 3.923605, 7.382534 ], [ 3.929438, 7.386584 ], [ 3.931785000000105, 7.389078 ], [ 3.932751, 7.391826 ], [ 3.932168000000161, 7.398518 ], [ 3.935687, 7.402146 ], [ 3.93715, 7.40696 ], [ 3.938313, 7.409373 ], [ 3.946768, 7.40265 ], [ 3.951789, 7.399338 ], [ 3.953601, 7.397235 ], [ 3.954226, 7.393078 ], [ 3.954456, 7.393073 ], [ 3.953478000000132, 7.389631000000121 ], [ 3.951361000000133, 7.387134000000116 ], [ 3.949706, 7.384629 ], [ 3.946894, 7.38191 ], [ 3.945485000000133, 7.380321 ], [ 3.943817000000138, 7.377124 ], [ 3.942132, 7.372773000000109 ], [ 3.940697000000113, 7.369573 ], [ 3.939748, 7.367975000000114 ], [ 3.940332, 7.361284 ], [ 3.940273, 7.357598 ], [ 3.940713, 7.356208000000151 ], [ 3.94089700000012, 7.353439 ], [ 3.941446, 7.352486 ], [ 3.941339, 7.352279000000124 ], [ 3.938695, 7.345642 ], [ 3.937686, 7.340359 ], [ 3.936435, 7.338191000000108 ], [ 3.935313000000121, 7.336252000000115 ], [ 3.933428, 7.333749000000125 ], [ 3.928521, 7.329916 ], [ 3.924991000000148, 7.325597 ], [ 3.917563, 7.322727000000158 ], [ 3.912422, 7.318668 ], [ 3.904278, 7.314429000000132 ], [ 3.893407, 7.312537 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([7.352001271302767, 3.9160132566757615], { "type": "Polygon", "coordinates": [ [ [ 3.893407, 7.312537 ], [ 3.88232100000016, 7.311804 ], [ 3.874187, 7.313754 ], [ 3.874305, 7.315395 ], [ 3.875317, 7.320909 ], [ 3.877523, 7.328936 ], [ 3.88037, 7.333729 ], [ 3.884384000000125, 7.33942 ], [ 3.889817, 7.347392 ], [ 3.894282, 7.352386 ], [ 3.899891000000139, 7.356899000000112 ], [ 3.90158700000012, 7.357771000000127 ], [ 3.902022, 7.360319000000118 ], [ 3.900483, 7.364953 ], [ 3.899709000000144, 7.366143 ], [ 3.90098, 7.36725 ], [ 3.904486, 7.369956 ], [ 3.907041, 7.371063 ], [ 3.911695, 7.37352 ], [ 3.9145, 7.375777000000142 ], [ 3.916843000000142, 7.37804 ], [ 3.920574000000101, 7.38051300000012 ], [ 3.923605, 7.382534 ], [ 3.929438, 7.386584 ], [ 3.931785000000105, 7.389078 ], [ 3.932751, 7.391826 ], [ 3.932168000000161, 7.398518 ], [ 3.935687, 7.402146 ], [ 3.93715, 7.40696 ], [ 3.938313, 7.409373 ], [ 3.946768, 7.40265 ], [ 3.951789, 7.399338 ], [ 3.953601, 7.397235 ], [ 3.954226, 7.393078 ], [ 3.954456, 7.393073 ], [ 3.953478000000132, 7.389631000000121 ], [ 3.951361000000133, 7.387134000000116 ], [ 3.949706, 7.384629 ], [ 3.946894, 7.38191 ], [ 3.945485000000133, 7.380321 ], [ 3.943817000000138, 7.377124 ], [ 3.942132, 7.372773000000109 ], [ 3.940697000000113, 7.369573 ], [ 3.939748, 7.367975000000114 ], [ 3.940332, 7.361284 ], [ 3.940273, 7.357598 ], [ 3.940713, 7.356208000000151 ], [ 3.94089700000012, 7.353439 ], [ 3.941446, 7.352486 ], [ 3.941339, 7.352279000000124 ], [ 3.938695, 7.345642 ], [ 3.937686, 7.340359 ], [ 3.936435, 7.338191000000108 ], [ 3.935313000000121, 7.336252000000115 ], [ 3.933428, 7.333749000000125 ], [ 3.928521, 7.329916 ], [ 3.924991000000148, 7.325597 ], [ 3.917563, 7.322727000000158 ], [ 3.912422, 7.318668 ], [ 3.904278, 7.314429000000132 ], [ 3.893407, 7.312537 ] ] ] });</script>
 
 
   </body>

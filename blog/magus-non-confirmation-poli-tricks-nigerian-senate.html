@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -218,6 +218,18 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
 
   </body>

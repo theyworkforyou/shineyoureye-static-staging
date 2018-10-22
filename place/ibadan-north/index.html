@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/abiodun-dada-awoleye/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/f9e6d731-c734-4986-bc94-7f3e749d3270/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/f9e6d731-c734-4986-bc94-7f3e749d3270/100x100.jpeg" alt="abiodun awoleye">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/abiodun-dada-awoleye/"><h3 class="media-heading">abiodun awoleye</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/ibadan-north/">Ibadan North</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="abiodun-dada-awoleye">
+        <a href="/person/abiodun-dada-awoleye/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/f9e6d731-c734-4986-bc94-7f3e749d3270/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/f9e6d731-c734-4986-bc94-7f3e749d3270/100x100.jpeg" alt="abiodun awoleye">
+          
+        </a>
+        <a href="/person/abiodun-dada-awoleye/">
+            <h3 class="contact-list__item__name">abiodun awoleye</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/ibadan-north/">Ibadan North</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([7.41189925346494, 3.910474204979623], { "type": "Polygon", "coordinates": [ [ [ 3.909591000000148, 7.443141 ], [ 3.912046, 7.438031000000137 ], [ 3.920465000000149, 7.430745 ], [ 3.923959, 7.426847 ], [ 3.926128, 7.424429 ], [ 3.934996, 7.416443 ], [ 3.934926, 7.412067 ], [ 3.938313, 7.409373 ], [ 3.93715, 7.40696 ], [ 3.935687, 7.402146 ], [ 3.932168000000161, 7.398518 ], [ 3.932751, 7.391826 ], [ 3.931785000000105, 7.389078 ], [ 3.929438, 7.386584 ], [ 3.923605, 7.382534 ], [ 3.920574000000101, 7.38051300000012 ], [ 3.916843000000142, 7.37804 ], [ 3.9145, 7.375777000000142 ], [ 3.912691, 7.378113000000155 ], [ 3.907273, 7.385347 ], [ 3.908704000000114, 7.388316 ], [ 3.909229, 7.392225 ], [ 3.907433, 7.39525 ], [ 3.905128000000161, 7.395521 ], [ 3.899168000000145, 7.397695 ], [ 3.896386, 7.39682 ], [ 3.889735, 7.399238 ], [ 3.889297, 7.400858 ], [ 3.888853, 7.401786 ], [ 3.885915, 7.405524 ], [ 3.885482, 7.407375000000115 ], [ 3.885993, 7.41036 ], [ 3.886510000000157, 7.413809 ], [ 3.886351000000161, 7.418189 ], [ 3.886907, 7.424169 ], [ 3.887693, 7.429917000000104 ], [ 3.887782, 7.435447 ], [ 3.887987, 7.436841 ], [ 3.891064, 7.438617000000136 ], [ 3.892005, 7.439752 ], [ 3.893411, 7.44111 ], [ 3.899864, 7.440771 ], [ 3.902423, 7.442111 ], [ 3.906808, 7.442268 ], [ 3.909591000000148, 7.443141 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([7.41189925346494, 3.910474204979623], { "type": "Polygon", "coordinates": [ [ [ 3.909591000000148, 7.443141 ], [ 3.912046, 7.438031000000137 ], [ 3.920465000000149, 7.430745 ], [ 3.923959, 7.426847 ], [ 3.926128, 7.424429 ], [ 3.934996, 7.416443 ], [ 3.934926, 7.412067 ], [ 3.938313, 7.409373 ], [ 3.93715, 7.40696 ], [ 3.935687, 7.402146 ], [ 3.932168000000161, 7.398518 ], [ 3.932751, 7.391826 ], [ 3.931785000000105, 7.389078 ], [ 3.929438, 7.386584 ], [ 3.923605, 7.382534 ], [ 3.920574000000101, 7.38051300000012 ], [ 3.916843000000142, 7.37804 ], [ 3.9145, 7.375777000000142 ], [ 3.912691, 7.378113000000155 ], [ 3.907273, 7.385347 ], [ 3.908704000000114, 7.388316 ], [ 3.909229, 7.392225 ], [ 3.907433, 7.39525 ], [ 3.905128000000161, 7.395521 ], [ 3.899168000000145, 7.397695 ], [ 3.896386, 7.39682 ], [ 3.889735, 7.399238 ], [ 3.889297, 7.400858 ], [ 3.888853, 7.401786 ], [ 3.885915, 7.405524 ], [ 3.885482, 7.407375000000115 ], [ 3.885993, 7.41036 ], [ 3.886510000000157, 7.413809 ], [ 3.886351000000161, 7.418189 ], [ 3.886907, 7.424169 ], [ 3.887693, 7.429917000000104 ], [ 3.887782, 7.435447 ], [ 3.887987, 7.436841 ], [ 3.891064, 7.438617000000136 ], [ 3.892005, 7.439752 ], [ 3.893411, 7.44111 ], [ 3.899864, 7.440771 ], [ 3.902423, 7.442111 ], [ 3.906808, 7.442268 ], [ 3.909591000000148, 7.443141 ] ] ] });</script>
 
 
   </body>

@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/jimoh-abdul/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/11b0606e-4b96-4228-9ee4-c78b653283c0/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/11b0606e-4b96-4228-9ee4-c78b653283c0/100x100.jpeg" alt="JIMOH ABDUL">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/jimoh-abdul/"><h3 class="media-heading">JIMOH ABDUL</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/lagos-mainland/">LAGOS MAINLAND</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="jimoh-abdul">
+        <a href="/person/jimoh-abdul/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/11b0606e-4b96-4228-9ee4-c78b653283c0/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/11b0606e-4b96-4228-9ee4-c78b653283c0/100x100.jpeg" alt="JIMOH ABDUL">
+          
+        </a>
+        <a href="/person/jimoh-abdul/">
+            <h3 class="contact-list__item__name">JIMOH ABDUL</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/lagos-mainland/">LAGOS MAINLAND</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.504245534059545, 3.3742415902300564], { "type": "Polygon", "coordinates": [ [ [ 3.381123, 6.532494 ], [ 3.384813, 6.532430000000147 ], [ 3.388982, 6.533513 ], [ 3.391728, 6.535366 ], [ 3.392229, 6.534609000000102 ], [ 3.39496, 6.532259 ], [ 3.396735, 6.527852 ], [ 3.39689, 6.523241 ], [ 3.395420000000115, 6.517967 ], [ 3.390702, 6.511594000000115 ], [ 3.387876, 6.507955 ], [ 3.385043, 6.503855000000158 ], [ 3.383327, 6.497664 ], [ 3.38325, 6.492826000000149 ], [ 3.384091000000125, 6.487743 ], [ 3.384517, 6.485662 ], [ 3.386292, 6.481252000000154 ], [ 3.387575, 6.475012 ], [ 3.382452, 6.472102 ], [ 3.378514, 6.471019 ], [ 3.374815, 6.470618000000115 ], [ 3.371822, 6.470898 ], [ 3.368157, 6.472573 ], [ 3.365379, 6.471931 ], [ 3.363845, 6.470449000000144 ], [ 3.362623, 6.472669 ], [ 3.358316, 6.477348 ], [ 3.355355, 6.479705 ], [ 3.354904000000147, 6.479985000000113 ], [ 3.351052, 6.482383 ], [ 3.352914, 6.485735000000147 ], [ 3.35554, 6.491221 ], [ 3.358405000000118, 6.497165 ], [ 3.362263, 6.507467 ], [ 3.362822, 6.51345 ], [ 3.363818000000151, 6.51804 ], [ 3.3639, 6.523109 ], [ 3.361675000000104, 6.528216000000157 ], [ 3.359857000000147, 6.529859 ], [ 3.358514, 6.532417000000122 ], [ 3.357267, 6.534634 ], [ 3.359478, 6.534935 ], [ 3.36225, 6.535117 ], [ 3.366177000000107, 6.535512 ], [ 3.370796, 6.535897 ], [ 3.374021, 6.53561 ], [ 3.376775, 6.534641000000136 ], [ 3.381123, 6.532494 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.504245534059545, 3.3742415902300564], { "type": "Polygon", "coordinates": [ [ [ 3.381123, 6.532494 ], [ 3.384813, 6.532430000000147 ], [ 3.388982, 6.533513 ], [ 3.391728, 6.535366 ], [ 3.392229, 6.534609000000102 ], [ 3.39496, 6.532259 ], [ 3.396735, 6.527852 ], [ 3.39689, 6.523241 ], [ 3.395420000000115, 6.517967 ], [ 3.390702, 6.511594000000115 ], [ 3.387876, 6.507955 ], [ 3.385043, 6.503855000000158 ], [ 3.383327, 6.497664 ], [ 3.38325, 6.492826000000149 ], [ 3.384091000000125, 6.487743 ], [ 3.384517, 6.485662 ], [ 3.386292, 6.481252000000154 ], [ 3.387575, 6.475012 ], [ 3.382452, 6.472102 ], [ 3.378514, 6.471019 ], [ 3.374815, 6.470618000000115 ], [ 3.371822, 6.470898 ], [ 3.368157, 6.472573 ], [ 3.365379, 6.471931 ], [ 3.363845, 6.470449000000144 ], [ 3.362623, 6.472669 ], [ 3.358316, 6.477348 ], [ 3.355355, 6.479705 ], [ 3.354904000000147, 6.479985000000113 ], [ 3.351052, 6.482383 ], [ 3.352914, 6.485735000000147 ], [ 3.35554, 6.491221 ], [ 3.358405000000118, 6.497165 ], [ 3.362263, 6.507467 ], [ 3.362822, 6.51345 ], [ 3.363818000000151, 6.51804 ], [ 3.3639, 6.523109 ], [ 3.361675000000104, 6.528216000000157 ], [ 3.359857000000147, 6.529859 ], [ 3.358514, 6.532417000000122 ], [ 3.357267, 6.534634 ], [ 3.359478, 6.534935 ], [ 3.36225, 6.535117 ], [ 3.366177000000107, 6.535512 ], [ 3.370796, 6.535897 ], [ 3.374021, 6.53561 ], [ 3.376775, 6.534641000000136 ], [ 3.381123, 6.532494 ] ] ] });</script>
 
 
   </body>

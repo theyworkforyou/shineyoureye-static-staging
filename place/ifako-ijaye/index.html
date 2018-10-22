@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/adewale-oluwatayo/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/78726e95-961f-461d-9bd1-ca226e30be4d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/78726e95-961f-461d-9bd1-ca226e30be4d/100x100.jpeg" alt="Adewale Oluwatayo">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/adewale-oluwatayo/"><h3 class="media-heading">Adewale Oluwatayo</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/ifako-ijaye/">IFAKO-IJAIYE</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="adewale-oluwatayo">
+        <a href="/person/adewale-oluwatayo/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/78726e95-961f-461d-9bd1-ca226e30be4d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/78726e95-961f-461d-9bd1-ca226e30be4d/100x100.jpeg" alt="Adewale Oluwatayo">
+          
+        </a>
+        <a href="/person/adewale-oluwatayo/">
+            <h3 class="contact-list__item__name">Adewale Oluwatayo</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/ifako-ijaye/">IFAKO-IJAIYE</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.677259809172716, 3.3039916890158336], { "type": "Polygon", "coordinates": [ [ [ 3.267871, 6.706930000000114 ], [ 3.273154000000147, 6.705228000000147 ], [ 3.277058, 6.704006000000106 ], [ 3.282345000000134, 6.702531 ], [ 3.288763, 6.699653 ], [ 3.293591, 6.698417 ], [ 3.299774, 6.695313000000112 ], [ 3.30482, 6.69315 ], [ 3.310794, 6.691434000000128 ], [ 3.317884, 6.687161 ], [ 3.324539, 6.684740000000147 ], [ 3.329592000000162, 6.68304 ], [ 3.337384, 6.679446000000155 ], [ 3.339208000000156, 6.678031000000146 ], [ 3.345607, 6.673999000000151 ], [ 3.350182, 6.671385 ], [ 3.353824000000145, 6.669194000000118 ], [ 3.353103, 6.668454 ], [ 3.349822000000131, 6.665283000000158 ], [ 3.347483, 6.66325 ], [ 3.344912000000136, 6.66122 ], [ 3.341635, 6.65828 ], [ 3.339761, 6.656468 ], [ 3.335768, 6.652158 ], [ 3.332284000000129, 6.648792000000128 ], [ 3.332026, 6.648997 ], [ 3.3283, 6.646754 ], [ 3.323169, 6.643385 ], [ 3.317654, 6.644632 ], [ 3.314707000000112, 6.647907 ], [ 3.310846, 6.651659 ], [ 3.307015000000149, 6.657254 ], [ 3.303149, 6.660775 ], [ 3.299498, 6.663141 ], [ 3.29722100000015, 6.665024 ], [ 3.294047, 6.668303 ], [ 3.289611, 6.672672 ], [ 3.289048, 6.673226000000113 ], [ 3.283756, 6.674008 ], [ 3.280303000000117, 6.674525000000131 ], [ 3.277083, 6.675043 ], [ 3.274327, 6.675781000000143 ], [ 3.272965, 6.677185000000121 ], [ 3.271381, 6.679056 ], [ 3.268190000000118, 6.681415 ], [ 3.267283, 6.682352 ], [ 3.266145, 6.683293 ], [ 3.263618, 6.684025000000133 ], [ 3.258218, 6.692412 ], [ 3.258271, 6.695637 ], [ 3.251668, 6.705109 ], [ 3.252395, 6.706502 ], [ 3.252145, 6.705353 ], [ 3.2528420000001, 6.705572 ], [ 3.258164000000136, 6.706404 ], [ 3.263486000000114, 6.707005 ], [ 3.265988, 6.706964 ], [ 3.267871, 6.706930000000114 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.677259809172716, 3.3039916890158336], { "type": "Polygon", "coordinates": [ [ [ 3.267871, 6.706930000000114 ], [ 3.273154000000147, 6.705228000000147 ], [ 3.277058, 6.704006000000106 ], [ 3.282345000000134, 6.702531 ], [ 3.288763, 6.699653 ], [ 3.293591, 6.698417 ], [ 3.299774, 6.695313000000112 ], [ 3.30482, 6.69315 ], [ 3.310794, 6.691434000000128 ], [ 3.317884, 6.687161 ], [ 3.324539, 6.684740000000147 ], [ 3.329592000000162, 6.68304 ], [ 3.337384, 6.679446000000155 ], [ 3.339208000000156, 6.678031000000146 ], [ 3.345607, 6.673999000000151 ], [ 3.350182, 6.671385 ], [ 3.353824000000145, 6.669194000000118 ], [ 3.353103, 6.668454 ], [ 3.349822000000131, 6.665283000000158 ], [ 3.347483, 6.66325 ], [ 3.344912000000136, 6.66122 ], [ 3.341635, 6.65828 ], [ 3.339761, 6.656468 ], [ 3.335768, 6.652158 ], [ 3.332284000000129, 6.648792000000128 ], [ 3.332026, 6.648997 ], [ 3.3283, 6.646754 ], [ 3.323169, 6.643385 ], [ 3.317654, 6.644632 ], [ 3.314707000000112, 6.647907 ], [ 3.310846, 6.651659 ], [ 3.307015000000149, 6.657254 ], [ 3.303149, 6.660775 ], [ 3.299498, 6.663141 ], [ 3.29722100000015, 6.665024 ], [ 3.294047, 6.668303 ], [ 3.289611, 6.672672 ], [ 3.289048, 6.673226000000113 ], [ 3.283756, 6.674008 ], [ 3.280303000000117, 6.674525000000131 ], [ 3.277083, 6.675043 ], [ 3.274327, 6.675781000000143 ], [ 3.272965, 6.677185000000121 ], [ 3.271381, 6.679056 ], [ 3.268190000000118, 6.681415 ], [ 3.267283, 6.682352 ], [ 3.266145, 6.683293 ], [ 3.263618, 6.684025000000133 ], [ 3.258218, 6.692412 ], [ 3.258271, 6.695637 ], [ 3.251668, 6.705109 ], [ 3.252395, 6.706502 ], [ 3.252145, 6.705353 ], [ 3.2528420000001, 6.705572 ], [ 3.258164000000136, 6.706404 ], [ 3.263486000000114, 6.707005 ], [ 3.265988, 6.706964 ], [ 3.267871, 6.706930000000114 ] ] ] });</script>
 
 
   </body>

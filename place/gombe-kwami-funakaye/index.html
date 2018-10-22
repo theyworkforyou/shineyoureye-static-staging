@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,52 +170,40 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/bauchi-tongo/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2c83eb76-563a-423d-ae96-7dca8f580854/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2c83eb76-563a-423d-ae96-7dca8f580854/100x100.jpeg" alt="Bauchi Tongo">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/bauchi-tongo/"><h3 class="media-heading">Bauchi Tongo</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/gombe-kwami-funakaye/">Gombe/kwami/Funakaye</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="bauchi-tongo">
+        <a href="/person/bauchi-tongo/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2c83eb76-563a-423d-ae96-7dca8f580854/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2c83eb76-563a-423d-ae96-7dca8f580854/100x100.jpeg" alt="Bauchi Tongo">
+          
+        </a>
+        <a href="/person/bauchi-tongo/">
+            <h3 class="contact-list__item__name">Bauchi Tongo</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/gombe-kwami-funakaye/">Gombe/kwami/Funakaye</a>
+          
+        </p>
     </li>
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/khamisu-mailantarki-ahmed/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/21ff1ae5-be2c-4c4c-93e9-d629a478a402/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/21ff1ae5-be2c-4c4c-93e9-d629a478a402/100x100.jpeg" alt="KHAMISU AHM AHMED">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/khamisu-mailantarki-ahmed/"><h3 class="media-heading">KHAMISU AHM AHMED</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/gombe-kwami-funakaye/">Gombe/kwami/Funakaye</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="khamisu-mailantarki-ahmed">
+        <a href="/person/khamisu-mailantarki-ahmed/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/21ff1ae5-be2c-4c4c-93e9-d629a478a402/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/21ff1ae5-be2c-4c4c-93e9-d629a478a402/100x100.jpeg" alt="KHAMISU AHM AHMED">
+          
+        </a>
+        <a href="/person/khamisu-mailantarki-ahmed/">
+            <h3 class="contact-list__item__name">KHAMISU AHM AHMED</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/gombe-kwami-funakaye/">Gombe/kwami/Funakaye</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -238,9 +226,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([10.656943670264694, 11.317841558098948], { "type": "Polygon", "coordinates": [ [ [ 11.25994, 10.293212 ], [ 11.259942000000137, 10.292373 ], [ 11.247027, 10.293847 ], [ 11.224737, 10.301517 ], [ 11.219308, 10.307807000000139 ], [ 11.215522, 10.312003 ], [ 11.212154, 10.314562 ], [ 11.192690000000141, 10.32935 ], [ 11.174673, 10.337885000000142 ], [ 11.150694000000101, 10.346728000000155 ], [ 11.123256, 10.356079 ], [ 11.100836, 10.371577 ], [ 11.077744, 10.393995 ], [ 11.071893, 10.407198 ], [ 11.049797, 10.419008000000133 ], [ 11.033909000000108, 10.430507000000148 ], [ 11.022618, 10.433882000000153 ], [ 11.016196, 10.431471000000156 ], [ 11.011163, 10.46028600000011 ], [ 11.011763, 10.484914 ], [ 11.011300000000119, 10.518974000000126 ], [ 11.006031, 10.554252000000133 ], [ 11.00989200000015, 10.58227 ], [ 11.017363000000103, 10.620363 ], [ 11.020984, 10.64861500000012 ], [ 11.033018, 10.681579 ], [ 11.038556, 10.696917 ], [ 11.047693, 10.705993 ], [ 11.079900000000123, 10.70094 ], [ 11.120997, 10.696452 ], [ 11.142868, 10.696605000000147 ], [ 11.164980000000128, 10.694914 ], [ 11.17243, 10.69343 ], [ 11.175863, 10.705658 ], [ 11.180186000000106, 10.721621 ], [ 11.186835, 10.724748 ], [ 11.190953, 10.745855 ], [ 11.192434000000105, 10.76884 ], [ 11.195568, 10.793416 ], [ 11.198324, 10.806489 ], [ 11.197314000000119, 10.842625 ], [ 11.190333, 10.847044 ], [ 11.197453, 10.854585000000156 ], [ 11.215267000000154, 10.862157000000138 ], [ 11.237582000000145, 10.87311300000016 ], [ 11.279352000000131, 10.89484 ], [ 11.316116, 10.916407 ], [ 11.3400400000001, 10.934704 ], [ 11.360414, 10.949831 ], [ 11.392182000000105, 10.970546 ], [ 11.417848, 10.979619 ], [ 11.444938, 10.989588 ], [ 11.480877, 10.995751 ], [ 11.487963, 11.003242 ], [ 11.497941000000138, 11.009968 ], [ 11.506689, 11.015862 ], [ 11.517359, 11.022612 ], [ 11.523401, 11.026109 ], [ 11.534813, 11.015923 ], [ 11.555483, 10.994695 ], [ 11.582837, 10.972221 ], [ 11.58879, 10.943839 ], [ 11.59372, 10.894534 ], [ 11.591288, 10.842112 ], [ 11.582014000000129, 10.780817000000127 ], [ 11.576136, 10.741786000000102 ], [ 11.57429, 10.70523100000014 ], [ 11.581547, 10.663026 ], [ 11.582034, 10.656424 ], [ 11.584225000000115, 10.626868 ], [ 11.586809, 10.602214 ], [ 11.59018, 10.596549 ], [ 11.58616, 10.593939 ], [ 11.574046, 10.58905 ], [ 11.549668, 10.597447 ], [ 11.53735, 10.588189 ], [ 11.519832, 10.573481 ], [ 11.50858, 10.550403 ], [ 11.491778, 10.535687 ], [ 11.476823, 10.528537 ], [ 11.465071, 10.508227000000145 ], [ 11.45445100000012, 10.495261 ], [ 11.442399, 10.482779000000107 ], [ 11.418657, 10.471381 ], [ 11.39535, 10.457904 ], [ 11.373464, 10.430137000000114 ], [ 11.346773, 10.408885000000112 ], [ 11.321044, 10.385316000000101 ], [ 11.296035, 10.364496000000145 ], [ 11.278481, 10.350245 ], [ 11.252517, 10.337956 ], [ 11.24723200000011, 10.336207 ], [ 11.249869, 10.32994 ], [ 11.252749, 10.323456 ], [ 11.258992, 10.311632 ], [ 11.260667, 10.300562 ], [ 11.25994, 10.293212 ] ] ] });</script>
 
           </div>
         </div>
@@ -275,6 +260,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([10.656943670264694, 11.317841558098948], { "type": "Polygon", "coordinates": [ [ [ 11.25994, 10.293212 ], [ 11.259942000000137, 10.292373 ], [ 11.247027, 10.293847 ], [ 11.224737, 10.301517 ], [ 11.219308, 10.307807000000139 ], [ 11.215522, 10.312003 ], [ 11.212154, 10.314562 ], [ 11.192690000000141, 10.32935 ], [ 11.174673, 10.337885000000142 ], [ 11.150694000000101, 10.346728000000155 ], [ 11.123256, 10.356079 ], [ 11.100836, 10.371577 ], [ 11.077744, 10.393995 ], [ 11.071893, 10.407198 ], [ 11.049797, 10.419008000000133 ], [ 11.033909000000108, 10.430507000000148 ], [ 11.022618, 10.433882000000153 ], [ 11.016196, 10.431471000000156 ], [ 11.011163, 10.46028600000011 ], [ 11.011763, 10.484914 ], [ 11.011300000000119, 10.518974000000126 ], [ 11.006031, 10.554252000000133 ], [ 11.00989200000015, 10.58227 ], [ 11.017363000000103, 10.620363 ], [ 11.020984, 10.64861500000012 ], [ 11.033018, 10.681579 ], [ 11.038556, 10.696917 ], [ 11.047693, 10.705993 ], [ 11.079900000000123, 10.70094 ], [ 11.120997, 10.696452 ], [ 11.142868, 10.696605000000147 ], [ 11.164980000000128, 10.694914 ], [ 11.17243, 10.69343 ], [ 11.175863, 10.705658 ], [ 11.180186000000106, 10.721621 ], [ 11.186835, 10.724748 ], [ 11.190953, 10.745855 ], [ 11.192434000000105, 10.76884 ], [ 11.195568, 10.793416 ], [ 11.198324, 10.806489 ], [ 11.197314000000119, 10.842625 ], [ 11.190333, 10.847044 ], [ 11.197453, 10.854585000000156 ], [ 11.215267000000154, 10.862157000000138 ], [ 11.237582000000145, 10.87311300000016 ], [ 11.279352000000131, 10.89484 ], [ 11.316116, 10.916407 ], [ 11.3400400000001, 10.934704 ], [ 11.360414, 10.949831 ], [ 11.392182000000105, 10.970546 ], [ 11.417848, 10.979619 ], [ 11.444938, 10.989588 ], [ 11.480877, 10.995751 ], [ 11.487963, 11.003242 ], [ 11.497941000000138, 11.009968 ], [ 11.506689, 11.015862 ], [ 11.517359, 11.022612 ], [ 11.523401, 11.026109 ], [ 11.534813, 11.015923 ], [ 11.555483, 10.994695 ], [ 11.582837, 10.972221 ], [ 11.58879, 10.943839 ], [ 11.59372, 10.894534 ], [ 11.591288, 10.842112 ], [ 11.582014000000129, 10.780817000000127 ], [ 11.576136, 10.741786000000102 ], [ 11.57429, 10.70523100000014 ], [ 11.581547, 10.663026 ], [ 11.582034, 10.656424 ], [ 11.584225000000115, 10.626868 ], [ 11.586809, 10.602214 ], [ 11.59018, 10.596549 ], [ 11.58616, 10.593939 ], [ 11.574046, 10.58905 ], [ 11.549668, 10.597447 ], [ 11.53735, 10.588189 ], [ 11.519832, 10.573481 ], [ 11.50858, 10.550403 ], [ 11.491778, 10.535687 ], [ 11.476823, 10.528537 ], [ 11.465071, 10.508227000000145 ], [ 11.45445100000012, 10.495261 ], [ 11.442399, 10.482779000000107 ], [ 11.418657, 10.471381 ], [ 11.39535, 10.457904 ], [ 11.373464, 10.430137000000114 ], [ 11.346773, 10.408885000000112 ], [ 11.321044, 10.385316000000101 ], [ 11.296035, 10.364496000000145 ], [ 11.278481, 10.350245 ], [ 11.252517, 10.337956 ], [ 11.24723200000011, 10.336207 ], [ 11.249869, 10.32994 ], [ 11.252749, 10.323456 ], [ 11.258992, 10.311632 ], [ 11.260667, 10.300562 ], [ 11.25994, 10.293212 ] ] ] });</script>
 
 
   </body>

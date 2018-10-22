@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/danburam-nuhu/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9d4283cd-7e90-4c59-a428-346c95bbe0a6/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9d4283cd-7e90-4c59-a428-346c95bbe0a6/100x100.jpeg" alt="DANBURAM NUHU">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/danburam-nuhu/"><h3 class="media-heading">DANBURAM NUHU</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/kano-municipal/">Municipal</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="danburam-nuhu">
+        <a href="/person/danburam-nuhu/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9d4283cd-7e90-4c59-a428-346c95bbe0a6/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9d4283cd-7e90-4c59-a428-346c95bbe0a6/100x100.jpeg" alt="DANBURAM NUHU">
+          
+        </a>
+        <a href="/person/danburam-nuhu/">
+            <h3 class="contact-list__item__name">DANBURAM NUHU</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/kano-municipal/">Municipal</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.940451131963453, 8.47748422480087], { "type": "Polygon", "coordinates": [ [ [ 8.472475, 11.920188 ], [ 8.463755000000106, 11.919439 ], [ 8.455199, 11.922625000000153 ], [ 8.448508, 11.927213 ], [ 8.4443940000001, 11.932742 ], [ 8.441417, 11.940824000000134 ], [ 8.434277, 11.944021 ], [ 8.433974, 11.946763 ], [ 8.438689, 11.947985 ], [ 8.450217, 11.950136 ], [ 8.471839, 11.955132 ], [ 8.489466000000107, 11.959178 ], [ 8.503054, 11.964816000000155 ], [ 8.503367, 11.965573 ], [ 8.503512, 11.965511000000106 ], [ 8.509534000000144, 11.958838 ], [ 8.509605, 11.941943 ], [ 8.504775, 11.926534000000117 ], [ 8.504224, 11.926401000000112 ], [ 8.492456, 11.924476 ], [ 8.4792920000001, 11.921618000000137 ], [ 8.472475, 11.920188 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.940451131963453, 8.47748422480087], { "type": "Polygon", "coordinates": [ [ [ 8.472475, 11.920188 ], [ 8.463755000000106, 11.919439 ], [ 8.455199, 11.922625000000153 ], [ 8.448508, 11.927213 ], [ 8.4443940000001, 11.932742 ], [ 8.441417, 11.940824000000134 ], [ 8.434277, 11.944021 ], [ 8.433974, 11.946763 ], [ 8.438689, 11.947985 ], [ 8.450217, 11.950136 ], [ 8.471839, 11.955132 ], [ 8.489466000000107, 11.959178 ], [ 8.503054, 11.964816000000155 ], [ 8.503367, 11.965573 ], [ 8.503512, 11.965511000000106 ], [ 8.509534000000144, 11.958838 ], [ 8.509605, 11.941943 ], [ 8.504775, 11.926534000000117 ], [ 8.504224, 11.926401000000112 ], [ 8.492456, 11.924476 ], [ 8.4792920000001, 11.921618000000137 ], [ 8.472475, 11.920188 ] ] ] });</script>
 
 
   </body>

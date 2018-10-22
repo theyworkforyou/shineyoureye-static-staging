@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/garba-mohammed/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ee784851-7a07-45d3-8314-b7d63bbd49aa/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ee784851-7a07-45d3-8314-b7d63bbd49aa/100x100.jpeg" alt="GARBA MOHAMMED">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/garba-mohammed/"><h3 class="media-heading">GARBA MOHAMMED</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/gwale/">Gwale</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="garba-mohammed">
+        <a href="/person/garba-mohammed/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ee784851-7a07-45d3-8314-b7d63bbd49aa/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ee784851-7a07-45d3-8314-b7d63bbd49aa/100x100.jpeg" alt="GARBA MOHAMMED">
+          
+        </a>
+        <a href="/person/garba-mohammed/">
+            <h3 class="contact-list__item__name">GARBA MOHAMMED</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/gwale/">Gwale</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.968264421917837, 8.468682679536874], { "type": "Polygon", "coordinates": [ [ [ 8.438689, 11.947985 ], [ 8.433974, 11.946763 ], [ 8.432866000000161, 11.956741000000136 ], [ 8.432709000000159, 11.959314 ], [ 8.432317, 11.965753 ], [ 8.430614, 11.972641000000124 ], [ 8.430186000000106, 11.974858 ], [ 8.433347, 11.975444 ], [ 8.448059000000114, 11.977898 ], [ 8.457007, 11.979111 ], [ 8.464065, 11.980312000000138 ], [ 8.480799000000104, 11.981572 ], [ 8.489017, 11.983938000000137 ], [ 8.500509, 11.987943 ], [ 8.501559, 11.988907 ], [ 8.504745, 11.988665 ], [ 8.511763, 11.988357 ], [ 8.510038000000121, 11.983143 ], [ 8.507328, 11.976415 ], [ 8.506218, 11.972472 ], [ 8.503367, 11.965573 ], [ 8.503054, 11.964816000000155 ], [ 8.489466000000107, 11.959178 ], [ 8.471839, 11.955132 ], [ 8.450217, 11.950136 ], [ 8.438689, 11.947985 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.968264421917837, 8.468682679536874], { "type": "Polygon", "coordinates": [ [ [ 8.438689, 11.947985 ], [ 8.433974, 11.946763 ], [ 8.432866000000161, 11.956741000000136 ], [ 8.432709000000159, 11.959314 ], [ 8.432317, 11.965753 ], [ 8.430614, 11.972641000000124 ], [ 8.430186000000106, 11.974858 ], [ 8.433347, 11.975444 ], [ 8.448059000000114, 11.977898 ], [ 8.457007, 11.979111 ], [ 8.464065, 11.980312000000138 ], [ 8.480799000000104, 11.981572 ], [ 8.489017, 11.983938000000137 ], [ 8.500509, 11.987943 ], [ 8.501559, 11.988907 ], [ 8.504745, 11.988665 ], [ 8.511763, 11.988357 ], [ 8.510038000000121, 11.983143 ], [ 8.507328, 11.976415 ], [ 8.506218, 11.972472 ], [ 8.503367, 11.965573 ], [ 8.503054, 11.964816000000155 ], [ 8.489466000000107, 11.959178 ], [ 8.471839, 11.955132 ], [ 8.450217, 11.950136 ], [ 8.438689, 11.947985 ] ] ] });</script>
 
 
   </body>

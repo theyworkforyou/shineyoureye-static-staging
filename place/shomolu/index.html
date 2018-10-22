@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/oyewole-diya/">
-              
-                <img class="media-object" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="OYEWOLE DIYA">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/oyewole-diya/"><h3 class="media-heading">OYEWOLE DIYA</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/shomolu/">SHOMOLU</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="oyewole-diya">
+        <a href="/person/oyewole-diya/">
+          
+            <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="OYEWOLE DIYA">
+          
+        </a>
+        <a href="/person/oyewole-diya/">
+            <h3 class="contact-list__item__name">OYEWOLE DIYA</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/shomolu/">SHOMOLU</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.553516805512885, 3.378711276926282], { "type": "Polygon", "coordinates": [ [ [ 3.382671, 6.571178 ], [ 3.387977000000149, 6.571089 ], [ 3.389738, 6.571809 ], [ 3.390502, 6.570355000000119 ], [ 3.395092000000147, 6.568894 ], [ 3.39736, 6.566551 ], [ 3.399165, 6.56398700000011 ], [ 3.401419, 6.560723 ], [ 3.402290000000107, 6.55748 ], [ 3.402454, 6.553332000000125 ], [ 3.400774, 6.549442 ], [ 3.398627, 6.545102 ], [ 3.396277, 6.542376000000104 ], [ 3.394841, 6.539174 ], [ 3.393647000000158, 6.53666 ], [ 3.391728, 6.535366 ], [ 3.388982, 6.533513 ], [ 3.384813, 6.532430000000147 ], [ 3.381123, 6.532494 ], [ 3.376775, 6.534641000000136 ], [ 3.374021, 6.53561 ], [ 3.370796, 6.535897 ], [ 3.366177000000107, 6.535512 ], [ 3.36225, 6.535117 ], [ 3.359478, 6.534935 ], [ 3.357267, 6.534634 ], [ 3.356944, 6.535206000000129 ], [ 3.357267, 6.540961 ], [ 3.358726, 6.545547000000113 ], [ 3.359713, 6.549449 ], [ 3.359991, 6.552437 ], [ 3.36005, 6.556124 ], [ 3.360388, 6.562570000000107 ], [ 3.361614, 6.567155 ], [ 3.361229, 6.571773 ], [ 3.360059, 6.576124 ], [ 3.360376, 6.576165 ], [ 3.364296, 6.576099 ], [ 3.372346, 6.574578000000144 ], [ 3.378985, 6.571472 ], [ 3.382671, 6.571178 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.553516805512885, 3.378711276926282], { "type": "Polygon", "coordinates": [ [ [ 3.382671, 6.571178 ], [ 3.387977000000149, 6.571089 ], [ 3.389738, 6.571809 ], [ 3.390502, 6.570355000000119 ], [ 3.395092000000147, 6.568894 ], [ 3.39736, 6.566551 ], [ 3.399165, 6.56398700000011 ], [ 3.401419, 6.560723 ], [ 3.402290000000107, 6.55748 ], [ 3.402454, 6.553332000000125 ], [ 3.400774, 6.549442 ], [ 3.398627, 6.545102 ], [ 3.396277, 6.542376000000104 ], [ 3.394841, 6.539174 ], [ 3.393647000000158, 6.53666 ], [ 3.391728, 6.535366 ], [ 3.388982, 6.533513 ], [ 3.384813, 6.532430000000147 ], [ 3.381123, 6.532494 ], [ 3.376775, 6.534641000000136 ], [ 3.374021, 6.53561 ], [ 3.370796, 6.535897 ], [ 3.366177000000107, 6.535512 ], [ 3.36225, 6.535117 ], [ 3.359478, 6.534935 ], [ 3.357267, 6.534634 ], [ 3.356944, 6.535206000000129 ], [ 3.357267, 6.540961 ], [ 3.358726, 6.545547000000113 ], [ 3.359713, 6.549449 ], [ 3.359991, 6.552437 ], [ 3.36005, 6.556124 ], [ 3.360388, 6.562570000000107 ], [ 3.361614, 6.567155 ], [ 3.361229, 6.571773 ], [ 3.360059, 6.576124 ], [ 3.360376, 6.576165 ], [ 3.364296, 6.576099 ], [ 3.372346, 6.574578000000144 ], [ 3.378985, 6.571472 ], [ 3.382671, 6.571178 ] ] ] });</script>
 
 
   </body>

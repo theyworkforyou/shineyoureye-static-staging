@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/emeka-idu/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9ab7d672-3488-4ce7-83df-d85603c0b1d8/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9ab7d672-3488-4ce7-83df-d85603c0b1d8/100x100.jpeg" alt="Emeka Idu">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/emeka-idu/"><h3 class="media-heading">Emeka Idu</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/onitsha-northsouth-federal/">Onitsha North/South</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">Peoples Democratic Party</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="emeka-idu">
+        <a href="/person/emeka-idu/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9ab7d672-3488-4ce7-83df-d85603c0b1d8/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/9ab7d672-3488-4ce7-83df-d85603c0b1d8/100x100.jpeg" alt="Emeka Idu">
+          
+        </a>
+        <a href="/person/emeka-idu/">
+            <h3 class="contact-list__item__name">Emeka Idu</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">Peoples Democratic Party</span>,
+            <a class="test-area" href="/place/onitsha-northsouth-federal/">Onitsha North/South</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.097748277614216, 6.77320703327165], { "type": "Polygon", "coordinates": [ [ [ 6.764388, 6.054867 ], [ 6.741907, 6.054867 ], [ 6.73762900000014, 6.058288000000118 ], [ 6.737670000000151, 6.070256 ], [ 6.737681, 6.073576000000116 ], [ 6.740022, 6.089913 ], [ 6.742889, 6.098807 ], [ 6.743425, 6.100468 ], [ 6.749581000000148, 6.110054000000105 ], [ 6.753239000000121, 6.121988 ], [ 6.753733, 6.123348000000135 ], [ 6.753831000000105, 6.123626 ], [ 6.756104, 6.12421 ], [ 6.765854000000104, 6.126999 ], [ 6.770243, 6.127385 ], [ 6.778455, 6.130252 ], [ 6.779059, 6.130461 ], [ 6.784105000000125, 6.128763 ], [ 6.788511, 6.131412 ], [ 6.789696, 6.132125 ], [ 6.793363, 6.135498 ], [ 6.799610000000142, 6.131726 ], [ 6.807592000000112, 6.12606 ], [ 6.814247, 6.123875 ], [ 6.81878, 6.122945 ], [ 6.818356, 6.121270000000152 ], [ 6.815749, 6.116937000000121 ], [ 6.81289100000015, 6.111456 ], [ 6.81166, 6.106638 ], [ 6.810698, 6.104119 ], [ 6.808797, 6.100694000000146 ], [ 6.808027, 6.095869 ], [ 6.807908, 6.088498 ], [ 6.8072, 6.087589 ], [ 6.806732, 6.087135 ], [ 6.805552, 6.085542 ], [ 6.803931, 6.080022 ], [ 6.800424, 6.082173 ], [ 6.796529000000134, 6.083853 ], [ 6.79149, 6.086011 ], [ 6.788292, 6.088138 ], [ 6.782100000000128, 6.090317 ], [ 6.778932, 6.091798 ], [ 6.767823000000135, 6.08069 ], [ 6.768283, 6.076544 ], [ 6.768974, 6.070331 ], [ 6.768974, 6.059972 ], [ 6.769127, 6.059603 ], [ 6.764388, 6.054867 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.097748277614216, 6.77320703327165], { "type": "Polygon", "coordinates": [ [ [ 6.764388, 6.054867 ], [ 6.741907, 6.054867 ], [ 6.73762900000014, 6.058288000000118 ], [ 6.737670000000151, 6.070256 ], [ 6.737681, 6.073576000000116 ], [ 6.740022, 6.089913 ], [ 6.742889, 6.098807 ], [ 6.743425, 6.100468 ], [ 6.749581000000148, 6.110054000000105 ], [ 6.753239000000121, 6.121988 ], [ 6.753733, 6.123348000000135 ], [ 6.753831000000105, 6.123626 ], [ 6.756104, 6.12421 ], [ 6.765854000000104, 6.126999 ], [ 6.770243, 6.127385 ], [ 6.778455, 6.130252 ], [ 6.779059, 6.130461 ], [ 6.784105000000125, 6.128763 ], [ 6.788511, 6.131412 ], [ 6.789696, 6.132125 ], [ 6.793363, 6.135498 ], [ 6.799610000000142, 6.131726 ], [ 6.807592000000112, 6.12606 ], [ 6.814247, 6.123875 ], [ 6.81878, 6.122945 ], [ 6.818356, 6.121270000000152 ], [ 6.815749, 6.116937000000121 ], [ 6.81289100000015, 6.111456 ], [ 6.81166, 6.106638 ], [ 6.810698, 6.104119 ], [ 6.808797, 6.100694000000146 ], [ 6.808027, 6.095869 ], [ 6.807908, 6.088498 ], [ 6.8072, 6.087589 ], [ 6.806732, 6.087135 ], [ 6.805552, 6.085542 ], [ 6.803931, 6.080022 ], [ 6.800424, 6.082173 ], [ 6.796529000000134, 6.083853 ], [ 6.79149, 6.086011 ], [ 6.788292, 6.088138 ], [ 6.782100000000128, 6.090317 ], [ 6.778932, 6.091798 ], [ 6.767823000000135, 6.08069 ], [ 6.768283, 6.076544 ], [ 6.768974, 6.070331 ], [ 6.768974, 6.059972 ], [ 6.769127, 6.059603 ], [ 6.764388, 6.054867 ] ] ] });</script>
 
 
   </body>

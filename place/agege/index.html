@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/taofeek-adaranijo/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b393127e-a630-43d9-8fba-0eb0f37a0e6d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b393127e-a630-43d9-8fba-0eb0f37a0e6d/100x100.jpeg" alt="TAOFEEK ADARANIJO">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/taofeek-adaranijo/"><h3 class="media-heading">TAOFEEK ADARANIJO</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/agege/">AGEGE</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="taofeek-adaranijo">
+        <a href="/person/taofeek-adaranijo/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b393127e-a630-43d9-8fba-0eb0f37a0e6d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b393127e-a630-43d9-8fba-0eb0f37a0e6d/100x100.jpeg" alt="TAOFEEK ADARANIJO">
+          
+        </a>
+        <a href="/person/taofeek-adaranijo/">
+            <h3 class="contact-list__item__name">TAOFEEK ADARANIJO</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/agege/">AGEGE</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.640746082985891, 3.3054096235833703], { "type": "Polygon", "coordinates": [ [ [ 3.317654, 6.644632 ], [ 3.323169, 6.643385 ], [ 3.3283, 6.646754 ], [ 3.332026, 6.648997 ], [ 3.332284000000129, 6.648792000000128 ], [ 3.331082000000151, 6.647629 ], [ 3.330132, 6.646032 ], [ 3.328931, 6.643057 ], [ 3.328865, 6.638909 ], [ 3.328847, 6.637758 ], [ 3.328348, 6.635463 ], [ 3.327857, 6.633628000000101 ], [ 3.327342000000158, 6.63041 ], [ 3.327285, 6.626957 ], [ 3.32654, 6.623511 ], [ 3.325113000000101, 6.621002 ], [ 3.322103, 6.620131000000129 ], [ 3.31772, 6.620204 ], [ 3.313811, 6.620963 ], [ 3.311512, 6.621462000000122 ], [ 3.308751, 6.621971000000144 ], [ 3.303904000000102, 6.621823 ], [ 3.301353, 6.620391000000153 ], [ 3.300661, 6.620956 ], [ 3.29883, 6.621907 ], [ 3.296547, 6.623329 ], [ 3.294021, 6.624063 ], [ 3.292649, 6.624776 ], [ 3.29061, 6.627117 ], [ 3.289520000000152, 6.631053 ], [ 3.289372, 6.636124 ], [ 3.287877, 6.643522 ], [ 3.287241, 6.646991000000128 ], [ 3.286653, 6.653452 ], [ 3.287918000000104, 6.660342 ], [ 3.288071, 6.669787000000156 ], [ 3.289611, 6.672672 ], [ 3.294047, 6.668303 ], [ 3.29722100000015, 6.665024 ], [ 3.299498, 6.663141 ], [ 3.303149, 6.660775 ], [ 3.307015000000149, 6.657254 ], [ 3.310846, 6.651659 ], [ 3.314707000000112, 6.647907 ], [ 3.317654, 6.644632 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.640746082985891, 3.3054096235833703], { "type": "Polygon", "coordinates": [ [ [ 3.317654, 6.644632 ], [ 3.323169, 6.643385 ], [ 3.3283, 6.646754 ], [ 3.332026, 6.648997 ], [ 3.332284000000129, 6.648792000000128 ], [ 3.331082000000151, 6.647629 ], [ 3.330132, 6.646032 ], [ 3.328931, 6.643057 ], [ 3.328865, 6.638909 ], [ 3.328847, 6.637758 ], [ 3.328348, 6.635463 ], [ 3.327857, 6.633628000000101 ], [ 3.327342000000158, 6.63041 ], [ 3.327285, 6.626957 ], [ 3.32654, 6.623511 ], [ 3.325113000000101, 6.621002 ], [ 3.322103, 6.620131000000129 ], [ 3.31772, 6.620204 ], [ 3.313811, 6.620963 ], [ 3.311512, 6.621462000000122 ], [ 3.308751, 6.621971000000144 ], [ 3.303904000000102, 6.621823 ], [ 3.301353, 6.620391000000153 ], [ 3.300661, 6.620956 ], [ 3.29883, 6.621907 ], [ 3.296547, 6.623329 ], [ 3.294021, 6.624063 ], [ 3.292649, 6.624776 ], [ 3.29061, 6.627117 ], [ 3.289520000000152, 6.631053 ], [ 3.289372, 6.636124 ], [ 3.287877, 6.643522 ], [ 3.287241, 6.646991000000128 ], [ 3.286653, 6.653452 ], [ 3.287918000000104, 6.660342 ], [ 3.288071, 6.669787000000156 ], [ 3.289611, 6.672672 ], [ 3.294047, 6.668303 ], [ 3.29722100000015, 6.665024 ], [ 3.299498, 6.663141 ], [ 3.303149, 6.660775 ], [ 3.307015000000149, 6.657254 ], [ 3.310846, 6.651659 ], [ 3.314707000000112, 6.647907 ], [ 3.317654, 6.644632 ] ] ] });</script>
 
 
   </body>

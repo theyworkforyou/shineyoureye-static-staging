@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/bolaji-ayinla/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/7b93348e-4294-43a1-a6b2-5f32e478ad38/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/7b93348e-4294-43a1-a6b2-5f32e478ad38/100x100.jpeg" alt="BOLAJI AYINLA">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/bolaji-ayinla/"><h3 class="media-heading">BOLAJI AYINLA</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/mushin-ii-federal-constituency/">MUSHIN II</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="bolaji-ayinla">
+        <a href="/person/bolaji-ayinla/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/7b93348e-4294-43a1-a6b2-5f32e478ad38/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/7b93348e-4294-43a1-a6b2-5f32e478ad38/100x100.jpeg" alt="BOLAJI AYINLA">
+          
+        </a>
+        <a href="/person/bolaji-ayinla/">
+            <h3 class="contact-list__item__name">BOLAJI AYINLA</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/mushin-ii-federal-constituency/">MUSHIN II</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.551415643774287, 3.3420039378805284], { "type": "Polygon", "coordinates": [ [ [ 3.360059, 6.576124 ], [ 3.361229, 6.571773 ], [ 3.361614, 6.567155 ], [ 3.360388, 6.562570000000107 ], [ 3.36005, 6.556124 ], [ 3.359991, 6.552437 ], [ 3.359713, 6.549449 ], [ 3.358726, 6.545547000000113 ], [ 3.357267, 6.540961 ], [ 3.356944, 6.535206000000129 ], [ 3.357267, 6.534634 ], [ 3.353466, 6.534115 ], [ 3.345598, 6.532635 ], [ 3.340272, 6.531343000000106 ], [ 3.333811, 6.531222 ], [ 3.326647, 6.530422000000101 ], [ 3.322481, 6.52957 ], [ 3.318538, 6.528255 ], [ 3.313925, 6.528332 ], [ 3.311448, 6.528478 ], [ 3.311869000000115, 6.52952 ], [ 3.314659, 6.530855 ], [ 3.319302, 6.532619 ], [ 3.321173, 6.53420100000011 ], [ 3.321672000000149, 6.536496000000112 ], [ 3.32192300000014, 6.537875 ], [ 3.322422, 6.54017000000016 ], [ 3.322679, 6.541779 ], [ 3.323427, 6.545223 ], [ 3.324163, 6.547976 ], [ 3.324648, 6.549348 ], [ 3.325398, 6.553025000000104 ], [ 3.326128, 6.555315 ], [ 3.327099, 6.55829400000016 ], [ 3.3276, 6.560819 ], [ 3.328092, 6.562656000000117 ], [ 3.330688, 6.566298 ], [ 3.333259, 6.568329 ], [ 3.336974, 6.569879 ], [ 3.340703, 6.572119 ], [ 3.34463, 6.57477 ], [ 3.3453540000001, 6.57457600000015 ], [ 3.348124000000155, 6.574528 ], [ 3.351355000000126, 6.574704 ], [ 3.353673, 6.575356 ], [ 3.35714, 6.575759 ], [ 3.360059, 6.576124 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.551415643774287, 3.3420039378805284], { "type": "Polygon", "coordinates": [ [ [ 3.360059, 6.576124 ], [ 3.361229, 6.571773 ], [ 3.361614, 6.567155 ], [ 3.360388, 6.562570000000107 ], [ 3.36005, 6.556124 ], [ 3.359991, 6.552437 ], [ 3.359713, 6.549449 ], [ 3.358726, 6.545547000000113 ], [ 3.357267, 6.540961 ], [ 3.356944, 6.535206000000129 ], [ 3.357267, 6.534634 ], [ 3.353466, 6.534115 ], [ 3.345598, 6.532635 ], [ 3.340272, 6.531343000000106 ], [ 3.333811, 6.531222 ], [ 3.326647, 6.530422000000101 ], [ 3.322481, 6.52957 ], [ 3.318538, 6.528255 ], [ 3.313925, 6.528332 ], [ 3.311448, 6.528478 ], [ 3.311869000000115, 6.52952 ], [ 3.314659, 6.530855 ], [ 3.319302, 6.532619 ], [ 3.321173, 6.53420100000011 ], [ 3.321672000000149, 6.536496000000112 ], [ 3.32192300000014, 6.537875 ], [ 3.322422, 6.54017000000016 ], [ 3.322679, 6.541779 ], [ 3.323427, 6.545223 ], [ 3.324163, 6.547976 ], [ 3.324648, 6.549348 ], [ 3.325398, 6.553025000000104 ], [ 3.326128, 6.555315 ], [ 3.327099, 6.55829400000016 ], [ 3.3276, 6.560819 ], [ 3.328092, 6.562656000000117 ], [ 3.330688, 6.566298 ], [ 3.333259, 6.568329 ], [ 3.336974, 6.569879 ], [ 3.340703, 6.572119 ], [ 3.34463, 6.57477 ], [ 3.3453540000001, 6.57457600000015 ], [ 3.348124000000155, 6.574528 ], [ 3.351355000000126, 6.574704 ], [ 3.353673, 6.575356 ], [ 3.35714, 6.575759 ], [ 3.360059, 6.576124 ] ] ] });</script>
 
 
   </body>

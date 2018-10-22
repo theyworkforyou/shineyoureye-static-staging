@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/rita-orji/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/296f1852-72c5-4b9e-94e4-b923ff9e309d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/296f1852-72c5-4b9e-94e4-b923ff9e309d/100x100.jpeg" alt="RITA ORJI">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/rita-orji/"><h3 class="media-heading">RITA ORJI</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/ajeromiifelodun/">AJEROMI/IFELODUN</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">Peoples Democratic Party</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="rita-orji">
+        <a href="/person/rita-orji/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/296f1852-72c5-4b9e-94e4-b923ff9e309d/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/296f1852-72c5-4b9e-94e4-b923ff9e309d/100x100.jpeg" alt="RITA ORJI">
+          
+        </a>
+        <a href="/person/rita-orji/">
+            <h3 class="contact-list__item__name">RITA ORJI</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">Peoples Democratic Party</span>,
+            <a class="test-area" href="/place/ajeromiifelodun/">AJEROMI/IFELODUN</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.466173448659315, 3.324310612505119], { "type": "Polygon", "coordinates": [ [ [ 3.324856, 6.448191 ], [ 3.322558, 6.446717000000149 ], [ 3.321382000000142, 6.44733 ], [ 3.317966000000126, 6.450154000000111 ], [ 3.316605, 6.451557 ], [ 3.314096, 6.453212 ], [ 3.312277, 6.454858 ], [ 3.310721, 6.458570000000122 ], [ 3.308936, 6.462288000000115 ], [ 3.308081, 6.466449000000124 ], [ 3.307418, 6.468302 ], [ 3.306322, 6.471780000000137 ], [ 3.306377000000111, 6.475235 ], [ 3.307024, 6.477795 ], [ 3.308277, 6.478659 ], [ 3.310146, 6.48001 ], [ 3.314331, 6.482011 ], [ 3.316416000000117, 6.482668 ], [ 3.318497, 6.48286400000012 ], [ 3.322424, 6.483258 ], [ 3.326337000000137, 6.482731000000115 ], [ 3.328849000000161, 6.481075 ], [ 3.3325, 6.478709 ], [ 3.334554, 6.47729100000015 ], [ 3.338914000000159, 6.475835 ], [ 3.339992, 6.471208 ], [ 3.34016, 6.467288000000109 ], [ 3.341968, 6.464954 ], [ 3.342852, 6.462634000000151 ], [ 3.343957000000159, 6.459621 ], [ 3.344618000000139, 6.457766 ], [ 3.344823, 6.45615 ], [ 3.343659, 6.455478 ], [ 3.342959, 6.455029 ], [ 3.33972, 6.454393 ], [ 3.335791, 6.453998 ], [ 3.333708, 6.453572000000122 ], [ 3.33162300000015, 6.452916 ], [ 3.329763, 6.452027 ], [ 3.327657000000101, 6.450217 ], [ 3.324856, 6.448191 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.466173448659315, 3.324310612505119], { "type": "Polygon", "coordinates": [ [ [ 3.324856, 6.448191 ], [ 3.322558, 6.446717000000149 ], [ 3.321382000000142, 6.44733 ], [ 3.317966000000126, 6.450154000000111 ], [ 3.316605, 6.451557 ], [ 3.314096, 6.453212 ], [ 3.312277, 6.454858 ], [ 3.310721, 6.458570000000122 ], [ 3.308936, 6.462288000000115 ], [ 3.308081, 6.466449000000124 ], [ 3.307418, 6.468302 ], [ 3.306322, 6.471780000000137 ], [ 3.306377000000111, 6.475235 ], [ 3.307024, 6.477795 ], [ 3.308277, 6.478659 ], [ 3.310146, 6.48001 ], [ 3.314331, 6.482011 ], [ 3.316416000000117, 6.482668 ], [ 3.318497, 6.48286400000012 ], [ 3.322424, 6.483258 ], [ 3.326337000000137, 6.482731000000115 ], [ 3.328849000000161, 6.481075 ], [ 3.3325, 6.478709 ], [ 3.334554, 6.47729100000015 ], [ 3.338914000000159, 6.475835 ], [ 3.339992, 6.471208 ], [ 3.34016, 6.467288000000109 ], [ 3.341968, 6.464954 ], [ 3.342852, 6.462634000000151 ], [ 3.343957000000159, 6.459621 ], [ 3.344618000000139, 6.457766 ], [ 3.344823, 6.45615 ], [ 3.343659, 6.455478 ], [ 3.342959, 6.455029 ], [ 3.33972, 6.454393 ], [ 3.335791, 6.453998 ], [ 3.333708, 6.453572000000122 ], [ 3.33162300000015, 6.452916 ], [ 3.329763, 6.452027 ], [ 3.327657000000101, 6.450217 ], [ 3.324856, 6.448191 ] ] ] });</script>
 
 
   </body>

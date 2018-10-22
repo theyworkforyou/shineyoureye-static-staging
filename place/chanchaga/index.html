@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/mohammed-umaru-bago/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5007b010-495c-4eba-937b-35c97001910f/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5007b010-495c-4eba-937b-35c97001910f/100x100.jpeg" alt="UMARU MOHAMMED">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/mohammed-umaru-bago/"><h3 class="media-heading">UMARU MOHAMMED</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/chanchaga/">Chanchaga</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="mohammed-umaru-bago">
+        <a href="/person/mohammed-umaru-bago/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5007b010-495c-4eba-937b-35c97001910f/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5007b010-495c-4eba-937b-35c97001910f/100x100.jpeg" alt="UMARU MOHAMMED">
+          
+        </a>
+        <a href="/person/mohammed-umaru-bago/">
+            <h3 class="contact-list__item__name">UMARU MOHAMMED</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/chanchaga/">Chanchaga</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([9.605471930243903, 6.514193786851488], { "type": "Polygon", "coordinates": [ [ [ 6.539299, 9.64542200000011 ], [ 6.543103, 9.641543 ], [ 6.544744, 9.641561 ], [ 6.541017, 9.639904 ], [ 6.544591, 9.635562 ], [ 6.55223500000011, 9.625268 ], [ 6.558202, 9.617491000000143 ], [ 6.560230000000104, 9.60644 ], [ 6.561347, 9.593533 ], [ 6.556337, 9.583092 ], [ 6.551234, 9.579343 ], [ 6.550334, 9.576793 ], [ 6.542243, 9.568622 ], [ 6.529590000000155, 9.568706 ], [ 6.517382000000111, 9.570179 ], [ 6.506591, 9.570976 ], [ 6.497912000000156, 9.571567 ], [ 6.487382, 9.57052 ], [ 6.480821, 9.570443 ], [ 6.472595, 9.572193 ], [ 6.464333, 9.576483 ], [ 6.461628, 9.585679 ], [ 6.466649, 9.595197 ], [ 6.474266, 9.603593 ], [ 6.473926, 9.611201 ], [ 6.478685, 9.622792 ], [ 6.484164, 9.63324 ], [ 6.4892210000001, 9.640221 ], [ 6.504116, 9.647779 ], [ 6.517677, 9.650014000000112 ], [ 6.530832, 9.647628 ], [ 6.539299, 9.64542200000011 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([9.605471930243903, 6.514193786851488], { "type": "Polygon", "coordinates": [ [ [ 6.539299, 9.64542200000011 ], [ 6.543103, 9.641543 ], [ 6.544744, 9.641561 ], [ 6.541017, 9.639904 ], [ 6.544591, 9.635562 ], [ 6.55223500000011, 9.625268 ], [ 6.558202, 9.617491000000143 ], [ 6.560230000000104, 9.60644 ], [ 6.561347, 9.593533 ], [ 6.556337, 9.583092 ], [ 6.551234, 9.579343 ], [ 6.550334, 9.576793 ], [ 6.542243, 9.568622 ], [ 6.529590000000155, 9.568706 ], [ 6.517382000000111, 9.570179 ], [ 6.506591, 9.570976 ], [ 6.497912000000156, 9.571567 ], [ 6.487382, 9.57052 ], [ 6.480821, 9.570443 ], [ 6.472595, 9.572193 ], [ 6.464333, 9.576483 ], [ 6.461628, 9.585679 ], [ 6.466649, 9.595197 ], [ 6.474266, 9.603593 ], [ 6.473926, 9.611201 ], [ 6.478685, 9.622792 ], [ 6.484164, 9.63324 ], [ 6.4892210000001, 9.640221 ], [ 6.504116, 9.647779 ], [ 6.517677, 9.650014000000112 ], [ 6.530832, 9.647628 ], [ 6.539299, 9.64542200000011 ] ] ] });</script>
 
 
   </body>

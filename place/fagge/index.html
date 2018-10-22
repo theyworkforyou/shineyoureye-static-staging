@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/aminu-suleiman/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6849db26-474d-46f1-8bc1-6c29e542d364/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6849db26-474d-46f1-8bc1-6c29e542d364/100x100.jpeg" alt="SULEIMAN AMINU">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/aminu-suleiman/"><h3 class="media-heading">SULEIMAN AMINU</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/fagge/">Fagge</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="aminu-suleiman">
+        <a href="/person/aminu-suleiman/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6849db26-474d-46f1-8bc1-6c29e542d364/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6849db26-474d-46f1-8bc1-6c29e542d364/100x100.jpeg" alt="SULEIMAN AMINU">
+          
+        </a>
+        <a href="/person/aminu-suleiman/">
+            <h3 class="contact-list__item__name">SULEIMAN AMINU</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/fagge/">Fagge</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.98513433632485, 8.553782434708312], { "type": "Polygon", "coordinates": [ [ [ 8.578172000000109, 11.974309000000119 ], [ 8.577067, 11.970133 ], [ 8.577591000000155, 11.966346 ], [ 8.571476000000132, 11.966165 ], [ 8.562168, 11.961163 ], [ 8.561416, 11.961243000000138 ], [ 8.545171, 11.959057 ], [ 8.538082, 11.959479 ], [ 8.531869, 11.963606 ], [ 8.532428, 11.971941000000129 ], [ 8.527471, 11.971909000000153 ], [ 8.526258, 11.98671400000012 ], [ 8.526908000000105, 11.988107 ], [ 8.530801, 11.996464 ], [ 8.53638, 12.001127 ], [ 8.540503, 12.008097000000133 ], [ 8.549838, 12.013941000000102 ], [ 8.549948, 12.014112 ], [ 8.560972, 12.011696 ], [ 8.566107000000159, 12.011422 ], [ 8.569799000000103, 12.006426 ], [ 8.577689, 12.000920000000121 ], [ 8.578084000000104, 11.992129 ], [ 8.580752, 11.988209 ], [ 8.5814, 11.978493 ], [ 8.577917000000127, 11.975232000000119 ], [ 8.578172000000109, 11.974309000000119 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.98513433632485, 8.553782434708312], { "type": "Polygon", "coordinates": [ [ [ 8.578172000000109, 11.974309000000119 ], [ 8.577067, 11.970133 ], [ 8.577591000000155, 11.966346 ], [ 8.571476000000132, 11.966165 ], [ 8.562168, 11.961163 ], [ 8.561416, 11.961243000000138 ], [ 8.545171, 11.959057 ], [ 8.538082, 11.959479 ], [ 8.531869, 11.963606 ], [ 8.532428, 11.971941000000129 ], [ 8.527471, 11.971909000000153 ], [ 8.526258, 11.98671400000012 ], [ 8.526908000000105, 11.988107 ], [ 8.530801, 11.996464 ], [ 8.53638, 12.001127 ], [ 8.540503, 12.008097000000133 ], [ 8.549838, 12.013941000000102 ], [ 8.549948, 12.014112 ], [ 8.560972, 12.011696 ], [ 8.566107000000159, 12.011422 ], [ 8.569799000000103, 12.006426 ], [ 8.577689, 12.000920000000121 ], [ 8.578084000000104, 11.992129 ], [ 8.580752, 11.988209 ], [ 8.5814, 11.978493 ], [ 8.577917000000127, 11.975232000000119 ], [ 8.578172000000109, 11.974309000000119 ] ] ] });</script>
 
 
   </body>

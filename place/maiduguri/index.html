@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/abdukadir-rahis/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b2a7f72a-9ecf-4263-83f1-cb0f8783053c/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b2a7f72a-9ecf-4263-83f1-cb0f8783053c/100x100.jpeg" alt="ABDUKADIR RAHIS">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/abdukadir-rahis/"><h3 class="media-heading">ABDUKADIR RAHIS</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/maiduguri/">Maiduguri (Metropolitan)</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="abdukadir-rahis">
+        <a href="/person/abdukadir-rahis/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b2a7f72a-9ecf-4263-83f1-cb0f8783053c/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/b2a7f72a-9ecf-4263-83f1-cb0f8783053c/100x100.jpeg" alt="ABDUKADIR RAHIS">
+          
+        </a>
+        <a href="/person/abdukadir-rahis/">
+            <h3 class="contact-list__item__name">ABDUKADIR RAHIS</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/maiduguri/">Maiduguri (Metropolitan)</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.852751999613815, 13.19961491559348], { "type": "Polygon", "coordinates": [ [ [ 13.258687, 11.805527 ], [ 13.253792, 11.793154 ], [ 13.249997, 11.790679 ], [ 13.237925, 11.780496 ], [ 13.230763, 11.781300000000101 ], [ 13.227126, 11.788714 ], [ 13.222315, 11.794077 ], [ 13.211774000000105, 11.800896 ], [ 13.193650000000103, 11.802075 ], [ 13.1815, 11.801555 ], [ 13.161924, 11.805514 ], [ 13.142641, 11.802795000000117 ], [ 13.136936, 11.802385000000129 ], [ 13.138044, 11.811143 ], [ 13.145806000000107, 11.823688 ], [ 13.154955, 11.841734 ], [ 13.159349000000132, 11.85823500000015 ], [ 13.164019, 11.869902 ], [ 13.164313, 11.892445 ], [ 13.162253, 11.911111 ], [ 13.162305000000117, 11.933886 ], [ 13.160352000000159, 11.939666 ], [ 13.156951, 11.95572 ], [ 13.157364, 11.955353 ], [ 13.166237, 11.948787000000152 ], [ 13.172978, 11.940409000000102 ], [ 13.179241, 11.932266 ], [ 13.190521, 11.922675 ], [ 13.204173, 11.914199 ], [ 13.217107000000112, 11.906653 ], [ 13.228858, 11.897744000000102 ], [ 13.233501, 11.883645000000115 ], [ 13.239096000000131, 11.86976 ], [ 13.243702, 11.860265 ], [ 13.246923, 11.845262 ], [ 13.249628, 11.835104 ], [ 13.254966000000138, 11.823524 ], [ 13.257135, 11.820501000000149 ], [ 13.258687, 11.805527 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.852751999613815, 13.19961491559348], { "type": "Polygon", "coordinates": [ [ [ 13.258687, 11.805527 ], [ 13.253792, 11.793154 ], [ 13.249997, 11.790679 ], [ 13.237925, 11.780496 ], [ 13.230763, 11.781300000000101 ], [ 13.227126, 11.788714 ], [ 13.222315, 11.794077 ], [ 13.211774000000105, 11.800896 ], [ 13.193650000000103, 11.802075 ], [ 13.1815, 11.801555 ], [ 13.161924, 11.805514 ], [ 13.142641, 11.802795000000117 ], [ 13.136936, 11.802385000000129 ], [ 13.138044, 11.811143 ], [ 13.145806000000107, 11.823688 ], [ 13.154955, 11.841734 ], [ 13.159349000000132, 11.85823500000015 ], [ 13.164019, 11.869902 ], [ 13.164313, 11.892445 ], [ 13.162253, 11.911111 ], [ 13.162305000000117, 11.933886 ], [ 13.160352000000159, 11.939666 ], [ 13.156951, 11.95572 ], [ 13.157364, 11.955353 ], [ 13.166237, 11.948787000000152 ], [ 13.172978, 11.940409000000102 ], [ 13.179241, 11.932266 ], [ 13.190521, 11.922675 ], [ 13.204173, 11.914199 ], [ 13.217107000000112, 11.906653 ], [ 13.228858, 11.897744000000102 ], [ 13.233501, 11.883645000000115 ], [ 13.239096000000131, 11.86976 ], [ 13.243702, 11.860265 ], [ 13.246923, 11.845262 ], [ 13.249628, 11.835104 ], [ 13.254966000000138, 11.823524 ], [ 13.257135, 11.820501000000149 ], [ 13.258687, 11.805527 ] ] ] });</script>
 
 
   </body>

@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/abbas-tajudeen/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/a435ef24-0197-44e6-8dbd-8fe1c87206e1/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/a435ef24-0197-44e6-8dbd-8fe1c87206e1/100x100.jpeg" alt="TAJUDEEN ABBAS">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/abbas-tajudeen/"><h3 class="media-heading">TAJUDEEN ABBAS</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/zaria/">Zaria Federal</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="abbas-tajudeen">
+        <a href="/person/abbas-tajudeen/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/a435ef24-0197-44e6-8dbd-8fe1c87206e1/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/a435ef24-0197-44e6-8dbd-8fe1c87206e1/100x100.jpeg" alt="TAJUDEEN ABBAS">
+          
+        </a>
+        <a href="/person/abbas-tajudeen/">
+            <h3 class="contact-list__item__name">TAJUDEEN ABBAS</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/zaria/">Zaria Federal</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.023142951418576, 7.714277638024205], { "type": "Polygon", "coordinates": [ [ [ 7.71454, 11.069075000000112 ], [ 7.716557, 11.06864 ], [ 7.720413000000121, 11.071687 ], [ 7.726528, 11.075456000000145 ], [ 7.733099, 11.079921 ], [ 7.739881, 11.083468 ], [ 7.747815, 11.089104000000134 ], [ 7.756628, 11.093368 ], [ 7.769733, 11.099536 ], [ 7.773813000000131, 11.102355000000157 ], [ 7.78104, 11.105445 ], [ 7.781758, 11.105872 ], [ 7.78677400000015, 11.098143 ], [ 7.79126, 11.097972 ], [ 7.796504000000141, 11.087666 ], [ 7.802124000000106, 11.072065 ], [ 7.801824, 11.050395 ], [ 7.80312, 11.030587 ], [ 7.804723, 11.016778 ], [ 7.799807, 11.002189000000158 ], [ 7.794259, 10.990593000000104 ], [ 7.794079, 10.977679 ], [ 7.794735, 10.976537 ], [ 7.796600000000126, 10.965265 ], [ 7.801165, 10.954886000000158 ], [ 7.800771, 10.954245 ], [ 7.797439, 10.952085 ], [ 7.792504000000121, 10.950897 ], [ 7.777719, 10.947269 ], [ 7.760628, 10.944969 ], [ 7.735259000000155, 10.944639 ], [ 7.704507000000149, 10.944696 ], [ 7.672015000000101, 10.94865 ], [ 7.649878, 10.95481500000011 ], [ 7.632301, 10.966110000000128 ], [ 7.625984, 10.97986 ], [ 7.622444, 11.00079 ], [ 7.622250000000121, 11.001941 ], [ 7.625861, 11.019506000000149 ], [ 7.630531000000133, 11.032477 ], [ 7.637532000000134, 11.051699 ], [ 7.6429270000001, 11.068368 ], [ 7.642888, 11.081736000000149 ], [ 7.644265, 11.099966 ], [ 7.639403, 11.1218 ], [ 7.636288, 11.123606 ], [ 7.63629, 11.123836 ], [ 7.630485, 11.126062 ], [ 7.62153, 11.12779 ], [ 7.607842000000119, 11.128779 ], [ 7.604366, 11.131487 ], [ 7.604758, 11.131512000000157 ], [ 7.610381, 11.131578000000104 ], [ 7.622483, 11.131722000000137 ], [ 7.630321, 11.130441 ], [ 7.644844, 11.125559 ], [ 7.652668, 11.123359 ], [ 7.666062000000124, 11.118001000000104 ], [ 7.671184, 11.11507 ], [ 7.678753, 11.110560000000135 ], [ 7.688049, 11.101001 ], [ 7.698715, 11.093302 ], [ 7.704195, 11.083693 ], [ 7.709694, 11.075698 ], [ 7.711877000000129, 11.071345 ], [ 7.712543000000153, 11.070663 ], [ 7.71454, 11.069075000000112 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.023142951418576, 7.714277638024205], { "type": "Polygon", "coordinates": [ [ [ 7.71454, 11.069075000000112 ], [ 7.716557, 11.06864 ], [ 7.720413000000121, 11.071687 ], [ 7.726528, 11.075456000000145 ], [ 7.733099, 11.079921 ], [ 7.739881, 11.083468 ], [ 7.747815, 11.089104000000134 ], [ 7.756628, 11.093368 ], [ 7.769733, 11.099536 ], [ 7.773813000000131, 11.102355000000157 ], [ 7.78104, 11.105445 ], [ 7.781758, 11.105872 ], [ 7.78677400000015, 11.098143 ], [ 7.79126, 11.097972 ], [ 7.796504000000141, 11.087666 ], [ 7.802124000000106, 11.072065 ], [ 7.801824, 11.050395 ], [ 7.80312, 11.030587 ], [ 7.804723, 11.016778 ], [ 7.799807, 11.002189000000158 ], [ 7.794259, 10.990593000000104 ], [ 7.794079, 10.977679 ], [ 7.794735, 10.976537 ], [ 7.796600000000126, 10.965265 ], [ 7.801165, 10.954886000000158 ], [ 7.800771, 10.954245 ], [ 7.797439, 10.952085 ], [ 7.792504000000121, 10.950897 ], [ 7.777719, 10.947269 ], [ 7.760628, 10.944969 ], [ 7.735259000000155, 10.944639 ], [ 7.704507000000149, 10.944696 ], [ 7.672015000000101, 10.94865 ], [ 7.649878, 10.95481500000011 ], [ 7.632301, 10.966110000000128 ], [ 7.625984, 10.97986 ], [ 7.622444, 11.00079 ], [ 7.622250000000121, 11.001941 ], [ 7.625861, 11.019506000000149 ], [ 7.630531000000133, 11.032477 ], [ 7.637532000000134, 11.051699 ], [ 7.6429270000001, 11.068368 ], [ 7.642888, 11.081736000000149 ], [ 7.644265, 11.099966 ], [ 7.639403, 11.1218 ], [ 7.636288, 11.123606 ], [ 7.63629, 11.123836 ], [ 7.630485, 11.126062 ], [ 7.62153, 11.12779 ], [ 7.607842000000119, 11.128779 ], [ 7.604366, 11.131487 ], [ 7.604758, 11.131512000000157 ], [ 7.610381, 11.131578000000104 ], [ 7.622483, 11.131722000000137 ], [ 7.630321, 11.130441 ], [ 7.644844, 11.125559 ], [ 7.652668, 11.123359 ], [ 7.666062000000124, 11.118001000000104 ], [ 7.671184, 11.11507 ], [ 7.678753, 11.110560000000135 ], [ 7.688049, 11.101001 ], [ 7.698715, 11.093302 ], [ 7.704195, 11.083693 ], [ 7.709694, 11.075698 ], [ 7.711877000000129, 11.071345 ], [ 7.712543000000153, 11.070663 ], [ 7.71454, 11.069075000000112 ] ] ] });</script>
 
 
   </body>

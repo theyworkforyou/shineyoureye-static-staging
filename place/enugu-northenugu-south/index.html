@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/chime-oji/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6e824b24-29b3-43c1-aae9-15d556e014b9/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6e824b24-29b3-43c1-aae9-15d556e014b9/100x100.jpeg" alt="chime oji">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/chime-oji/"><h3 class="media-heading">chime oji</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/enugu-northenugu-south/">Enugu North/South</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">Peoples Democratic Party</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="chime-oji">
+        <a href="/person/chime-oji/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6e824b24-29b3-43c1-aae9-15d556e014b9/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/6e824b24-29b3-43c1-aae9-15d556e014b9/100x100.jpeg" alt="chime oji">
+          
+        </a>
+        <a href="/person/chime-oji/">
+            <h3 class="contact-list__item__name">chime oji</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">Peoples Democratic Party</span>,
+            <a class="test-area" href="/place/enugu-northenugu-south/">Enugu North/South</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([6.431514821256361, 7.527781188369056], { "type": "Polygon", "coordinates": [ [ [ 7.571291, 6.386734000000104 ], [ 7.564572, 6.386734000000104 ], [ 7.556516000000101, 6.386734000000104 ], [ 7.544427, 6.362559 ], [ 7.524282, 6.362559 ], [ 7.459814, 6.378678 ], [ 7.455782, 6.394793 ], [ 7.447726000000102, 6.398823 ], [ 7.43032, 6.416229000000157 ], [ 7.430195, 6.418205 ], [ 7.430151, 6.4189 ], [ 7.42993, 6.422437 ], [ 7.432749000000115, 6.425616 ], [ 7.433556, 6.432743 ], [ 7.433107, 6.447729 ], [ 7.433502, 6.448601 ], [ 7.436216, 6.454589 ], [ 7.437511, 6.463322 ], [ 7.436727, 6.471862 ], [ 7.438192, 6.476906 ], [ 7.439439000000107, 6.482645000000104 ], [ 7.439673000000141, 6.485915000000148 ], [ 7.441082, 6.484461 ], [ 7.447575, 6.486424 ], [ 7.453809, 6.486779 ], [ 7.46140000000014, 6.485498 ], [ 7.471957, 6.482093 ], [ 7.482093, 6.481232 ], [ 7.499977, 6.474476 ], [ 7.523534, 6.476152 ], [ 7.538077000000157, 6.476826 ], [ 7.555871, 6.478597 ], [ 7.572488, 6.479240000000117 ], [ 7.588895, 6.481034 ], [ 7.595596000000114, 6.481612 ], [ 7.605884000000117, 6.484085 ], [ 7.609027, 6.484842 ], [ 7.615012, 6.484049 ], [ 7.622838000000114, 6.482994 ], [ 7.630430000000159, 6.481713 ], [ 7.63755, 6.479748 ], [ 7.641692, 6.479472000000101 ], [ 7.641849, 6.4746090000001 ], [ 7.638993, 6.469127 ], [ 7.638916, 6.464289000000122 ], [ 7.639282000000151, 6.458522 ], [ 7.634291, 6.44939 ], [ 7.626989, 6.440068 ], [ 7.621546000000136, 6.431633000000146 ], [ 7.614255000000128, 6.423000000000116 ], [ 7.608619, 6.416876 ], [ 7.600451, 6.411023 ], [ 7.600555, 6.403187 ], [ 7.59287, 6.398709 ], [ 7.587238, 6.392813 ], [ 7.581618, 6.387609 ], [ 7.580902, 6.385143 ], [ 7.576661, 6.386734000000104 ], [ 7.573639, 6.386734000000104 ], [ 7.571291, 6.386734000000104 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([6.431514821256361, 7.527781188369056], { "type": "Polygon", "coordinates": [ [ [ 7.571291, 6.386734000000104 ], [ 7.564572, 6.386734000000104 ], [ 7.556516000000101, 6.386734000000104 ], [ 7.544427, 6.362559 ], [ 7.524282, 6.362559 ], [ 7.459814, 6.378678 ], [ 7.455782, 6.394793 ], [ 7.447726000000102, 6.398823 ], [ 7.43032, 6.416229000000157 ], [ 7.430195, 6.418205 ], [ 7.430151, 6.4189 ], [ 7.42993, 6.422437 ], [ 7.432749000000115, 6.425616 ], [ 7.433556, 6.432743 ], [ 7.433107, 6.447729 ], [ 7.433502, 6.448601 ], [ 7.436216, 6.454589 ], [ 7.437511, 6.463322 ], [ 7.436727, 6.471862 ], [ 7.438192, 6.476906 ], [ 7.439439000000107, 6.482645000000104 ], [ 7.439673000000141, 6.485915000000148 ], [ 7.441082, 6.484461 ], [ 7.447575, 6.486424 ], [ 7.453809, 6.486779 ], [ 7.46140000000014, 6.485498 ], [ 7.471957, 6.482093 ], [ 7.482093, 6.481232 ], [ 7.499977, 6.474476 ], [ 7.523534, 6.476152 ], [ 7.538077000000157, 6.476826 ], [ 7.555871, 6.478597 ], [ 7.572488, 6.479240000000117 ], [ 7.588895, 6.481034 ], [ 7.595596000000114, 6.481612 ], [ 7.605884000000117, 6.484085 ], [ 7.609027, 6.484842 ], [ 7.615012, 6.484049 ], [ 7.622838000000114, 6.482994 ], [ 7.630430000000159, 6.481713 ], [ 7.63755, 6.479748 ], [ 7.641692, 6.479472000000101 ], [ 7.641849, 6.4746090000001 ], [ 7.638993, 6.469127 ], [ 7.638916, 6.464289000000122 ], [ 7.639282000000151, 6.458522 ], [ 7.634291, 6.44939 ], [ 7.626989, 6.440068 ], [ 7.621546000000136, 6.431633000000146 ], [ 7.614255000000128, 6.423000000000116 ], [ 7.608619, 6.416876 ], [ 7.600451, 6.411023 ], [ 7.600555, 6.403187 ], [ 7.59287, 6.398709 ], [ 7.587238, 6.392813 ], [ 7.581618, 6.387609 ], [ 7.580902, 6.385143 ], [ 7.576661, 6.386734000000104 ], [ 7.573639, 6.386734000000104 ], [ 7.571291, 6.386734000000104 ] ] ] });</script>
 
 
   </body>

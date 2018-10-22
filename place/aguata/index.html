@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/azodo-okwunna-eucharia/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2042f878-8ec3-4d2e-a7ac-d5cba38fdd56/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2042f878-8ec3-4d2e-a7ac-d5cba38fdd56/100x100.jpeg" alt="Eucharia Okwunna">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/azodo-okwunna-eucharia/"><h3 class="media-heading">Eucharia Okwunna</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/aguata/">Aguta</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">Peoples Democratic Party</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="azodo-okwunna-eucharia">
+        <a href="/person/azodo-okwunna-eucharia/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2042f878-8ec3-4d2e-a7ac-d5cba38fdd56/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2042f878-8ec3-4d2e-a7ac-d5cba38fdd56/100x100.jpeg" alt="Eucharia Okwunna">
+          
+        </a>
+        <a href="/person/azodo-okwunna-eucharia/">
+            <h3 class="contact-list__item__name">Eucharia Okwunna</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">Peoples Democratic Party</span>,
+            <a class="test-area" href="/place/aguata/">Aguta</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([5.974717773995672, 7.046606472623368], { "type": "Polygon", "coordinates": [ [ [ 7.084374, 6.009619 ], [ 7.088181, 6.002413000000161 ], [ 7.091255, 5.992913000000158 ], [ 7.094391000000144, 5.987099 ], [ 7.098466, 5.982422 ], [ 7.105776, 5.977921000000151 ], [ 7.111396, 5.968839 ], [ 7.119421000000102, 5.965707000000123 ], [ 7.129750000000115, 5.962537 ], [ 7.132583, 5.962637000000143 ], [ 7.13132, 5.959745000000111 ], [ 7.131252, 5.955599 ], [ 7.13071600000012, 5.951 ], [ 7.130869000000131, 5.946159 ], [ 7.131486, 5.941539 ], [ 7.131872, 5.936926000000142 ], [ 7.130408, 5.93188 ], [ 7.128968, 5.928448 ], [ 7.127256000000159, 5.922486 ], [ 7.125091000000111, 5.916993 ], [ 7.123569, 5.91527200000013 ], [ 7.118874000000119, 5.91666 ], [ 7.100251, 5.921592 ], [ 7.077195, 5.923600000000135 ], [ 7.071652, 5.923365 ], [ 7.053861, 5.922613 ], [ 7.034322, 5.918085 ], [ 7.031772000000103, 5.923644 ], [ 7.037180000000149, 5.930002000000115 ], [ 7.029867, 5.934273 ], [ 7.023702, 5.938066 ], [ 7.015016, 5.943053000000134 ], [ 7.008149, 5.946394 ], [ 6.996448, 5.950278 ], [ 6.984263000000111, 5.953019000000154 ], [ 6.976733, 5.957988 ], [ 6.972628, 5.961051 ], [ 6.969725, 5.966861 ], [ 6.969495, 5.966865 ], [ 6.967712, 5.970813 ], [ 6.961524, 5.973222 ], [ 6.960519, 5.982454 ], [ 6.95969, 5.988230000000101 ], [ 6.959366000000159, 5.99676 ], [ 6.959997000000158, 5.997864 ], [ 6.961978000000101, 6.001323 ], [ 6.965964, 6.005405 ], [ 6.968063, 6.006752 ], [ 6.973399, 6.008505 ], [ 6.9780090000001, 6.008425 ], [ 6.98170400000015, 6.008594 ], [ 6.987552000000107, 6.013565 ], [ 6.991532, 6.017184000000157 ], [ 6.996899, 6.02101 ], [ 7.005712, 6.023855 ], [ 7.011978, 6.026284 ], [ 7.016219, 6.031743 ], [ 7.020121, 6.034715000000119 ], [ 7.020657, 6.035125000000107 ], [ 7.030366, 6.036342000000103 ], [ 7.039605, 6.037106 ], [ 7.04652, 6.036759000000131 ], [ 7.056631000000152, 6.034284 ], [ 7.067395, 6.029493 ], [ 7.074697000000128, 6.024529 ], [ 7.08083, 6.018665 ], [ 7.084374, 6.009619 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([5.974717773995672, 7.046606472623368], { "type": "Polygon", "coordinates": [ [ [ 7.084374, 6.009619 ], [ 7.088181, 6.002413000000161 ], [ 7.091255, 5.992913000000158 ], [ 7.094391000000144, 5.987099 ], [ 7.098466, 5.982422 ], [ 7.105776, 5.977921000000151 ], [ 7.111396, 5.968839 ], [ 7.119421000000102, 5.965707000000123 ], [ 7.129750000000115, 5.962537 ], [ 7.132583, 5.962637000000143 ], [ 7.13132, 5.959745000000111 ], [ 7.131252, 5.955599 ], [ 7.13071600000012, 5.951 ], [ 7.130869000000131, 5.946159 ], [ 7.131486, 5.941539 ], [ 7.131872, 5.936926000000142 ], [ 7.130408, 5.93188 ], [ 7.128968, 5.928448 ], [ 7.127256000000159, 5.922486 ], [ 7.125091000000111, 5.916993 ], [ 7.123569, 5.91527200000013 ], [ 7.118874000000119, 5.91666 ], [ 7.100251, 5.921592 ], [ 7.077195, 5.923600000000135 ], [ 7.071652, 5.923365 ], [ 7.053861, 5.922613 ], [ 7.034322, 5.918085 ], [ 7.031772000000103, 5.923644 ], [ 7.037180000000149, 5.930002000000115 ], [ 7.029867, 5.934273 ], [ 7.023702, 5.938066 ], [ 7.015016, 5.943053000000134 ], [ 7.008149, 5.946394 ], [ 6.996448, 5.950278 ], [ 6.984263000000111, 5.953019000000154 ], [ 6.976733, 5.957988 ], [ 6.972628, 5.961051 ], [ 6.969725, 5.966861 ], [ 6.969495, 5.966865 ], [ 6.967712, 5.970813 ], [ 6.961524, 5.973222 ], [ 6.960519, 5.982454 ], [ 6.95969, 5.988230000000101 ], [ 6.959366000000159, 5.99676 ], [ 6.959997000000158, 5.997864 ], [ 6.961978000000101, 6.001323 ], [ 6.965964, 6.005405 ], [ 6.968063, 6.006752 ], [ 6.973399, 6.008505 ], [ 6.9780090000001, 6.008425 ], [ 6.98170400000015, 6.008594 ], [ 6.987552000000107, 6.013565 ], [ 6.991532, 6.017184000000157 ], [ 6.996899, 6.02101 ], [ 7.005712, 6.023855 ], [ 7.011978, 6.026284 ], [ 7.016219, 6.031743 ], [ 7.020121, 6.034715000000119 ], [ 7.020657, 6.035125000000107 ], [ 7.030366, 6.036342000000103 ], [ 7.039605, 6.037106 ], [ 7.04652, 6.036759000000131 ], [ 7.056631000000152, 6.034284 ], [ 7.067395, 6.029493 ], [ 7.074697000000128, 6.024529 ], [ 7.08083, 6.018665 ], [ 7.084374, 6.009619 ] ] ] });</script>
 
 
   </body>

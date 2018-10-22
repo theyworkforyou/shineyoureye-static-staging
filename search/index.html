@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -123,9 +123,9 @@
         <!-- {% include breadcrumbs.html %} -->
         <div class="page-section">
           <div class="container">
-             <form class="big-form big-form--short" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+             <form class="big-form big-form--short js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
     <h1>Find your representative</h1>
-    <label for="search-input">Enter your Polling Unit (PU) number</label>
+    <label for="search-input" class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</label>
     <p class="input-group">
         <input name="pu-number" id="search-input" type="search" class="form-control input-lg" placeholder="e.g. 1:1:1">
         <span class="input-group-btn">
@@ -133,6 +133,12 @@
         </span>
     </p>
 </form>
+
+<div class="row">
+    <div class="col-md-10 col-md-push-1">
+        <gcse:searchresults-only></gcse:searchresults-only>
+    </div>
+</div>
 
           </div>
         </div>
@@ -167,6 +173,18 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
 
   </body>

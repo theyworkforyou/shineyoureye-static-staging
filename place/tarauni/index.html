@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/nasiru-baballe-ila/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8010d5b9-a35e-4b8b-bbf9-74cdd1507c4b/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8010d5b9-a35e-4b8b-bbf9-74cdd1507c4b/100x100.jpeg" alt="NASIRU ILA">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/nasiru-baballe-ila/"><h3 class="media-heading">NASIRU ILA</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/tarauni/">Tarauni</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="nasiru-baballe-ila">
+        <a href="/person/nasiru-baballe-ila/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8010d5b9-a35e-4b8b-bbf9-74cdd1507c4b/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/8010d5b9-a35e-4b8b-bbf9-74cdd1507c4b/100x100.jpeg" alt="NASIRU ILA">
+          
+        </a>
+        <a href="/person/nasiru-baballe-ila/">
+            <h3 class="contact-list__item__name">NASIRU ILA</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/tarauni/">Tarauni</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.954979172007775, 8.528279735680634], { "type": "Polygon", "coordinates": [ [ [ 8.511763, 11.988357 ], [ 8.51868, 11.988057 ], [ 8.526908000000105, 11.988107 ], [ 8.526258, 11.98671400000012 ], [ 8.527471, 11.971909000000153 ], [ 8.532428, 11.971941000000129 ], [ 8.531869, 11.963606 ], [ 8.538082, 11.959479 ], [ 8.545171, 11.959057 ], [ 8.561416, 11.961243000000138 ], [ 8.562168, 11.961163 ], [ 8.561893, 11.961015 ], [ 8.560354, 11.954756 ], [ 8.562996, 11.952226000000108 ], [ 8.566382, 11.947618 ], [ 8.567141000000106, 11.947098 ], [ 8.564757, 11.946218 ], [ 8.557954, 11.943862000000138 ], [ 8.550032, 11.938257 ], [ 8.537841, 11.933784000000117 ], [ 8.528861, 11.934424000000147 ], [ 8.520604, 11.934141 ], [ 8.517386, 11.929492 ], [ 8.504775, 11.926534000000117 ], [ 8.509605, 11.941943 ], [ 8.509534000000144, 11.958838 ], [ 8.503512, 11.965511000000106 ], [ 8.503367, 11.965573 ], [ 8.506218, 11.972472 ], [ 8.507328, 11.976415 ], [ 8.510038000000121, 11.983143 ], [ 8.511763, 11.988357 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.954979172007775, 8.528279735680634], { "type": "Polygon", "coordinates": [ [ [ 8.511763, 11.988357 ], [ 8.51868, 11.988057 ], [ 8.526908000000105, 11.988107 ], [ 8.526258, 11.98671400000012 ], [ 8.527471, 11.971909000000153 ], [ 8.532428, 11.971941000000129 ], [ 8.531869, 11.963606 ], [ 8.538082, 11.959479 ], [ 8.545171, 11.959057 ], [ 8.561416, 11.961243000000138 ], [ 8.562168, 11.961163 ], [ 8.561893, 11.961015 ], [ 8.560354, 11.954756 ], [ 8.562996, 11.952226000000108 ], [ 8.566382, 11.947618 ], [ 8.567141000000106, 11.947098 ], [ 8.564757, 11.946218 ], [ 8.557954, 11.943862000000138 ], [ 8.550032, 11.938257 ], [ 8.537841, 11.933784000000117 ], [ 8.528861, 11.934424000000147 ], [ 8.520604, 11.934141 ], [ 8.517386, 11.929492 ], [ 8.504775, 11.926534000000117 ], [ 8.509605, 11.941943 ], [ 8.509534000000144, 11.958838 ], [ 8.503512, 11.965511000000106 ], [ 8.503367, 11.965573 ], [ 8.506218, 11.972472 ], [ 8.507328, 11.976415 ], [ 8.510038000000121, 11.983143 ], [ 8.511763, 11.988357 ] ] ] });</script>
 
 
   </body>

@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/aliyu-sani-madaki/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5417f0ae-48a3-4e36-8d4b-820b75dfc976/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5417f0ae-48a3-4e36-8d4b-820b75dfc976/100x100.jpeg" alt="ALIYU MADAKI">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/aliyu-sani-madaki/"><h3 class="media-heading">ALIYU MADAKI</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/dala/">Dala</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="aliyu-sani-madaki">
+        <a href="/person/aliyu-sani-madaki/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5417f0ae-48a3-4e36-8d4b-820b75dfc976/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/5417f0ae-48a3-4e36-8d4b-820b75dfc976/100x100.jpeg" alt="ALIYU MADAKI">
+          
+        </a>
+        <a href="/person/aliyu-sani-madaki/">
+            <h3 class="contact-list__item__name">ALIYU MADAKI</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/dala/">Dala</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.998378119356763, 8.462519288253043], { "type": "Polygon", "coordinates": [ [ [ 8.433347, 11.975444 ], [ 8.430186000000106, 11.974858 ], [ 8.429149000000109, 11.980223 ], [ 8.431745000000149, 11.989472 ], [ 8.435198, 11.99574 ], [ 8.43953, 12.000635000000159 ], [ 8.441155000000151, 12.0045760000001 ], [ 8.445481000000141, 12.009009 ], [ 8.45117, 12.014385 ], [ 8.455496, 12.018818 ], [ 8.464751, 12.022631 ], [ 8.47041, 12.025934 ], [ 8.482298000000128, 12.029031 ], [ 8.487018, 12.029058 ], [ 8.484286000000111, 12.023486000000105 ], [ 8.480140000000119, 12.017906 ], [ 8.481432, 12.011664 ], [ 8.481968, 12.008197 ], [ 8.487923000000137, 12.005225 ], [ 8.48605, 11.991325 ], [ 8.499073, 11.989094 ], [ 8.501559, 11.988907 ], [ 8.500509, 11.987943 ], [ 8.489017, 11.983938000000137 ], [ 8.480799000000104, 11.981572 ], [ 8.464065, 11.980312000000138 ], [ 8.457007, 11.979111 ], [ 8.448059000000114, 11.977898 ], [ 8.433347, 11.975444 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.998378119356763, 8.462519288253043], { "type": "Polygon", "coordinates": [ [ [ 8.433347, 11.975444 ], [ 8.430186000000106, 11.974858 ], [ 8.429149000000109, 11.980223 ], [ 8.431745000000149, 11.989472 ], [ 8.435198, 11.99574 ], [ 8.43953, 12.000635000000159 ], [ 8.441155000000151, 12.0045760000001 ], [ 8.445481000000141, 12.009009 ], [ 8.45117, 12.014385 ], [ 8.455496, 12.018818 ], [ 8.464751, 12.022631 ], [ 8.47041, 12.025934 ], [ 8.482298000000128, 12.029031 ], [ 8.487018, 12.029058 ], [ 8.484286000000111, 12.023486000000105 ], [ 8.480140000000119, 12.017906 ], [ 8.481432, 12.011664 ], [ 8.481968, 12.008197 ], [ 8.487923000000137, 12.005225 ], [ 8.48605, 11.991325 ], [ 8.499073, 11.989094 ], [ 8.501559, 11.988907 ], [ 8.500509, 11.987943 ], [ 8.489017, 11.983938000000137 ], [ 8.480799000000104, 11.981572 ], [ 8.464065, 11.980312000000138 ], [ 8.457007, 11.979111 ], [ 8.448059000000114, 11.977898 ], [ 8.433347, 11.975444 ] ] ] });</script>
 
 
   </body>

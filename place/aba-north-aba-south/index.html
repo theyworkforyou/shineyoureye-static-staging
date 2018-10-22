@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/prestige-ossy/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2d5472ed-c775-4af9-9277-87c97ed667b4/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2d5472ed-c775-4af9-9277-87c97ed667b4/100x100.jpeg" alt="PRESTIGE OSSY">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/prestige-ossy/"><h3 class="media-heading">PRESTIGE OSSY</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/aba-north-aba-south/">Aba North/South</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Grand Alliance</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="prestige-ossy">
+        <a href="/person/prestige-ossy/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2d5472ed-c775-4af9-9277-87c97ed667b4/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/2d5472ed-c775-4af9-9277-87c97ed667b4/100x100.jpeg" alt="PRESTIGE OSSY">
+          
+        </a>
+        <a href="/person/prestige-ossy/">
+            <h3 class="contact-list__item__name">PRESTIGE OSSY</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Grand Alliance</span>,
+            <a class="test-area" href="/place/aba-north-aba-south/">Aba North/South</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([5.0791078750425065, 7.346415184935368], { "type": "Polygon", "coordinates": [ [ [ 7.378114, 5.056952 ], [ 7.377601, 5.056022 ], [ 7.375226, 5.051913 ], [ 7.371489, 5.048982 ], [ 7.365684000000101, 5.046546 ], [ 7.359879, 5.044339 ], [ 7.351997, 5.041939000000126 ], [ 7.344346, 5.039533 ], [ 7.3374, 5.037807 ], [ 7.330929, 5.037226 ], [ 7.324721, 5.038484 ], [ 7.317352, 5.0393 ], [ 7.312069, 5.040772 ], [ 7.307035, 5.043161 ], [ 7.304115, 5.04805 ], [ 7.300496, 5.052487000000156 ], [ 7.300619, 5.06009 ], [ 7.299621, 5.069784 ], [ 7.299919, 5.073927 ], [ 7.302043, 5.076885 ], [ 7.306481, 5.080268000000159 ], [ 7.309729, 5.081364 ], [ 7.31276, 5.083388 ], [ 7.314784, 5.088024 ], [ 7.315155, 5.088876 ], [ 7.316577, 5.091157000000123 ], [ 7.319401, 5.094565 ], [ 7.321313, 5.098681 ], [ 7.323656, 5.100946 ], [ 7.328114, 5.105707 ], [ 7.333981, 5.111829 ], [ 7.337514, 5.116148 ], [ 7.341971, 5.120911000000149 ], [ 7.347578, 5.125194000000135 ], [ 7.349928, 5.128218 ], [ 7.350625, 5.128139 ], [ 7.356152000000121, 5.127582 ], [ 7.365351, 5.1258160000001 ], [ 7.371997, 5.123168 ], [ 7.377715, 5.120075 ], [ 7.379064000000142, 5.117980000000102 ], [ 7.383584, 5.112141 ], [ 7.385168, 5.108087 ], [ 7.385578, 5.107038000000159 ], [ 7.385255, 5.101284000000135 ], [ 7.384874, 5.092074000000139 ], [ 7.386374000000102, 5.084906 ], [ 7.386711000000105, 5.077296000000104 ], [ 7.384509, 5.069499000000121 ], [ 7.383509, 5.064676 ], [ 7.379741, 5.059901 ], [ 7.379607000000135, 5.059664000000111 ], [ 7.378114, 5.056952 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([5.0791078750425065, 7.346415184935368], { "type": "Polygon", "coordinates": [ [ [ 7.378114, 5.056952 ], [ 7.377601, 5.056022 ], [ 7.375226, 5.051913 ], [ 7.371489, 5.048982 ], [ 7.365684000000101, 5.046546 ], [ 7.359879, 5.044339 ], [ 7.351997, 5.041939000000126 ], [ 7.344346, 5.039533 ], [ 7.3374, 5.037807 ], [ 7.330929, 5.037226 ], [ 7.324721, 5.038484 ], [ 7.317352, 5.0393 ], [ 7.312069, 5.040772 ], [ 7.307035, 5.043161 ], [ 7.304115, 5.04805 ], [ 7.300496, 5.052487000000156 ], [ 7.300619, 5.06009 ], [ 7.299621, 5.069784 ], [ 7.299919, 5.073927 ], [ 7.302043, 5.076885 ], [ 7.306481, 5.080268000000159 ], [ 7.309729, 5.081364 ], [ 7.31276, 5.083388 ], [ 7.314784, 5.088024 ], [ 7.315155, 5.088876 ], [ 7.316577, 5.091157000000123 ], [ 7.319401, 5.094565 ], [ 7.321313, 5.098681 ], [ 7.323656, 5.100946 ], [ 7.328114, 5.105707 ], [ 7.333981, 5.111829 ], [ 7.337514, 5.116148 ], [ 7.341971, 5.120911000000149 ], [ 7.347578, 5.125194000000135 ], [ 7.349928, 5.128218 ], [ 7.350625, 5.128139 ], [ 7.356152000000121, 5.127582 ], [ 7.365351, 5.1258160000001 ], [ 7.371997, 5.123168 ], [ 7.377715, 5.120075 ], [ 7.379064000000142, 5.117980000000102 ], [ 7.383584, 5.112141 ], [ 7.385168, 5.108087 ], [ 7.385578, 5.107038000000159 ], [ 7.385255, 5.101284000000135 ], [ 7.384874, 5.092074000000139 ], [ 7.386374000000102, 5.084906 ], [ 7.386711000000105, 5.077296000000104 ], [ 7.384509, 5.069499000000121 ], [ 7.383509, 5.064676 ], [ 7.379741, 5.059901 ], [ 7.379607000000135, 5.059664000000111 ], [ 7.378114, 5.056952 ] ] ] });</script>
 
 
   </body>

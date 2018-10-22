@@ -98,10 +98,10 @@
     <div class="site-header">
   <div class="container">
 
-    <form class="site-header__search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
       <label for="site-search">
         <strong>Find your representative</strong>
-        <span>Enter your Polling Unit (PU) number</span>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
       </label>
       <p>
         <span class="input-group">
@@ -170,29 +170,23 @@
 
         <section class="person__section">
             <h2>People</h2>
-            <ul class="media-list media-list--people">
+            <ul class="contact-list">
   
-    <li class="media">
-        <div class="media-left">
-            <a href="/person/garba-datti-muhammad/">
-              
-                <img class="media-object" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ba282346-4ec2-4712-9d47-d463d46da0f9/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ba282346-4ec2-4712-9d47-d463d46da0f9/100x100.jpeg" alt="GARBA MUHAMMAD">
-              
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="/person/garba-datti-muhammad/"><h3 class="media-heading">GARBA MUHAMMAD</h3></a>
-            
-            <p>
-              Federal Constituency:
-              <a class="listing__area" href="/place/sabon-gari/">Sabon Gari</a>
-            </p>
-            
-            <p>
-              Party:
-              <span class="listing__party">All Progressives Congress</span>
-            </p>
-        </div>
+    <li class="contact-list__item" id="garba-datti-muhammad">
+        <a href="/person/garba-datti-muhammad/">
+          
+            <img class="contact-list__item__photo" src="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ba282346-4ec2-4712-9d47-d463d46da0f9/100x100.jpeg" srcset="https://theyworkforyou.github.io/shineyoureye-images/Representatives/ba282346-4ec2-4712-9d47-d463d46da0f9/100x100.jpeg" alt="GARBA MUHAMMAD">
+          
+        </a>
+        <a href="/person/garba-datti-muhammad/">
+            <h3 class="contact-list__item__name">GARBA MUHAMMAD</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="test-area" href="/place/sabon-gari/">Sabon Gari</a>
+          
+        </p>
     </li>
   
 </ul>
@@ -215,9 +209,6 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="/javascripts/show-map.js"></script>
-<script>LeafletMap.showMap([11.15950156980758, 7.688105021309089], { "type": "Polygon", "coordinates": [ [ [ 7.669014000000118, 11.201256000000114 ], [ 7.678794, 11.194238000000153 ], [ 7.690944, 11.196239 ], [ 7.707853, 11.201531000000159 ], [ 7.718473, 11.206744 ], [ 7.732634, 11.208082 ], [ 7.745821, 11.203874 ], [ 7.763979, 11.202268 ], [ 7.769633000000112, 11.189201 ], [ 7.777959, 11.174558 ], [ 7.782059000000118, 11.162624 ], [ 7.782838, 11.154107 ], [ 7.783618000000104, 11.145588 ], [ 7.782838, 11.137971 ], [ 7.783597000000156, 11.128068 ], [ 7.78329, 11.122072 ], [ 7.783062000000142, 11.119667000000106 ], [ 7.782765, 11.116531 ], [ 7.782989000000156, 11.116533 ], [ 7.777311, 11.111850000000118 ], [ 7.772325, 11.108328 ], [ 7.780840000000126, 11.107285 ], [ 7.781758, 11.105872 ], [ 7.78104, 11.105445 ], [ 7.773813000000131, 11.102355000000157 ], [ 7.769733, 11.099536 ], [ 7.756628, 11.093368 ], [ 7.747815, 11.089104000000134 ], [ 7.739881, 11.083468 ], [ 7.733099, 11.079921 ], [ 7.726528, 11.075456000000145 ], [ 7.720413000000121, 11.071687 ], [ 7.716557, 11.06864 ], [ 7.71454, 11.069075000000112 ], [ 7.712543000000153, 11.070663 ], [ 7.711877000000129, 11.071345 ], [ 7.709694, 11.075698 ], [ 7.704195, 11.083693 ], [ 7.698715, 11.093302 ], [ 7.688049, 11.101001 ], [ 7.678753, 11.110560000000135 ], [ 7.671184, 11.11507 ], [ 7.666062000000124, 11.118001000000104 ], [ 7.652668, 11.123359 ], [ 7.644844, 11.125559 ], [ 7.630321, 11.130441 ], [ 7.622483, 11.131722000000137 ], [ 7.610381, 11.131578000000104 ], [ 7.604758, 11.131512000000157 ], [ 7.604366, 11.131487 ], [ 7.591496, 11.141510000000153 ], [ 7.590156, 11.170335 ], [ 7.594322, 11.19092 ], [ 7.60012, 11.211981 ], [ 7.603518, 11.23717 ], [ 7.621248000000151, 11.242916 ], [ 7.633329, 11.250439 ], [ 7.6368, 11.255059 ], [ 7.638893, 11.254888 ], [ 7.642913, 11.252167 ], [ 7.644137, 11.248488000000123 ], [ 7.648490000000152, 11.23885 ], [ 7.651667000000145, 11.22942600000016 ], [ 7.655533, 11.221166 ], [ 7.663881, 11.21065 ], [ 7.669014000000118, 11.201256000000114 ] ] ] });</script>
 
           </div>
         </div>
@@ -252,6 +243,21 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([11.15950156980758, 7.688105021309089], { "type": "Polygon", "coordinates": [ [ [ 7.669014000000118, 11.201256000000114 ], [ 7.678794, 11.194238000000153 ], [ 7.690944, 11.196239 ], [ 7.707853, 11.201531000000159 ], [ 7.718473, 11.206744 ], [ 7.732634, 11.208082 ], [ 7.745821, 11.203874 ], [ 7.763979, 11.202268 ], [ 7.769633000000112, 11.189201 ], [ 7.777959, 11.174558 ], [ 7.782059000000118, 11.162624 ], [ 7.782838, 11.154107 ], [ 7.783618000000104, 11.145588 ], [ 7.782838, 11.137971 ], [ 7.783597000000156, 11.128068 ], [ 7.78329, 11.122072 ], [ 7.783062000000142, 11.119667000000106 ], [ 7.782765, 11.116531 ], [ 7.782989000000156, 11.116533 ], [ 7.777311, 11.111850000000118 ], [ 7.772325, 11.108328 ], [ 7.780840000000126, 11.107285 ], [ 7.781758, 11.105872 ], [ 7.78104, 11.105445 ], [ 7.773813000000131, 11.102355000000157 ], [ 7.769733, 11.099536 ], [ 7.756628, 11.093368 ], [ 7.747815, 11.089104000000134 ], [ 7.739881, 11.083468 ], [ 7.733099, 11.079921 ], [ 7.726528, 11.075456000000145 ], [ 7.720413000000121, 11.071687 ], [ 7.716557, 11.06864 ], [ 7.71454, 11.069075000000112 ], [ 7.712543000000153, 11.070663 ], [ 7.711877000000129, 11.071345 ], [ 7.709694, 11.075698 ], [ 7.704195, 11.083693 ], [ 7.698715, 11.093302 ], [ 7.688049, 11.101001 ], [ 7.678753, 11.110560000000135 ], [ 7.671184, 11.11507 ], [ 7.666062000000124, 11.118001000000104 ], [ 7.652668, 11.123359 ], [ 7.644844, 11.125559 ], [ 7.630321, 11.130441 ], [ 7.622483, 11.131722000000137 ], [ 7.610381, 11.131578000000104 ], [ 7.604758, 11.131512000000157 ], [ 7.604366, 11.131487 ], [ 7.591496, 11.141510000000153 ], [ 7.590156, 11.170335 ], [ 7.594322, 11.19092 ], [ 7.60012, 11.211981 ], [ 7.603518, 11.23717 ], [ 7.621248000000151, 11.242916 ], [ 7.633329, 11.250439 ], [ 7.6368, 11.255059 ], [ 7.638893, 11.254888 ], [ 7.642913, 11.252167 ], [ 7.644137, 11.248488000000123 ], [ 7.648490000000152, 11.23885 ], [ 7.651667000000145, 11.22942600000016 ], [ 7.655533, 11.221166 ], [ 7.663881, 11.21065 ], [ 7.669014000000118, 11.201256000000114 ] ] ] });</script>
 
 
   </body>
