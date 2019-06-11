@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Ifelodun/Offa/Oyun :: Shine your eye</title>
+
+  
+
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body class="">
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-nationwide-continuous-voter-registration-exercise">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <!-- Hide these for now as we dont have the necessary info in EveryPolitician -->
+            <!-- <li>
+              <a href="/position/state-legislator/">State Legislators</a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Places<span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/places-overview">Places</a></li>
+            <li><a href="/place/is/state/">States</a></li>
+            <li><a href="/place/is/senatorial-district/">Senatorial Districts</a></li>
+            <li><a href="/place/is/federal-constituency/">Federal Constituencies</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/events/">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+        <li><a href="/contact/">Contact</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+      
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <div class="row">
+    <div class="col-sm-4 col-md-3">
+        <div class="person__image">
+            <div id="map-canvas"></div>
+        </div>
+
+        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Ifelodun/Offa/Oyun</h3>
+    </div>
+    <div class="panel-body">
+
+        <ul class="social-actions">
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:9292/place/ifelodun-offa-oyun/&amp;t=Ifelodun/Offa/Oyun"
+                  target="_blank"
+                  class="btn btn-block btn-facebook">Share on Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/share?via=NGShineYourEye&amp;text=Ifelodun/Offa/Oyun&amp;url=http://localhost:9292/place/ifelodun-offa-oyun/"
+                  target="_blank"
+                  class="btn btn-block btn-twitter">Share on Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="http://localhost:9292/place/ifelodun-offa-oyun/#fb-root"
+                  class="btn btn-block btn-default">Comments <span class="fb-comments-count"></span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="col-sm-8 col-md-9">
+        <header class="person__key-info">
+          <h1 class="person__name">Ifelodun/Offa/Oyun</h1>
+          <h2>Federal Constituency (House of Representatives)</h2>
+        </header>
+
+        <section class="person__section">
+            <h2>People</h2>
+            <ul class="contact-list">
+  
+    <li class="contact-list__item" id="tijani-kayode">
+        <a href="/person/tijani-kayode/">
+          
+            <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Tijani Kayode">
+          
+        </a>
+        <a href="/person/tijani-kayode/">
+            <h3 class="contact-list__item__name">Tijani Kayode</h3>
+        </a>
+        <p>
+          
+            <span class="test-party">All Progressives Congress</span>,
+            <a class="contact-list__item__area test-area" href="/place/ifelodun-offa-oyun/">Ifelodun/Offa/Oyun</a>
+          
+        </p>
+    </li>
+  
+</ul>
+
+        </section>
+
+        <section class="person__section">
+            <h2>Comments</h2>
+            <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments"></div>
+
+        </section>
+    </div>
+</div>
+
+
+          </div>
+        </div>
+
+      
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="site-footer__primary">
+      <h3>Shine Your Eye</h3>
+      <p>Shine your Eye is an initiative of <a href="http://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="http://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>. <a href="/info/about">Read more.</a></p>
+      <ul class="list-inline">
+        <li><a href="mailto:syeinfo@eienigeria.org">syeinfo@eienigeria.org</a></li>
+        <li><a href="https://twitter.com/NGShineYourEye">@NGShineYourEye</a></li>
+      </ul>
+    </div>
+    <div class="site-footer__secondary">
+      <ul class="list-inline">
+        <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+        <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+        <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+        <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+        <li><a class="btn btn-default" href="/events/">Events</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="/javascripts/show-map.js"></script>
+    <script>LeafletMap.showMap([8.475717387333294, 5.009849310371763], { "type": "Polygon", "coordinates": [ [ [ 4.762380000000121, 8.170564 ], [ 4.766819, 8.156283 ], [ 4.771439, 8.142378 ], [ 4.776319, 8.130316 ], [ 4.780747000000133, 8.118948 ], [ 4.782308, 8.10141 ], [ 4.785615, 8.091906 ], [ 4.789324, 8.078710000000115 ], [ 4.794445, 8.067332 ], [ 4.794376, 8.063045 ], [ 4.788537, 8.061518000000149 ], [ 4.765782, 8.053601 ], [ 4.752463, 8.043677 ], [ 4.731326, 8.035732 ], [ 4.707961, 8.0328990000001 ], [ 4.689224, 8.030682 ], [ 4.664523, 8.030873000000156 ], [ 4.651438, 8.035479 ], [ 4.62005, 8.036245 ], [ 4.596921, 8.03364 ], [ 4.573667000000114, 8.037726 ], [ 4.555626, 8.034155000000112 ], [ 4.547694000000149, 8.044860000000142 ], [ 4.541472000000113, 8.04566 ], [ 4.53731, 8.045268 ], [ 4.531335, 8.046984 ], [ 4.529035000000135, 8.047486 ], [ 4.524392, 8.045952 ], [ 4.520301, 8.049943 ], [ 4.516023, 8.056705 ], [ 4.512862, 8.061142000000132 ], [ 4.510857000000101, 8.065559 ], [ 4.509541000000127, 8.069965 ], [ 4.504712, 8.085504 ], [ 4.500546000000156, 8.09703 ], [ 4.5029, 8.098308 ], [ 4.514029, 8.101807 ], [ 4.525366000000133, 8.103689 ], [ 4.533930000000112, 8.105617000000107 ], [ 4.544829, 8.10912 ], [ 4.553873, 8.111962 ], [ 4.558980000000133, 8.11395 ], [ 4.567796, 8.117024 ], [ 4.573638, 8.121765 ], [ 4.583176000000151, 8.126672000000156 ], [ 4.59343, 8.132951000000105 ], [ 4.601343000000156, 8.137425 ], [ 4.604609, 8.139674 ], [ 4.613892, 8.142975 ], [ 4.61909, 8.150719 ], [ 4.617212, 8.162965 ], [ 4.610414, 8.170452 ], [ 4.601767, 8.177743 ], [ 4.595412, 8.1843 ], [ 4.591365, 8.190821 ], [ 4.589172000000133, 8.197772 ], [ 4.587185, 8.2033330000001 ], [ 4.591941, 8.21224 ], [ 4.592997, 8.220285000000104 ], [ 4.595157, 8.22555 ], [ 4.59757500000012, 8.232422000000156 ], [ 4.608239000000139, 8.235697 ], [ 4.616599, 8.239011 ], [ 4.619567, 8.251402 ], [ 4.623863, 8.260316 ], [ 4.630242000000123, 8.269656 ], [ 4.639498, 8.28563 ], [ 4.642616, 8.292949 ], [ 4.644058000000143, 8.296613 ], [ 4.657305, 8.302608 ], [ 4.663659, 8.310336 ], [ 4.66765000000015, 8.314644000000101 ], [ 4.672552, 8.318249000000151 ], [ 4.676402, 8.328091 ], [ 4.679018000000156, 8.332886 ], [ 4.683155, 8.33568 ], [ 4.682776, 8.336138 ], [ 4.682083, 8.336984 ], [ 4.669621, 8.351019000000122 ], [ 4.659404, 8.361099000000138 ], [ 4.650303000000121, 8.368858000000159 ], [ 4.641706, 8.379371000000106 ], [ 4.629852, 8.388098000000126 ], [ 4.625128, 8.395551 ], [ 4.61876, 8.401189 ], [ 4.614885, 8.40402 ], [ 4.614746000000139, 8.406532 ], [ 4.617898, 8.404893 ], [ 4.622730000000104, 8.404118 ], [ 4.625939, 8.402910000000134 ], [ 4.632836, 8.401413000000105 ], [ 4.647067, 8.397023000000104 ], [ 4.656031000000154, 8.395029 ], [ 4.664532, 8.392811 ], [ 4.674485, 8.394947 ], [ 4.689352, 8.38709100000011 ], [ 4.702331000000129, 8.376502 ], [ 4.720929, 8.371118 ], [ 4.740226000000121, 8.366182 ], [ 4.753888, 8.369407 ], [ 4.76116, 8.376887000000124 ], [ 4.766879, 8.388082 ], [ 4.771927000000118, 8.400670000000105 ], [ 4.773249, 8.411015 ], [ 4.77037700000011, 8.418898 ], [ 4.766655, 8.431404000000157 ], [ 4.758327, 8.444217 ], [ 4.751299, 8.451709 ], [ 4.74396, 8.454368 ], [ 4.735486000000151, 8.4582 ], [ 4.725232000000119, 8.465978 ], [ 4.71444, 8.469155 ], [ 4.706684, 8.474587 ], [ 4.699462, 8.484385000000145 ], [ 4.692893, 8.491874 ], [ 4.692308, 8.498333000000116 ], [ 4.697969, 8.503584000000103 ], [ 4.698160000000144, 8.503764 ], [ 4.705223000000103, 8.51263 ], [ 4.712207000000149, 8.516429 ], [ 4.71764, 8.524402 ], [ 4.725599000000102, 8.53141 ], [ 4.73097300000012, 8.535697 ], [ 4.74282, 8.540796 ], [ 4.757682000000102, 8.546765000000107 ], [ 4.775473, 8.548538 ], [ 4.787509, 8.551100000000133 ], [ 4.798144, 8.552531 ], [ 4.819643, 8.555393 ], [ 4.838908, 8.562671 ], [ 4.865985, 8.567972000000111 ], [ 4.88773, 8.57175100000012 ], [ 4.906348, 8.581804 ], [ 4.921495, 8.591226 ], [ 4.939174, 8.600372 ], [ 4.952658, 8.606827000000123 ], [ 4.959413, 8.610861000000114 ], [ 4.96987, 8.615522000000112 ], [ 4.98271700000015, 8.625443000000132 ], [ 4.993286000000126, 8.637014 ], [ 4.999129, 8.641754 ], [ 5.001969, 8.646085 ], [ 5.00302900000014, 8.65459 ], [ 5.00173, 8.659915 ], [ 4.994444, 8.665797 ], [ 4.985238, 8.667105 ], [ 4.980826, 8.665337 ], [ 4.974834, 8.665669 ], [ 4.965679000000137, 8.670203 ], [ 4.960145, 8.670296000000121 ], [ 4.956883000000118, 8.668277 ], [ 4.948173000000111, 8.671652 ], [ 4.941312000000153, 8.675454 ], [ 4.936264000000108, 8.677152 ], [ 4.930083, 8.680021 ], [ 4.92298600000015, 8.683369 ], [ 4.919057, 8.682975 ], [ 4.915513, 8.67773300000016 ], [ 4.905926, 8.684117 ], [ 4.89701, 8.689108 ], [ 4.889296000000115, 8.6970740000001 ], [ 4.881619000000114, 8.707341000000156 ], [ 4.877613, 8.716394 ], [ 4.875835000000109, 8.720571 ], [ 4.875796, 8.720979 ], [ 4.87578, 8.721155 ], [ 4.87632, 8.721948000000111 ], [ 4.875637, 8.736705 ], [ 4.869855, 8.750168 ], [ 4.865864, 8.760142000000144 ], [ 4.857265000000154, 8.77042800000015 ], [ 4.851612000000159, 8.777436 ], [ 4.843211, 8.785873 ], [ 4.833965, 8.798933 ], [ 4.82725100000016, 8.811721 ], [ 4.823057, 8.823310000000106 ], [ 4.820675, 8.833029000000122 ], [ 4.81606, 8.847164 ], [ 4.814923, 8.862391 ], [ 4.815846, 8.87666 ], [ 4.811992, 8.895158 ], [ 4.815007, 8.910316 ], [ 4.819675, 8.927977 ], [ 4.821216, 8.93763 ], [ 4.824671, 8.951628 ], [ 4.832171, 8.958873 ], [ 4.836502, 8.969861 ], [ 4.845377, 8.976621 ], [ 4.854988, 8.986136000000158 ], [ 4.858783, 8.992525 ], [ 4.867012000000159, 8.994884 ], [ 4.871546000000137, 9.007196 ], [ 4.873273, 9.009115 ], [ 4.872806000000139, 9.009744 ], [ 4.873027, 9.013682 ], [ 4.873513, 9.015462 ], [ 4.874231, 9.018097 ], [ 4.87651, 9.023311 ], [ 4.877079, 9.024610000000109 ], [ 4.876984, 9.026349 ], [ 4.876811, 9.029472 ], [ 4.879564, 9.039459 ], [ 4.881692000000101, 9.044204 ], [ 4.881957, 9.044794 ], [ 4.88542800000016, 9.050112 ], [ 4.885911000000135, 9.050440000000151 ], [ 4.892926, 9.05524 ], [ 4.896607, 9.058494 ], [ 4.895846, 9.052514000000144 ], [ 4.896302, 9.045857 ], [ 4.896511, 9.043037 ], [ 4.896794, 9.039192000000128 ], [ 4.899739000000125, 9.031815000000108 ], [ 4.901895, 9.024891 ], [ 4.903082000000153, 9.022714 ], [ 4.905532, 9.018222 ], [ 4.906268, 9.016376 ], [ 4.907219, 9.014742 ], [ 4.908406000000127, 9.012695000000122 ], [ 4.909165, 9.011854 ], [ 4.911298000000158, 9.009488000000147 ], [ 4.913593, 9.006040000000155 ], [ 4.915592, 9.003934 ], [ 4.916422, 9.003064000000109 ], [ 4.920825, 8.999756 ], [ 4.922088, 8.999756 ], [ 4.919253, 8.99449600000014 ], [ 4.915652000000136, 8.985801000000151 ], [ 4.913486000000148, 8.980306 ], [ 4.911959000000138, 8.971347 ], [ 4.908614000000114, 8.964261000000134 ], [ 4.90597, 8.957624 ], [ 4.905619000000115, 8.950256 ], [ 4.904087, 8.941066000000149 ], [ 4.902521, 8.929803000000106 ], [ 4.899805, 8.918788 ], [ 4.902335, 8.903996 ], [ 4.904032, 8.894982 ], [ 4.90664, 8.885032 ], [ 4.909746000000155, 8.877374 ], [ 4.91765, 8.866874 ], [ 4.927656, 8.857946 ], [ 4.937903, 8.849707 ], [ 4.949772, 8.841904 ], [ 4.961968, 8.840085 ], [ 4.970886, 8.835093 ], [ 4.989493, 8.830398 ], [ 4.99407, 8.828019 ], [ 4.998660000000143, 8.826558 ], [ 5.017422, 8.81702200000012 ], [ 5.024289, 8.813681 ], [ 5.033911, 8.809601 ], [ 5.048753, 8.800134 ], [ 5.063397, 8.792743 ], [ 5.069069, 8.786885 ], [ 5.073783, 8.778742 ], [ 5.080748, 8.767332 ], [ 5.089329, 8.755896 ], [ 5.093126000000154, 8.748229000000151 ], [ 5.100334, 8.737508 ], [ 5.106443000000126, 8.73003 ], [ 5.113695000000121, 8.722073000000137 ], [ 5.124799, 8.709675 ], [ 5.135456, 8.698202 ], [ 5.144367, 8.692983 ], [ 5.159259000000134, 8.68674 ], [ 5.171152, 8.680317 ], [ 5.180802, 8.677847000000156 ], [ 5.193654, 8.673715 ], [ 5.208969, 8.665159 ], [ 5.220399000000157, 8.658743 ], [ 5.241937, 8.649627 ], [ 5.25199, 8.643694000000153 ], [ 5.267302000000143, 8.63468 ], [ 5.275723, 8.627621 ], [ 5.284803, 8.632768000000112 ], [ 5.290414, 8.637513 ], [ 5.297243000000151, 8.645921 ], [ 5.303848, 8.655026 ], [ 5.314662, 8.667518000000143 ], [ 5.326402000000144, 8.680222 ], [ 5.336266, 8.691114 ], [ 5.343969, 8.696745 ], [ 5.362141, 8.707726 ], [ 5.368903, 8.712221 ], [ 5.382042, 8.711537 ], [ 5.391654, 8.706767 ], [ 5.407127, 8.6936 ], [ 5.419008, 8.686487 ], [ 5.420886, 8.674243 ], [ 5.423361, 8.65622900000011 ], [ 5.425601, 8.637757 ], [ 5.428548, 8.620426 ], [ 5.43082100000015, 8.604028 ], [ 5.434686, 8.586219000000142 ], [ 5.436288, 8.571215 ], [ 5.439, 8.553427000000113 ], [ 5.441102000000114, 8.540718 ], [ 5.441097, 8.526202000000126 ], [ 5.445813000000157, 8.50400100000013 ], [ 5.446232, 8.487174000000151 ], [ 5.448962000000108, 8.470539 ], [ 5.448976, 8.470247 ], [ 5.444277, 8.466063000000133 ], [ 5.42007, 8.439483 ], [ 5.41106, 8.424872 ], [ 5.399396, 8.403154 ], [ 5.383036, 8.376443 ], [ 5.36679, 8.356878 ], [ 5.354346000000135, 8.34394 ], [ 5.348466000000144, 8.337351 ], [ 5.345672, 8.321479 ], [ 5.352728, 8.309279000000117 ], [ 5.342, 8.304144 ], [ 5.322881, 8.291565 ], [ 5.315806, 8.282007000000135 ], [ 5.309653, 8.272434000000146 ], [ 5.30493, 8.265601 ], [ 5.299301, 8.259935000000155 ], [ 5.298441, 8.249581 ], [ 5.294193, 8.243665 ], [ 5.290688000000102, 8.240957 ], [ 5.286032, 8.238272000000109 ], [ 5.278134, 8.234949000000142 ], [ 5.26931, 8.231182 ], [ 5.258924, 8.230897 ], [ 5.247165, 8.231328 ], [ 5.238345, 8.228016 ], [ 5.234892000000116, 8.228538000000128 ], [ 5.218717, 8.22674 ], [ 5.208345, 8.227376 ], [ 5.198609, 8.224315000000104 ], [ 5.189914000000101, 8.228839 ], [ 5.187069, 8.238334 ], [ 5.182276, 8.255696 ], [ 5.183179, 8.268817 ], [ 5.185462000000143, 8.281681 ], [ 5.190185, 8.302569 ], [ 5.185811, 8.317390000000103 ], [ 5.17837900000012, 8.328576 ], [ 5.170014, 8.339085 ], [ 5.157985, 8.351272000000108 ], [ 5.138022000000148, 8.357831 ], [ 5.123518, 8.359689 ], [ 5.111507, 8.35874 ], [ 5.089543, 8.355657 ], [ 5.072094, 8.346506 ], [ 5.059465, 8.33589 ], [ 5.041581, 8.328357 ], [ 5.019865000000152, 8.32642200000015 ], [ 5.003542000000152, 8.329923 ], [ 4.979641, 8.335398000000112 ], [ 4.966075, 8.338162 ], [ 4.943585, 8.345458 ], [ 4.92129, 8.350442000000157 ], [ 4.90249, 8.357674 ], [ 4.899597, 8.358663 ], [ 4.886889, 8.363007 ], [ 4.874648, 8.362061000000153 ], [ 4.859163, 8.360252 ], [ 4.844729000000143, 8.352199 ], [ 4.829336, 8.355919 ], [ 4.82066200000014, 8.347308 ], [ 4.814173, 8.331288 ], [ 4.812569, 8.317721 ], [ 4.810007000000155, 8.301865 ], [ 4.808395, 8.287839 ], [ 4.811958, 8.279942 ], [ 4.816425, 8.27088 ], [ 4.819456, 8.258618 ], [ 4.819228000000122, 8.244567000000131 ], [ 4.815155000000118, 8.235189000000105 ], [ 4.811796, 8.22718 ], [ 4.808243, 8.22148 ], [ 4.798363, 8.209664 ], [ 4.792282000000113, 8.204468 ], [ 4.789709, 8.202207 ], [ 4.782238, 8.196806 ], [ 4.775938, 8.192302 ], [ 4.770302000000129, 8.186178000000153 ], [ 4.768155, 8.181836 ], [ 4.767683000000147, 8.181152 ], [ 4.764577, 8.174522000000138 ], [ 4.762380000000121, 8.170564 ] ] ] });</script>
+
+
+  </body>
+</html>
