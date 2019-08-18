@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>State House of Assembly :: Shine your eye</title>
+
+  
+
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body class="">
+
+    <nav class="navbar navbar-default main-menu" id="main-menu">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-links" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ShineYourEye</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-menu-links">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/info/democracy-resources">Democracy Resources</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Elections <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="elections">
+            <li><a href="/info/elections">Elections</a></li>
+            <li><a href="/info/inec-nationwide-continuous-voter-registration-exercise">Voting Information</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Government Officials <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/government-officials">Government Officials</a></li>
+            <li><a href="/position/executive-governor/">Governors</a></li>
+            <li><a href="/position/senator/">Senators</a></li>
+            <li><a href="/position/representative/">Representatives</a></li>
+            <li><a href="/position/state-legislator/">State Legislators</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Places<span class="caret"></span></a>
+          <ul class="dropdown-menu" id="government-officials">
+            <li><a href="/info/places-overview">Places</a></li>
+            <li><a href="/place/is/state/">States</a></li>
+            <li><a href="/place/is/senatorial-district/">Senatorial Districts</a></li>
+            <li><a href="/place/is/federal-constituency/">Federal Constituencies</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/events/">Events</a></li>
+
+        <li><a href="/blog/">Blog</a></li>
+
+        <li><a href="/info/about">About</a></li>
+
+        <li><a href="/contact/">Contact</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+    <div class="site-header">
+  <div class="container">
+
+    <form class="site-header__search js-multipurpose-search" action="https://sye-pu-lookup-frontend.herokuapp.com/lookup" method="post">
+      <label for="site-search">
+        <strong>Find your representative</strong>
+        <span class="js-multipurpose-search-label">Enter your Polling Unit (PU) number</span>
+      </label>
+      <p>
+        <span class="input-group">
+          <input name="pu-number" id="site-search" type="search" class="form-control" placeholder="e.g. 1:1:1">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search" aria-label="Search"></i></button>
+          </span>
+        </span>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+
+    <div id="page">
+
+      
+        <!-- {% include breadcrumbs.html %} -->
+        <div class="page-section">
+          <div class="container">
+             <h1 class="page-title text-center">State House of Assembly</h1>
+
+
+<div class="page-section page-section--grey" id="seat-count">
+  <div class="container">
+      <div class="party-groupings__title text-center">
+          <h3>Party Groupings</h3>
+      </div>
+      <ul class="grid-list grid-list--vertically-center">
+        
+            <li id="party-type"><div class="avatar-unit">
+                <span class="avatar"><i class="glyphicon glyphicon-user"></i></span>
+                <h4>All Progressives Congress</h4>
+                <p><span class="seatcount">66</span> seats</p>
+            </div></li>
+          
+      </ul>
+  </div>
+</div>
+
+<div class="content_box">
+  <div class="party-groupings__title text-center">
+    <h3>Members</h3>
+  </div>
+  <div class="accordion people-accordion">
+    
+      <h2>Lagos</h2>
+      <ul class="contact-list">
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="abdulsobur-o-olawale">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/abdulsobur-o-olawale/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Abdulsobur O. Olawale">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/abdulsobur-o-olawale/">
+                  <h3 class="contact-list__item__name">Abdulsobur Olawale</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/mushin/">Mushin</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="adebisi-yusuff">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/adebisi-yusuff/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Adebisi Yusuff">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/adebisi-yusuff/">
+                  <h3 class="contact-list__item__name">Adebisi Yusuff</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/alimosho/">Alimosho</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="adewale-temitope">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/adewale-temitope/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Adewale Temitope">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/adewale-temitope/">
+                  <h3 class="contact-list__item__name">Adewale Temitope</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ifakoijaye/">Ifako/Ijaye</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="akinsanya-nureni">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/akinsanya-nureni/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Akinsanya Nureni">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/akinsanya-nureni/">
+                  <h3 class="contact-list__item__name">Akinsanya Nureni</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/mushin/">Mushin</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="desmond-elliot">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/desmond-elliot/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Desmond Elliot">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/desmond-elliot/">
+                  <h3 class="contact-list__item__name">Desmond Elliot</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/surulere/">Surulere</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="fatai-mojeed">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/fatai-mojeed/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Fatai Mojeed">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/fatai-mojeed/">
+                  <h3 class="contact-list__item__name">Fatai Mojeed</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ibeju-lekki/">Ibeju/Lekki</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="fatai-o-oluwa">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/fatai-o-oluwa/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Fatai O. Oluwa">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/fatai-o-oluwa/">
+                  <h3 class="contact-list__item__name">Fatai Oluwa</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ajeromi-ifelodun/">Ajeromi/Ifelodun</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="gbolahan-o-yishawu">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/gbolahan-o-yishawu/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Gbolahan O. Yishawu">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/gbolahan-o-yishawu/">
+                  <h3 class="contact-list__item__name">Gbolahan Yishawu</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/eti-osa/">Eti-Osa</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="hakeem-shokunle">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/hakeem-shokunle/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Hakeem Shokunle">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/hakeem-shokunle/">
+                  <h3 class="contact-list__item__name">Hakeem Shokunle</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/oshodi-isolo/">Oshodi/Isolo</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="ibrahim-o-layode">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/ibrahim-o-layode/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Ibrahim O. Layode">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/ibrahim-o-layode/">
+                  <h3 class="contact-list__item__name">Ibrahim Layode</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/badagary/">Badagary</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="ibrahim-olatunbosun">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/ibrahim-olatunbosun/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Ibrahim Olatunbosun">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/ibrahim-olatunbosun/">
+                  <h3 class="contact-list__item__name">Ibrahim Olatunbosun</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/lagos-mainland/">Mainland</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="jubril-f-mohammed">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/jubril-f-mohammed/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Jubril F. Mohammed">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/jubril-f-mohammed/">
+                  <h3 class="contact-list__item__name">Jubril Mohammed</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ikeja/">Ikeja</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="jude-emeka-idimogu">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/jude-emeka-idimogu/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Jude Emeka Idimogu">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/jude-emeka-idimogu/">
+                  <h3 class="contact-list__item__name">Jude Idimogu</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/oshodi-isolo/">Oshodi/Isolo</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="kasunmu-a-r">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/kasunmu-a-r/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Kasunmu A. R.">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/kasunmu-a-r/">
+                  <h3 class="contact-list__item__name">Kasunmu R.</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ikeja/">Ikeja</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="kehinde-joseph">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/kehinde-joseph/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Kehinde Joseph">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/kehinde-joseph/">
+                  <h3 class="contact-list__item__name">Kehinde Joseph</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/alimosho/">Alimosho</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="lateef-abiru">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/lateef-abiru/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Lateef Abiru">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/lateef-abiru/">
+                  <h3 class="contact-list__item__name">Lateef Abiru</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/shomolu/">Shomolu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="mojisola-alli-macaulay">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/mojisola-alli-macaulay/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Mojisola Alli-Macaulay">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/mojisola-alli-macaulay/">
+                  <h3 class="contact-list__item__name">Mojisola Alli-Macaulay</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/amuwo-odofin/">Amuwo Odofin</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="mojisola-meranda">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/mojisola-meranda/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Mojisola Meranda">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/mojisola-meranda/">
+                  <h3 class="contact-list__item__name">Mojisola Meranda</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/apapa/">Apapa</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="moshood-osun">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/moshood-osun/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Moshood Osun">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/moshood-osun/">
+                  <h3 class="contact-list__item__name">Moshood Osun</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/lagos-mainland/">Mainland</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="mudashiru-ajayi-obasa">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/mudashiru-ajayi-obasa/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Mudashiru Ajayi Obasa">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/mudashiru-ajayi-obasa/">
+                  <h3 class="contact-list__item__name">Mudashiru Obasa</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/agege/">Agege</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="mustainu-tobun">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/mustainu-tobun/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Mustainu Tobun">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/mustainu-tobun/">
+                  <h3 class="contact-list__item__name">Mustainu Tobun</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/epe/">Epe</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="noheem-babatunde">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/noheem-babatunde/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Noheem Babatunde">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/noheem-babatunde/">
+                  <h3 class="contact-list__item__name">Noheem Babatunde</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/eti-osa/">Eti-Osa</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="nurudeen-solaja-saka">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/nurudeen-solaja-saka/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Nurudeen Solaja-Saka">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/nurudeen-solaja-saka/">
+                  <h3 class="contact-list__item__name">Nurudeen Solaja-Saka</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ikorodu/">Ikorodu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="ogunkelu-sylvester">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/ogunkelu-sylvester/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Ogunkelu Sylvester">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/ogunkelu-sylvester/">
+                  <h3 class="contact-list__item__name">Ogunkelu Sylvester</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/epe/">Epe</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="olanrewaju-afinni">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/olanrewaju-afinni/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Olanrewaju Afinni">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/olanrewaju-afinni/">
+                  <h3 class="contact-list__item__name">Olanrewaju Afinni</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/lagos-island/">LagosIsland</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="olumoh-lukman">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/olumoh-lukman/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Olumoh Lukman">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/olumoh-lukman/">
+                  <h3 class="contact-list__item__name">Olumoh Lukman</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ajeromi-ifelodun/">Ajeromi/Ifelodun</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="olumuyiwa-jimoh">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/olumuyiwa-jimoh/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Olumuyiwa Jimoh">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/olumuyiwa-jimoh/">
+                  <h3 class="contact-list__item__name">Olumuyiwa Jimoh</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/apapa/">Apapa</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="olusegun-akande">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/olusegun-akande/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Olusegun Akande">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/olusegun-akande/">
+                  <h3 class="contact-list__item__name">Olusegun Akande</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ojo/">Ojo</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="oluyinka-ogundimu">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/oluyinka-ogundimu/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Oluyinka Ogundimu">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/oluyinka-ogundimu/">
+                  <h3 class="contact-list__item__name">Oluyinka Ogundimu</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/agege/">Agege</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="raheem-a-kazeem">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/raheem-a-kazeem/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Raheem A. Kazeem">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/raheem-a-kazeem/">
+                  <h3 class="contact-list__item__name">Raheem Kazeem</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ibeju-lekki/">Ibeju/Lekki</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="rasheed-l-makinde">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/rasheed-l-makinde/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Rasheed L. Makinde">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/rasheed-l-makinde/">
+                  <h3 class="contact-list__item__name">Rasheed Makinde</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ifakoijaye/">Ifako/Ijaye</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="rauf-olawale">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/rauf-olawale/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Rauf Olawale">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/rauf-olawale/">
+                  <h3 class="contact-list__item__name">Rauf Olawale</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/amuwo-odofin/">Amuwo Odofin</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="rotimi-olowo">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/rotimi-olowo/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Rotimi Olowo">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/rotimi-olowo/">
+                  <h3 class="contact-list__item__name">Rotimi Olowo</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/shomolu/">Shomolu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="sanai-o-agunbiade">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/sanai-o-agunbiade/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Sanai O. Agunbiade">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/sanai-o-agunbiade/">
+                  <h3 class="contact-list__item__name">Sanai Agunbiade</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ikorodu/">Ikorodu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="sangodara-rotimi">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/sangodara-rotimi/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Sangodara Rotimi">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/sangodara-rotimi/">
+                  <h3 class="contact-list__item__name">Sangodara Rotimi</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/surulere/">Surulere</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="sanni-babatunde">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/sanni-babatunde/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Sanni Babatunde">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/sanni-babatunde/">
+                  <h3 class="contact-list__item__name">Sanni Babatunde</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/kosofe/">Kosofe</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="setonji-s-david">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/setonji-s-david/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Setonji S. David">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/setonji-s-david/">
+                  <h3 class="contact-list__item__name">Setonji David</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/badagary/">Badagary</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="tijani-suraju">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/tijani-suraju/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Tijani Suraju">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/tijani-suraju/">
+                  <h3 class="contact-list__item__name">Tijani Suraju</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ojo/">Ojo</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="tunde-braimoh">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/tunde-braimoh/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Tunde Braimoh">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/tunde-braimoh/">
+                  <h3 class="contact-list__item__name">Tunde Braimoh</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/kosofe/">Kosofe</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="wasiu-eshilokun-sanni">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/wasiu-eshilokun-sanni/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Wasiu Eshilokun Sanni">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/wasiu-eshilokun-sanni/">
+                  <h3 class="contact-list__item__name">Wasiu Sanni</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/lagos-island/">LagosIsland</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+</ul> 
+    
+      <h2>Ogun</h2>
+      <ul class="contact-list">
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="abdul-bashir-oladunjoye">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/abdul-bashir-oladunjoye/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Abdul Bashir Oladunjoye">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/abdul-bashir-oladunjoye/">
+                  <h3 class="contact-list__item__name">Abdul Oladunjoye</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/shagamu/">Shagamu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="abiodun-sylvester-niyi">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/abiodun-sylvester-niyi/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Abiodun Sylvester Niyi">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/abiodun-sylvester-niyi/">
+                  <h3 class="contact-list__item__name">Abiodun Niyi</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ijebu-north/">IjebuNorth</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="adegoke-olusesi-adeyanju">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/adegoke-olusesi-adeyanju/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Adegoke Olusesi Adeyanju">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/adegoke-olusesi-adeyanju/">
+                  <h3 class="contact-list__item__name">Adegoke Adeyanju</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/egbado-north/">EgbadoNorth</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="adejojo-yusuf-temitope">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/adejojo-yusuf-temitope/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Adejojo Yusuf Temitope">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/adejojo-yusuf-temitope/">
+                  <h3 class="contact-list__item__name">Adejojo Temitope</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/abeokuta-south/">Abeokuta South</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="ademuyiwa-adeyemi">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/ademuyiwa-adeyemi/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Ademuyiwa Adeyemi">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/ademuyiwa-adeyemi/">
+                  <h3 class="contact-list__item__name">Ademuyiwa Adeyemi</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/abeokuta-south/">Abeokuta South</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="adeniran-a-adeyinka">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/adeniran-a-adeyinka/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Adeniran A. Adeyinka">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/adeniran-a-adeyinka/">
+                  <h3 class="contact-list__item__name">Adeniran Adeyinka</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/shagamu/">Shagamu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="ajayi-bolanle-lateefat">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/ajayi-bolanle-lateefat/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Ajayi Bolanle Lateefat">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/ajayi-bolanle-lateefat/">
+                  <h3 class="contact-list__item__name">Ajayi Lateefat</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/egbado-south/">EgbadoSouth</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="akingbade-jemili-adigun">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/akingbade-jemili-adigun/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Akingbade Jemili Adigun">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/akingbade-jemili-adigun/">
+                  <h3 class="contact-list__item__name">Akingbade Adigun</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/imeko-afon/">Imeko-Afon</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="amosun-yusuf-olawale">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/amosun-yusuf-olawale/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Amosun, Yusuf Olawale">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/amosun-yusuf-olawale/">
+                  <h3 class="contact-list__item__name">Amosun, Olawale</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ewekoro/">Ewekoro</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="balogun-akeem-agbolade">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/balogun-akeem-agbolade/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Balogun Akeem Agbolade">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/balogun-akeem-agbolade/">
+                  <h3 class="contact-list__item__name">Balogun Agbolade</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ogun-waterside/">OgunWaterside</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="bello-atinuke">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/bello-atinuke/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Bello Atinuke">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/bello-atinuke/">
+                  <h3 class="contact-list__item__name">Bello Atinuke</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/odogbolu/">Odogbolu</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="elemide-oludaisi">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/elemide-oludaisi/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Elemide Oludaisi">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/elemide-oludaisi/">
+                  <h3 class="contact-list__item__name">Elemide Oludaisi</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/odeda/">Odeda</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="fasuwa-abayomi-johnson">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/fasuwa-abayomi-johnson/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Fasuwa Abayomi Johnson">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/fasuwa-abayomi-johnson/">
+                  <h3 class="contact-list__item__name">Fasuwa Johnson</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ijebu-north-east/">Ijebu North-East</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="haruna-abiodun-wahab">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/haruna-abiodun-wahab/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Haruna Abiodun Wahab">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/haruna-abiodun-wahab/">
+                  <h3 class="contact-list__item__name">Haruna Wahab</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/egbado-north/">EgbadoNorth</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="isaac-olushola-adams">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/isaac-olushola-adams/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Isaac Olushola Adams">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/isaac-olushola-adams/">
+                  <h3 class="contact-list__item__name">Isaac Adams</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ijebu-east/">IjebuEast</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="lamidi-musefiu-olatunji">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/lamidi-musefiu-olatunji/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Lamidi Musefiu Olatunji ">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/lamidi-musefiu-olatunji/">
+                  <h3 class="contact-list__item__name">Lamidi Olatunji </h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/adoodo-ota/">AdoOdo/Ota</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="mujota-modupe-onikepo">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/mujota-modupe-onikepo/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Mujota Modupe Onikepo ">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/mujota-modupe-onikepo/">
+                  <h3 class="contact-list__item__name">Mujota Onikepo </h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/abeokuta-north/">AbeokutaNorth</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="oduwole-kemi-olaitan">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/oduwole-kemi-olaitan/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Oduwole Kemi Olaitan">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/oduwole-kemi-olaitan/">
+                  <h3 class="contact-list__item__name">Oduwole Olaitan</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ijebu-ode/">IjebuOde</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="oludare-oluwatimileyin-kadiri">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/oludare-oluwatimileyin-kadiri/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Oludare Oluwatimileyin Kadiri">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/oludare-oluwatimileyin-kadiri/">
+                  <h3 class="contact-list__item__name">Oludare Kadiri</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ijebu-north/">IjebuNorth</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="oluomo-olakunle-taiwo">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/oluomo-olakunle-taiwo/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Oluomo Olakunle Taiwo ">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/oluomo-olakunle-taiwo/">
+                  <h3 class="contact-list__item__name">Oluomo Taiwo </h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ifo/">Ifo</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="osho-solomon-oluwaseyi">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/osho-solomon-oluwaseyi/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Osho Solomon Oluwaseyi">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/osho-solomon-oluwaseyi/">
+                  <h3 class="contact-list__item__name">Osho Oluwaseyi</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/remo-north/">Remo-North</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="oyedeji-ganiyu-alani">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/oyedeji-ganiyu-alani/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Oyedeji Ganiyu Alani">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/oyedeji-ganiyu-alani/">
+                  <h3 class="contact-list__item__name">Oyedeji Alani</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ifo/">Ifo</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="sikiratu-ajibola-o">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/sikiratu-ajibola-o/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Sikiratu Ajibola O.">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/sikiratu-ajibola-o/">
+                  <h3 class="contact-list__item__name">Sikiratu O.</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ipokia/">Ipokia</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="sobukanla-olakunle">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/sobukanla-olakunle/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Sobukanla Olakunle">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/sobukanla-olakunle/">
+                  <h3 class="contact-list__item__name">Sobukanla Olakunle</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/ikenne/">Ikenne</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="soneye-damilola-kayode">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/soneye-damilola-kayode/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Soneye Damilola Kayode">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/soneye-damilola-kayode/">
+                  <h3 class="contact-list__item__name">Soneye Kayode</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/obafemi-owode/">Obafemi-Owode</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+    <li class="col-md-4 col-sm-12 col-xs-12" id="yusuf-sherif-abiodun">
+      <div class="contact-list__item contact-list__item--people">
+          <div class="media">
+            <div class="media-left">
+              <a href="/person/yusuf-sherif-abiodun/">
+                
+                  <img class="contact-list__item__photo" src="/images/person-250x250.png" srcset="/images/person-250x250.png" alt="Yusuf Sherif Abiodun">
+                
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="/person/yusuf-sherif-abiodun/">
+                  <h3 class="contact-list__item__name">Yusuf Abiodun</h3>
+              </a>
+              <p>
+                
+                  <span class="test-party">All Progressives Congress</span>
+                  <a class="contact-list__item__area test-area" href="/place/adoodo-ota/">AdoOdo/Ota</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+    </li>
+  
+</ul> 
+    
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+      
+
+    </div>
+
+    <div class="site-footer">
+  <div class="container">
+    <div class="site-footer__primary">
+      <h3>Shine Your Eye</h3>
+      <p>Shine your Eye is an initiative of <a href="https://eie.ng" target="_blank" title="EiE Nigeria">Enough is Enough Nigeria (EiENigeria)</a>  with support from <a href="https://www.placng.org/" target="_blank" title="PLAC NG">Policy and Legal Advocacy Center</a>. <a href="/info/about">Read more.</a></p>
+      <ul class="list-inline">
+        <li><a href="mailto:syeinfo@eienigeria.org">syeinfo@eienigeria.org</a></li>
+        <li><a href="https://twitter.com/NGShineYourEye">@NGShineYourEye</a></li>
+      </ul>
+    </div>
+    <div class="site-footer__secondary">
+      <ul class="list-inline">
+        <li><a class="btn btn-primary" href="/search/">Find your Representative</a></li>
+        <li><a class="btn btn-default" href="/blog/">Latest News</a></li>
+        <li><a class="btn btn-default" href="/info/democracy-resources">Democractic Resources</a></li>
+        <li><a class="btn btn-default" href="/info/elections">Elections</a></li>
+        <li><a class="btn btn-default" href="/events/">Events</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/javascripts/bootstrap/bootstrap.min.js"></script>
+<script src="/javascripts/multipurpose-search.js"></script>
+<script>
+  (function() {
+    var cx = '009849292720701569670:dnm2ccnvkai';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+    <script src="/javascripts/accordion.js"></script>
+
+
+  </body>
+</html>
